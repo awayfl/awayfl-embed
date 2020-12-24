@@ -17,6 +17,9 @@
   "author": "eXponenta",
   "license": "MIT",
   "repository": "https://github.com/eXponenta/away-player-embed",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@awayfl/avm1": "^0.2.0",
     "@awayfl/avm2": "^0.2.0",
