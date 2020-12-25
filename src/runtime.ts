@@ -16,9 +16,9 @@ import { LoaderInfo, PlayerGlobal } from "@awayfl/playerglobal";
 import { AVMStage } from "@awayfl/swf-loader";
 
 //@ts-ignore;
-export const VERSION = __VERSION__;
+export const VERSION = "__VERSION__";
 //@ts-ignore
-export const RUNTIME = JSON.parse(__RUNTIME__);
+export const RUNTIME = JSON.parse("__RUNTIME__");
 export class Player extends AVMStage {
     constructor(public container: HTMLDivElement, conf: any) {
         super(Object.assign({
