@@ -8,10 +8,13 @@ import fs from 'fs';
 const p = require('./package.json');
 const VERSION = p.version;
 const DEPS = p.dependencies;
+const REAL_VERS = {};
 
 const versions = Object.keys(DEPS).map( (name) => {
 	const pstring = fs.readFileSync(`./node_modules/${name}/package.json`);
 	const p = JSON.parse(pstring);
+
+	REAL_VERS[name] = p.version;
 	return `${name}:${p.version}`;
 });
 
@@ -69,7 +72,7 @@ export default [
 	plugins: [
 		replace({
 			__VERSION__: VERSION,
-			__LIBS__: JSON.stringify(JSON.stringify(DEPS)),
+			__LIBS__: JSON.stringify(JSON.stringify(REAL_VERS)),
 			__DATE__: new Date().toDateString()
 		}),
 		typescript({
