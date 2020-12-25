@@ -1,18 +1,18 @@
-Bundle version: 0.0.3
-Build at: Thu Dec 24 2020 20:40:18 GMT+0300 (GMT+03:00)
+Bundle version: 0.0.4
+Build at: Fri Dec 25 2020 12:03:53 GMT+0300 (GMT+03:00)
 ==========
 Modules:
 @awayfl/avm1:0.2.96
 @awayfl/avm2:0.2.146
 @awayfl/awayfl-player:0.2.20
-@awayfl/playerglobal:0.2.161
+@awayfl/playerglobal:0.2.162
 @awayfl/swf-loader:0.4.79
 @awayjs/core:0.9.19
 @awayjs/graphics:0.5.35
 @awayjs/materials:0.6.5
 @awayjs/renderer:0.11.11
 @awayjs/scene:0.13.145
-@awayjs/stage:0.11.69
+@awayjs/stage:0.11.70
 @awayjs/view:0.6.14
 random-seed:0.3.0
 tslib:1.14.1
