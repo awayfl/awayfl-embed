@@ -23,6 +23,8 @@ const emit = [
 	...versions
 ];
 
+console.log(JSON.stringify(JSON.stringify(DEPS)));
+
 fs.writeFileSync('./dist/VERSIONS.txt', emit.join('\n'));
 
 export default [
@@ -37,7 +39,6 @@ export default [
 	plugins: [
 		replace({
 			__VERSION__: VERSION,
-			__RUNTIME__: JSON.stringify(DEPS),
 			__DATE__: new Date().toDateString(),
 		}), 
 		typescript({
@@ -68,6 +69,7 @@ export default [
 	plugins: [
 		replace({
 			__VERSION__: VERSION,
+			__LIBS__: JSON.stringify(JSON.stringify(DEPS)),
 			__DATE__: new Date().toDateString()
 		}),
 		typescript({
