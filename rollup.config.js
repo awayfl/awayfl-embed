@@ -12,7 +12,7 @@ const DEPS = p.dependencies;
 const versions = Object.keys(DEPS).map( (name) => {
 	const pstring = fs.readFileSync(`./node_modules/${name}/package.json`);
 	const p = JSON.parse(pstring);
-	return `${name}:${p.version}`;	
+	return `${name}:${p.version}`;
 });
 
 const emit = [
@@ -37,7 +37,8 @@ export default [
 	plugins: [
 		replace({
 			__VERSION__: VERSION,
-			__DATE__: new Date().toDateString()
+			__RUNTIME__: JSON.stringify(DEPS),
+			__DATE__: new Date().toDateString(),
 		}), 
 		typescript({
 			rollupCommonJSResolveHack:true,
