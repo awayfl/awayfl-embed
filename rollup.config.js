@@ -26,8 +26,6 @@ const emit = [
 	...versions
 ];
 
-console.log(JSON.stringify(JSON.stringify(DEPS)));
-
 fs.writeFileSync('./dist/VERSIONS.txt', emit.join('\n'));
 
 export default [
