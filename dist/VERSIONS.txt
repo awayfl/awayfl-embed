@@ -1,5 +1,5 @@
-Bundle version: 0.0.10
-Build at: Sun Dec 27 2020 00:01:42 GMT+0300 (GMT+03:00)
+Bundle version: 0.0.11
+Build at: Sun Dec 27 2020 00:11:31 GMT+0300 (GMT+03:00)
 ==========
 Modules:
 @awayfl/avm1:0.2.96
