@@ -1,6 +1,6 @@
 {
   "name": "@exponenta/away-player-embed",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "AwayFL Runtime provider for replacing a flash player",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "static": "copyfiles -u 1 ./static/**/* ./dist/assets/",
     "prebuild": "npm run clean && npm run static",
     "build": "rollup -c",
-    "version": " npm run build && git commit -a -m Build",
-    "posversion": "git push origin --all && git push origin --tags && npm publish"
+    "version": " npm run build",
+    "postversion": "git commit -a -m Build && git push origin --all && git push origin --tags && npm publish"
   },
   "keywords": [
     "Flash",
