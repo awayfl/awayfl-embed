@@ -11,11 +11,21 @@ export class Runner {
 
 		const config = this.config;
 
-		const scripts = Array.isArray(config.runtime) ? config.runtime : [config.runtime];		
-		const jss = scripts.map((e: any) => (<any>{ path: e.path || e, size: e.size || 0 }));
+		const bins = config.binary = 
+			(
+				Array.isArray(config.binary) 
+					? config.binary 
+					: [config.binary]
+			).map(e => (typeof e === 'string' ? {path: e} : e) as IFile);
+		
 
-		const bins = this.config.binary;
-
+		const jss = config.runtime = 
+			(
+				Array.isArray(config.runtime) 
+					? config.runtime 
+					: [config.runtime]
+			).map(e => (typeof e === 'string' ? {path: e, type: 'js'} : e) as IFile);
+		
 		const loadReporter = new Reporter(null, null, 4);
 		const avmReporter = new Reporter(
 			(f) => {
@@ -39,7 +49,7 @@ export class Runner {
 
 		return this.loader.run(jss, <any>bins, loadReporter.report, config.debug).then((data: IFile[]) => {
 			config.files = data;
-			return data;
+			return config;
 		});
 	}
 }

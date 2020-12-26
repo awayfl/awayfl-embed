@@ -24,15 +24,40 @@ export class Player extends AVMStage {
         super(Object.assign({
             x:'0%', y: '0%', w: '100', h: '100%',
             stageScaleMode: 'showAll',
-            files: [
-                { path: "assets/fonts.swf", resourceType: <any>"FONTS" },                
-            ]
         }, conf || {}));
+        
+        this._gameConfig.files.push(
+            { 
+                path:  `${(conf?.baseUrl ? conf?.baseUrl + "/" : "")}assets/fonts.swf`, 
+                resourceType: <any>"FONTS" 
+            },                
+        );
+
+        if (conf?.baseUrl) {
+            // builtins located in assets
+            PlayerGlobal.builtinsBaseUrl = conf.baseUrl + '/assets/builtins';
+        }
 
         this.registerAVMStageHandler( new AVM1Handler());
         this.registerAVMStageHandler( new AVM2Handler(new PlayerGlobal()));
 
         LoaderInfo.DefaultLocation = conf?.location || "http://localhost";
+
+    }
+
+    loadAndPlay(): Promise<void> {
+        return new Promise((res, rej) => {
+            this.addEventListener('loaderComplete', () =>{
+                this.play();
+                res();
+            });
+
+            this.addEventListener('loadError', (r) => {
+                rej(r);
+            });
+
+            this.load();
+        });
     }
 
     loadBuffer(buffer: ArrayBuffer): Promise<void> {

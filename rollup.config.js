@@ -3,6 +3,7 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import replace  from '@rollup/plugin-replace'
+import { string as strings } from 'rollup-plugin-string';
 import fs from 'fs';
 
 const p = require('./package.json');
@@ -28,13 +29,46 @@ const emit = [
 
 fs.writeFileSync('./dist/VERSIONS.txt', emit.join('\n'));
 
-export default [
-{
+const EMBED_CONFIG = {
+	input: './src/embed/index.ts',
+	output: {
+		sourcemap: true,
+		format: 'iife',
+		name: 'AwayEmbed',
+		file: './dist/embed.js'
+	},
+	plugins: [
+		strings({
+			include: "**/*.html",
+		}),
+		replace({
+			__VERSION__: VERSION,
+			__DATE__: new Date().toDateString(),
+		}), 
+		typescript({
+			rollupCommonJSResolveHack:true,
+			tsconfigOverride: {
+				compilerOptions: {
+					target: 'es2017'
+				}
+			}
+		}),
+		nodeResolve({
+			mainFields: ['jsnext', 'module']
+		}),
+		commonjs({
+			include: /node_modules/,
+		}),
+		terser({})
+	]
+};
+
+const LOADER_CONFIG = {
 	input: './src/loader/index.ts',
 	output: {
 		sourcemap: true,
 		format: 'iife',
-		name: 'AwayLoader',
+		name: 'AWAYFL',
 		file: './dist/loader.js'
 	},
 	plugins: [
@@ -58,7 +92,9 @@ export default [
 		}),
 		terser({})
 	]
-},
+};
+
+const RUNTIME_CONFIG = 
 {
 	input: './src/runtime.ts',
 	output: {
@@ -89,5 +125,29 @@ export default [
 		}),
 		terser({})
 	]
+};
+
+
+export default (args) => {
+	const conf = [];
+
+	if(args.embed) {
+		delete args.embed
+		conf.push(EMBED_CONFIG)
+	}
+
+	if(args.loader) {
+		delete args.loader;
+		conf.push(LOADER_CONFIG);
+	}
+
+	if(args.runtime) {
+		delete args.runtime;
+		conf.push(RUNTIME_CONFIG);
+	}
+
+	if (conf.length === 0)
+		conf.push(EMBED_CONFIG, LOADER_CONFIG, RUNTIME_CONFIG);
+
+	return conf
 }
-];

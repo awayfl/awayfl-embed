@@ -16,7 +16,7 @@ export const LegacyLoader = {
 	init(_gameConfig: IGameConfigBase) {
 		loader = new Loader(_gameConfig);
 		runner = new Runner(loader, _gameConfig);
-		ui = new ProgressUI(document);
+		ui = new ProgressUI(document, _gameConfig);
 
 		ui.init();
 
@@ -72,13 +72,6 @@ export const LegacyLoader = {
 			pokiGameParseComplete: complete,
 		});
 		
-		return runner.runGame(progress).then((_) =>{
-			const runMethod = window["startPokiGame"];
-			if (!runMethod) {
-				throw "Could not find a 'startPokiGame' method";
-			}
-
-			runMethod(runner.config);
-		})
+		return runner.runGame(progress).then((res) => completeEvent(res));
 	}
 }

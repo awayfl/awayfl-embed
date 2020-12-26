@@ -77,14 +77,13 @@ export function loadBinary(file: IFile, progressEvent: tProgress = f => f): Prom
 	const isScript = file.path.indexOf(".js") > -1;
 
 	if (!isScript && supportDecoderApi) {
-		return Fetcher(file.path, progressEvent).then((buffer) => ({
-			meta: file.meta || {},
-			name: file.name,
-			path: file.path,
-			resourceType: file.resourceType,
-			data: buffer.buffer,
-			type: "swf",
-		}));
+		return Fetcher(file.path, progressEvent).then((buffer) => {
+			return Object.assign(file,
+			{
+				data: buffer.buffer,
+				type: "swf",
+			});
+		})
 	}
 
 	const req = new XMLHttpRequest();

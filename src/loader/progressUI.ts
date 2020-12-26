@@ -7,13 +7,15 @@ const transformRel = (val: string | number, base: number) => {
 }
 
 export class ProgressUI {
-	config: IGameConfigBase;
 	splash: HTMLDivElement;
 	prRoot: HTMLDivElement;
 	prLine: HTMLDivElement;
 	_isTransited: boolean = false;
 
-	constructor (public root: HTMLElement | HTMLDocument = document) {
+	constructor (
+		public root: HTMLElement | HTMLDocument = document, 
+		public config: IGameConfigBase) 
+	{
 		this.onUpdate = this.onUpdate.bind(this);
 		this.onProgress = this.onProgress.bind(this);
 
