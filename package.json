@@ -1,6 +1,6 @@
 {
   "name": "@exponenta/away-player-embed",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "AwayFL Runtime provider for replacing a flash player",
   "main": "index.js",
   "scripts": {
