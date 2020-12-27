@@ -13,9 +13,7 @@
 			outline: none
 		}
 
-		html,
-		body,
-		#container {
+		html, body {
 			margin: 0;
 			overflow: hidden;
 			width: 100%;
@@ -31,7 +29,7 @@
 
 		#splash__image {
 			position: absolute;
-			background-size: contain;
+			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
 			visibility: visible;
@@ -47,6 +45,7 @@
 			width: 0;
 			height: 100%;
 			transition: all 0.5s;
+			background: #cc0000;
 		}
 	</style>
 
@@ -68,9 +67,9 @@
 			AWAYFL.LegacyLoader.init(config);
 			AWAYFL.LegacyLoader.runGame((fill) => {
 				//
-			}, (config) => {
+			}, (config, hideLoader) => {
 				const player = new AWAYFL.Player(document, config);
-				player.loadAndPlay();
+				player.loadAndPlay().then(()=> hideLoader());
 			})
 		});
 	</script>

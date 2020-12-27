@@ -100,6 +100,7 @@ export function loadBinary(file: IFile, progressEvent: tProgress = f => f): Prom
 			return;
 		}
 
+		console.log("XHR", e.loaded, total);
 		progressEvent(Math.min(1, e.loaded / total));
 	});
 

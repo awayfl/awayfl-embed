@@ -68,8 +68,8 @@ function createRuntimeFrame(
     target.appendChild(frame);
 
     const gameConfig = {
-        width: frame.width,
-        height: frame.height,
+        width: frame.clientWidth,
+        height: frame.clientHeight,
         splash: AWAY_EMBED_CFG.splash,
         progress: AWAY_EMBED_CFG.progress || {},
         runtime: [runtimeUrl],
@@ -79,7 +79,7 @@ function createRuntimeFrame(
             name: swfUrl,
             meta: {}
         }],
-        debug: true,
+//        debug: true,
         baseUrl
     }
 

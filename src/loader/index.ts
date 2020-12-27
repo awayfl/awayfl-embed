@@ -34,17 +34,18 @@ export const LegacyLoader = {
 		};
 	},
 
-	runGame(progressEvent = (f) => f, completeEvent = (f) => f) {
+	runGame(progressEvent = (f) => f, completeEvent = (data, gameRunEvent: (a: any) => void) => 0) {
 		const conf = runner.config;
 
 		const progress = (f: number) => {
+			console.log("progress:", f);
 			ui.onProgress(f);
 			progressEvent(f); 
 		}
 
 		const complete = (func: () => void) => {
 			// rereport
-			completeEvent(func);
+			// completeEvent(func);
 
 			if (conf.start) {
 				//	start image exists.
@@ -72,6 +73,10 @@ export const LegacyLoader = {
 			pokiGameParseComplete: complete,
 		});
 		
-		return runner.runGame(progress).then((res) => completeEvent(res));
+		return runner
+			.runGame(progress)
+			.then((res) => {
+				completeEvent(res, complete);
+			});
 	}
 }

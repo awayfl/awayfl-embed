@@ -1,16 +1,16 @@
 import { IGameConfigBase } from "./iConfigBase";
 
 const transformRel = (val: string | number, base: number) => {
-	return typeof val === "string"
-		? (parseFloat(val.replace("%", "")) / 100) * base
-		: val;
+	if (typeof val !== 'string') return +val;
+	return val.includes("%")
+		? (parseFloat(val) / 100) * base
+		: parseFloat(val);
 }
 
 export class ProgressUI {
 	splash: HTMLDivElement;
 	prRoot: HTMLDivElement;
 	prLine: HTMLDivElement;
-	_isTransited: boolean = false;
 
 	constructor (
 		public root: HTMLElement | HTMLDocument = document, 
@@ -26,9 +26,6 @@ export class ProgressUI {
 		this.splash = this.root.querySelector<HTMLDivElement>("#splash__image");
 		this.prRoot = this.root.querySelector<HTMLDivElement>("#progress__root");
 		this.prLine = this.root.querySelector<HTMLDivElement>("#progress__line");
-
-		this.splash.addEventListener('transitionrun', () => this._isTransited = true);
-		this.splash.addEventListener('transitionend', () => this._isTransited = false);
 	}
 
 	init() {
@@ -42,7 +39,7 @@ export class ProgressUI {
 		});
 
 		const pr_conf = config.progress;
-		pr_conf.rect = pr_conf.rect || [0, 0.9, 1, 0.2];
+		pr_conf.rect = pr_conf.rect || [0.1, 0.9, 0.8, 0.01];
 
 		Object.assign(this.prRoot.style, {
 			background: pr_conf.back,
@@ -84,7 +81,6 @@ export class ProgressUI {
 		if (!this.splash) {
 			return;
 		}
-
 		const config = this.config;
 		let x = transformRel(config.x, window.innerWidth) || 0;
 		let y = transformRel(config.y, window.innerHeight) || 0;
@@ -127,15 +123,7 @@ export class ProgressUI {
 			opacity: 0,
 		});
 
-		let promise: Promise<any>;
-		if (!this._isTransited) {
-			promise = Promise.resolve(true);
-		} else {
-			promise = new Promise(res =>{
-				this.splash.addEventListener('transitionend', res, {once: true});
-			})
-		}
-
+		const promise = new Promise((res) => setTimeout(res, 500));
 		if (!dispose) {
 			return promise;
 		}
