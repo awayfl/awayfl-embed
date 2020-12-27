@@ -49,7 +49,7 @@ export class ProgressUI {
 			height: `${100 * pr_conf.rect[3]}%`,
 		});
 
-		Object.assign(this.prRoot.style, {
+		Object.assign(this.prLine.style, {
 			background: pr_conf.line,
 		});
 

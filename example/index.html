@@ -8,13 +8,19 @@
     <script>
         AWAY_EMBED_CFG = {
             // url to away loader
-            loaderUrl: 'https://ghcdn.rawgit.org/eXponenta/away-player-embed/master/dist/loader.js?v' + Math.random(),
+            loaderUrl: '../dist/loader.js?v' + Math.random(),
             // url to runtime, optional, will use a base of loaderUrl, but cache can be invalid
-            runtimeUrl: 'https://ghcdn.rawgit.org/eXponenta/away-player-embed/master/dist/runtime.js?v' + Math.random(),
+            runtimeUrl: '../dist/runtime.js?v' + Math.random(),
             // url to baseUrl, optional, will use a base of loaderUrl, SHOULD be valid url to /asset/ forlder of runtime
-            baseUrl: 'https://ghcdn.rawgit.org/eXponenta/away-player-embed/master/dist/',
+            baseUrl: '../dist/',
             // url to placeholder while runtime load
-            splash: './todo.jpg'
+            splash: './todo.jpg',
+            progress: {
+                back: 'no-repeat url("./progressBg.jpg")',
+                line: 'no-repeat url("./progressLine.jpg")',
+                // relative a frame size
+                rect: [168 / 550, 0.75, 214 / 550, 0.2]
+            }
         }
     </script>
     <script src="../dist/embed.js"></script>
