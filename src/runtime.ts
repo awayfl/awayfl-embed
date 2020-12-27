@@ -26,6 +26,10 @@ export class Player extends AVMStage {
             stageScaleMode: 'showAll',
         }, conf || {}));
         
+        if(!this._gameConfig.files) {
+            this._gameConfig.files = [];
+        }
+
         this._gameConfig.files.push(
             { 
                 path:  `${(conf?.baseUrl ? conf?.baseUrl + "/" : "")}assets/fonts.swf`, 
