@@ -7,7 +7,14 @@
 
     <script>
         AWAY_EMBED_CFG = {
-            loaderUrl: '../dist/loader.js',
+            // url to away loader
+            loaderUrl: 'https://ghcdn.rawgit.org/eXponenta/away-player-embed/master/dist/loader.js?v' + Math.random(),
+            // url to runtime, optional, will use a base of loaderUrl, but cache can be invalid
+            runtimeUrl: 'https://ghcdn.rawgit.org/eXponenta/away-player-embed/master/dist/runtime.js?v' + Math.random(),
+            // url to baseUrl, optional, will use a base of loaderUrl, SHOULD be valid url to /asset/ forlder of runtime
+            baseUrl: 'https://ghcdn.rawgit.org/eXponenta/away-player-embed/master/dist/',
+            // url to placeholder while runtime load
+            splash: './todo.jpg'
         }
     </script>
     <script src="../dist/embed.js"></script>
