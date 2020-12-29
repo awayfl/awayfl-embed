@@ -8,11 +8,9 @@
 			margin: 0;
 			padding: 0;
 		}
-
 		canvas {
 			outline: none
 		}
-
 		html, body {
 			margin: 0;
 			overflow: hidden;
@@ -20,45 +18,11 @@
 			height: 100%;
 			background-color: white;
 		}
-
-		#splash {
-			position: absolute;
-			visibility: hidden;
-			z-index: 10;
-		}
-
-		#splash__image {
-			position: absolute;
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			visibility: visible;
-			transition: all 0.5s;
-			z-index: 10;
-		}
-
-		#progress__root {
-			position: absolute;
-		}
-
-		#progress__line {
-			width: 0;
-			height: 100%;
-			transition: all 0.5s;
-			background: #cc0000;
-		}
 	</style>
-
 	<script src="__LOADER_URL__"></script>
 </head>
 
 <body>
-	<div id="splash__image">
-		<div id="progress__root">
-			<div id="progress__line"></div>
-		</div>
-	</div>
-
 	<script>
 		window.addEventListener("load", () => {
 
@@ -66,10 +30,16 @@
 
 			AWAYFL.LegacyLoader.init(config);
 			AWAYFL.LegacyLoader.runGame((fill) => {
-				//
+				window.dispatchEvent(new CustomEvent('awayfl-player-progress', {detail: fill}));
 			}, (config, hideLoader) => {
 				const player = new AWAYFL.Player(document, config);
-				player.loadAndPlay().then(()=> hideLoader());
+				window.dispatchEvent(new CustomEvent('awayfl-player-init', {detail: player}));
+				player
+					.loadAndPlay()
+					.then((_, hide) => {
+						window.dispatchEvent(new CustomEvent('awayfl-player-load'));
+						hide && hide();
+					});				
 			})
 		});
 	</script>

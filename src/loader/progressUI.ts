@@ -31,6 +31,10 @@ export class ProgressUI {
 	init() {
 		this.build();
 
+		if(!this.splash) {
+			return;
+		}
+
 		const config = this.config;
 
 		Object.assign( this.splash.style, {
@@ -57,6 +61,10 @@ export class ProgressUI {
 	}
 
 	onProgress (p: number) {
+		if (!this.prLine) {
+			return;
+		}
+
 		const pr_conf = this.config.progress;
 
 		switch (pr_conf.direction) {
@@ -81,6 +89,7 @@ export class ProgressUI {
 		if (!this.splash) {
 			return;
 		}
+
 		const config = this.config;
 		let x = transformRel(config.x, window.innerWidth) || 0;
 		let y = transformRel(config.y, window.innerHeight) || 0;
@@ -102,6 +111,10 @@ export class ProgressUI {
 	}
 
 	ready () {
+		if(!this.splash) {
+			return;
+		}
+
 		if(this.config.start) {
 			this.splash.style.background = `url(${this.config.start})`;
 		}
@@ -113,6 +126,10 @@ export class ProgressUI {
 	}
 
 	hide (dispose: boolean = false) {
+		if (!this.splash) {
+			return;
+		}
+
 		Object.assign(this.prRoot.style, {
 			visibility: "hidden",
 			opacity: 0,
@@ -132,6 +149,10 @@ export class ProgressUI {
 	}
 
 	dispose () {
+		if(!this.splash) {
+			return;
+		}
+
 		window.removeEventListener('resize', this.onUpdate);
 		this.splash.remove();
 		this.prRoot.remove();

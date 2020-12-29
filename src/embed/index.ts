@@ -1,5 +1,6 @@
 //@ts-ignore
 import template from "./embed.html";
+import {AwayPlayerComponent} from './AwayPlayerComponent';
 
 interface IAWAY_EMBED_CFG {
     loaderUrl: string,
@@ -57,39 +58,25 @@ function createRuntimeFrame(
         runtimeUrl = baseUrl  + '/runtime.js';
     }
 
-    const frame = document.createElement('iframe');
+    const player = new AwayPlayerComponent();
+    player.setAttribute('src', swfUrl);
+    player.setAttribute('width', width);
+    player.setAttribute('height', height);
+    player.setAttribute('runtimebaseurl', baseUrl);
 
-    // disable border for iframe
-    frame.style.border = 'none';
-    frame.width = width || target.getAttribute('width');
-    frame.height = height || target.getAttribute('height');
+    const id = target.id;
+    const name = target.className;
+    const parent = target.parentElement;
 
-    target.innerHTML = '';
-    target.appendChild(frame);
+    target.id = null;
+    target.className = '';
 
-    const gameConfig = {
-        width: frame.clientWidth,
-        height: frame.clientHeight,
-        splash: AWAY_EMBED_CFG.splash,
-        progress: AWAY_EMBED_CFG.progress || {},
-        runtime: [runtimeUrl],
-        binary: [{
-            path: swfUrl,
-            resourceType: 'GAME',
-            name: swfUrl,
-            meta: {}
-        }],
-//        debug: true,
-        baseUrl
-    }
+    player.id = id;
+    player.className = name;
 
-    const body = template
-        .replace(/__LOADER_URL__/, loaderUrl)
-        .replace(/__GAME_CONFIG__/, JSON.stringify(JSON.stringify(gameConfig)));
-
-    frame.srcdoc = body;
-
-    return frame;
+    parent.replaceChild(player, target);
+    
+    return player;
 }
 
 function embedSWF (
