@@ -2,9 +2,10 @@ export const supportDecoderApi = ('DecompressionStream' in self);
 export const isSWC = (head:Uint8Array) => (head[0] === 0x43 && head[1] === 0x57 && head[2] === 0x53);
 export const outputSize = (head: Uint8Array) => new DataView(head.buffer).getUint32(4, true);
 
+/*
 declare global {
     interface Window { DecompressionStream: any; }
-}
+}*/
 
 export function Decoder(size: number, offset = 8) {
 	if(!supportDecoderApi) {
