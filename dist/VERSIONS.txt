@@ -1,5 +1,5 @@
-Bundle version: 0.0.16
-Build at: Wed Jan 20 2021 21:30:40 GMT+0300 (GMT+03:00)
+Bundle version: 0.0.17
+Build at: Wed Jan 20 2021 21:51:06 GMT+0300 (GMT+03:00)
 ==========
 Modules:
 @awayfl/avm1:0.2.98
