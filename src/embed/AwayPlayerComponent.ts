@@ -238,21 +238,23 @@ export class AwayPlayerComponent extends HTMLElement {
 
     connectedCallback() 
     {
-        this._loaderHolder = this.querySelector('div.awayfl__loader');
-        this._mapAttrs();
-        this._constructPlayer();
+        setTimeout(() => {
+            this._loaderHolder = this.querySelector('div.awayfl__loader');
+            this._mapAttrs();
+            this._constructPlayer();
 
-        const style = document.createElement('style');
-        style.textContent = `
-        :host {
-            display: block;
-            contain: content;
-            width: ${this._runConfig.width};
-            height: ${this._runConfig.height};
-        }
-        `;
+            const style = document.createElement('style');
+            style.textContent = `
+            :host {
+                display: block;
+                contain: content;
+                width: ${this._runConfig.width};
+                height: ${this._runConfig.height};
+            }
+            `;
 
-        this._root.appendChild(style); 
+            this._root.appendChild(style); 
+        });
     }
 
     disconnectedCallback() {
@@ -265,7 +267,7 @@ export class AwayPlayerComponent extends HTMLElement {
         }
 
         // if SRC changed, drop runtime and load again
-        if (name === 'src') {
+        if (name === 'src' && this._player) {
             this._dropPlayer();
             this._runConfig.src = newValue;
             this._constructPlayer();

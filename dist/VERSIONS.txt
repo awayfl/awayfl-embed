@@ -1,18 +1,18 @@
 Bundle version: 0.0.17
-Build at: Wed Jan 20 2021 21:51:06 GMT+0300 (GMT+03:00)
+Build at: Thu Feb 04 2021 01:47:14 GMT+0300 (GMT+03:00)
 ==========
 Modules:
 @awayfl/avm1:0.2.98
-@awayfl/avm2:0.2.150
+@awayfl/avm2:0.2.154
 @awayfl/awayfl-player:0.2.20
-@awayfl/playerglobal:0.2.174
-@awayfl/swf-loader:0.4.86
-@awayjs/core:0.9.19
-@awayjs/graphics:0.5.38
+@awayfl/playerglobal:0.2.183
+@awayfl/swf-loader:0.4.89
+@awayjs/core:0.9.21
+@awayjs/graphics:0.5.49
 @awayjs/materials:0.6.5
-@awayjs/renderer:0.11.11
-@awayjs/scene:0.13.153
-@awayjs/stage:0.11.70
+@awayjs/renderer:0.11.12
+@awayjs/scene:0.13.162
+@awayjs/stage:0.11.73
 @awayjs/view:0.6.14
 random-seed:0.3.0
 tslib:1.14.1
