@@ -1,10 +1,10 @@
-Bundle version: 0.0.19
-Build at: Wed Feb 10 2021 16:04:36 GMT+0300 (GMT+03:00)
+Bundle version: 0.0.20
+Build at: Fri Feb 12 2021 19:27:45 GMT+0300 (GMT+03:00)
 ==========
 Modules:
 @awayfl/avm1:0.2.101
 @awayfl/avm2:0.2.155
-@awayfl/awayfl-player:0.2.20
+@awayfl/awayfl-player:0.2.21
 @awayfl/playerglobal:0.2.185
 @awayfl/swf-loader:0.4.89
 @awayjs/core:0.9.21
@@ -12,5 +12,5 @@ Modules:
 @awayjs/materials:0.6.5
 @awayjs/renderer:0.11.12
 @awayjs/scene:0.13.163
-@awayjs/stage:0.11.73
+@awayjs/stage:0.11.74
 @awayjs/view:0.6.14

@@ -1,40 +1,7 @@
-@awayfl/avm1 (v0.2.101-v0.2.100):
-	2021-02-09; extra check of depth id because `_depth_childs` can be invalid
-	2021-02-09; Remove legacy
+@awayfl/awayfl-player (v0.2.21-v0.2.20):
+	2021-02-10; Revert back a es5 target
+	2021-02-10; Add branch switch script. Fix debug interface for latest update
+	2020-12-18; Fix node traverser
 
-@awayfl/avm2 (v0.2.155-v0.2.154):
-	2021-01-28; fixes for try..catch
-
-@awayfl/awayfl-player (v0.2.20-v0.2.19):
-	2020-12-16; update version number in index.ts
-	2020-12-16; updates fro AVMStage mods
-
-@awayfl/playerglobal (v0.2.185-v0.2.184):
-	2021-02-09; add SimpleButton.removeAllTimelineChilds
-
-@awayfl/swf-loader (v0.4.89-v0.4.88):
-	2021-01-28; parse buttons - fix order of frames
-
-@awayjs/core (v0.9.21-v0.9.20):
-	2021-01-21; change console.log to warn for Debug.logPIR
-
-@awayjs/graphics (v0.5.49-v0.5.48):
-	2021-02-01; [WIP] Support selector for modern shader pipeline
-
-@awayjs/materials (v0.6.5-v0.6.4):
-	2020-11-30; update package to bypass eslint error
-	2020-11-30; added requestAbstraction() to IAssetPool
-
-@awayjs/renderer (v0.11.12-v0.11.11):
-	2021-01-28; [UNSAFE] Export IShaderBase interface, isolate IPass from ShaderBase.
-
-@awayjs/scene (v0.13.163-v0.13.162):
-	2021-02-09; fixes for satprof - some textFields missed words
-
-@awayjs/stage (v0.11.73-v0.11.72):
-	2021-02-01; Fix matrix upload.
-	2021-01-31; Lagacy support for AGAL pipeline of samplers
-	2021-01-30; Remove Legacy copy task
-
-@awayjs/view (v0.6.14-v0.6.13):
-	2020-12-16; replace onRenderEnd() with present()
+@awayjs/stage (v0.11.74-v0.11.73):
+	2021-02-12; Fix a colorTranform data partial upload for ColorTransform filter
