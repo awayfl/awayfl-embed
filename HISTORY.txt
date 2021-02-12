@@ -1,3 +1,7 @@
+Bundle version: 0.0.22
+Build at: Fri Feb 12 2021 19:47:51 GMT+0300 (GMT+03:00)
+---
+
 @awayfl/awayfl-player (v0.2.21-v0.2.20):
 	2021-02-10; Revert back a es5 target
 	2021-02-10; Add branch switch script. Fix debug interface for latest update
