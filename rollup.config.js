@@ -52,8 +52,14 @@ export default async (args) => {
 			return `${e.name} (${e.currentTag}-${e.endTag}):\n\t${commits.join('\n\t')}`;
 		});
 
-	fs.writeFileSync('./dist/VERSIONS.txt', versionMapped.join('\n'));
-	fs.writeFileSync('./dist/HISTORY.txt', releaseLogsMapped.join('\n\n'));
+	releaseLogsMapped.push(
+		`Bundle version: ${VERSION}`,
+		`Build at: ${new Date()}`,
+		'---\n'
+	);
+
+	fs.writeFileSync('./dist/VERSIONS.txt', versionMapped.join('\n') + '\n');
+	fs.appendFileSync('./dist/HISTORY.txt', releaseLogsMapped.join('\n\n'));
 
 	p.lastUsedTags = releaseLogs.reduce((acc, e) => (acc[e.name] = e.currentTag, acc) , {});
 
