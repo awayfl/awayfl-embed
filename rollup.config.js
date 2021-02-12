@@ -59,7 +59,8 @@ export default async (args) => {
 	);
 
 	fs.writeFileSync('./dist/VERSIONS.txt', versionMapped.join('\n') + '\n');
-	fs.appendFileSync('./dist/HISTORY.txt', releaseLogsMapped.join('\n\n'));
+	fs.appendFileSync('./HISTORY.txt', releaseLogsMapped.join('\n\n'));
+	fs.copyFileSync('./HISTORY.txt','./dist/HISTORY.txt');
 
 	p.lastUsedTags = releaseLogs.reduce((acc, e) => (acc[e.name] = e.currentTag, acc) , {});
 
