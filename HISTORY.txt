@@ -1,0 +1,7 @@
+@awayfl/awayfl-player (v0.2.21-v0.2.20):
+	2021-02-10; Revert back a es5 target
+	2021-02-10; Add branch switch script. Fix debug interface for latest update
+	2020-12-18; Fix node traverser
+
+@awayjs/stage (v0.11.74-v0.11.73):
+	2021-02-12; Fix a colorTranform data partial upload for ColorTransform filter
