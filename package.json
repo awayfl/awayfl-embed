@@ -1,6 +1,6 @@
 {
   "name": "@exponenta/away-player-embed",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "AwayFL Runtime provider for replacing a flash player",
   "main": "index.js",
   "scripts": {
@@ -52,7 +52,7 @@
   "lastUsedTags": {
     "@awayfl/avm1": "v0.2.101",
     "@awayfl/avm2": "v0.2.155",
-    "@awayfl/awayfl-player": "v0.2.20",
+    "@awayfl/awayfl-player": "v0.2.21",
     "@awayfl/playerglobal": "v0.2.185",
     "@awayfl/swf-loader": "v0.4.89",
     "@awayjs/core": "v0.9.21",
@@ -60,7 +60,7 @@
     "@awayjs/materials": "v0.6.5",
     "@awayjs/renderer": "v0.11.12",
     "@awayjs/scene": "v0.13.163",
-    "@awayjs/stage": "v0.11.73",
+    "@awayjs/stage": "v0.11.74",
     "@awayjs/view": "v0.6.14"
   }
 }
