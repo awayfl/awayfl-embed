@@ -64,8 +64,10 @@ export default async (args) => {
 	releaseLogsMapped.unshift(
 		`Bundle version: ${VERSION}`,
 		`Build at: ${new Date()}`,
-		'---\n'
+		'---'
 	);
+
+	releaseLogsMapped.push('\n---\n');
 
 	fs.writeFileSync('./dist/VERSIONS.txt', versionMapped.join('\n') + '\n');
 
