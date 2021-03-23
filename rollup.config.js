@@ -46,13 +46,22 @@ export default async (args) => {
 		.filter((e) => e.commits.length > 0)
 		.map((e) => {
 			// remove top 2 commits: tag and update version commit
-			let commits = e.commits.length > 2 ? e.commits.slice(2) : e.commits;
-			commits = commits.filter((e) => e.indexOf('Merge branch') === -1);
+			let commits = commits.filter((e, i) => {
+				if (e.indexOf('Merge ') > -1) {
+					return false;
+				}
+				
+				if (e.indexOf('update version') > -1) {
+					return false;
+				}
 
-			return `${e.name} (${e.currentTag}-${e.endTag}):\n\t${commits.join('\n\t')}`;
+				return true;
+			});
+
+			return `${e.name} (${e.endTag}-${e.currentTag}):\n\t${commits.join('\n\t')}`;
 		});
 
-	releaseLogsMapped.push(
+	releaseLogsMapped.unshift(
 		`Bundle version: ${VERSION}`,
 		`Build at: ${new Date()}`,
 		'---\n'
