@@ -1,3 +1,15 @@
+Bundle version: 0.0.24
+Build at: Tue Mar 23 2021 16:45:31 GMT+0300 (GMT+03:00)
+---
+
+@awayfl/avm1 (v0.2.108-v0.2.108):
+	2021-03-23; Change method material into Material fabric
+	2021-03-19; attachBitmap  - crash prevent error
+	2021-03-19; Unroll filters to filter models
+@awayfl/awayfl-player (v0.2.23-v0.2.23):
+	2021-02-19; Fix minore bug
+@awayjs/view (v0.6.22-v0.6.22):
+	2021-02-25; Force update entity when cacheASBitmap reached (required for cached  MC)
 Bundle version: 0.0.23
 Build at: Tue Mar 23 2021 16:23:11 GMT+0300 (GMT+03:00)
 ---
