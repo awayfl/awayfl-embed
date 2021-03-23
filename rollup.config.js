@@ -46,7 +46,7 @@ export default async (args) => {
 		.filter((e) => e.commits.length > 0)
 		.map((e) => {
 			// remove top 2 commits: tag and update version commit
-			let commits = commits.filter((e, i) => {
+			let commits = e.commits.filter((e, i) => {
 				if (e.indexOf('Merge ') > -1) {
 					return false;
 				}
