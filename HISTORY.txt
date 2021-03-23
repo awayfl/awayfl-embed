@@ -1,3 +1,287 @@
+@awayfl/avm1 (v0.2.108-v0.2.101):
+	2021-03-20; update version number in index.ts
+	2021-03-20; fix depthToChilds for Papa-Louie
+	2021-03-19; attachBitmap  - crash prevent error
+	2021-03-19; Unroll filters to filter models
+	2021-03-19; v0.2.107
+	2021-03-19; update version number in index.ts
+	2021-03-19; [req: scene  >v1.13.177] implement mouse hacks.
+	2021-03-08; 0.2.106
+	2021-03-08; update version number in index.ts
+	2021-03-08; remove unecessary getChildForDraw() returnChildAfterDraw() methods
+	2021-03-03; 0.2.105
+	2021-03-03; update version number in index.ts
+	2021-03-03; revert now that stage nodes are now persistent
+	2021-03-02; 0.2.104
+	2021-03-02; update version number in index.ts
+	2021-03-02; fixed by eslint
+	2021-03-02; remove node property cache
+	2021-02-26; v0.2.103
+	2021-02-26; update version number in index.ts
+	2021-02-26; Remove spammed logger
+	2021-02-24; 0.2.102
+	2021-02-24; update version number in index.ts
+	2021-02-24; tidy up for eslint
+	2021-02-24; fix for property names in FPA 2 / FPA 3
+	2021-02-24; small tweak to get width / height
+	2021-02-24; add helper method for track depth changing
+	2021-02-24; Restirct
+	2021-02-24; remove _children from adaptee access
+	2021-02-24; remove the use of _children on the DOC
+	2021-02-24; fix for removeAllTimelineChilds and syntax corrections
+	2021-02-24; tidy up AVMSymbolBase interface
+	2021-02-24; refine naming conventions for partition node variables
+	2021-02-09; partition properties refactor
+@awayfl/avm2 (v0.2.157-v0.2.155):
+	2021-03-09; Disable scope propagation in try-catch for papa-series/bakeria
+	2021-03-09; Merge remote-tracking branch 'origin/dev' into dev
+	2021-03-08; 0.2.156
+	2021-03-08; update version number in index.ts
+	2021-03-08; remove logs
+	2021-03-05; Grab meta  for method, include invalid methods
+@awayfl/awayfl-player (v0.2.23-v0.2.21):
+	2021-03-09; update version number in index.ts
+	2021-02-19; Fix minore bug
+	2021-02-14; v0.2.22
+	2021-02-14; update version number in index.ts
+	2021-02-14; Fix for legacy (dev) support
+	2021-02-14; auto stash uncommited changes
+@awayfl/playerglobal (v0.2.191-v0.2.185):
+	2021-03-19; [req: scenev0.13.178] Grab adapters from filters for passing to away
+	2021-03-13; v0.2.190
+	2021-03-13; update version number in index.ts
+	2021-03-13; [WIP] applyfilter for Bitmap
+	2021-03-11; 0.2.189
+	2021-03-11; update version number in index.ts
+	2021-03-11; 0.2.188
+	2021-03-11; update version number in index.ts
+	2021-03-11; FileReference stubs
+	2021-03-08; 0.2.187
+	2021-03-08; update version number in index.ts
+	2021-03-08; remove unecessary getChildForDraw() returnChildAfterDraw() methods
+	2021-02-24; 0.2.186
+	2021-02-24; update version number in index.ts
+	2021-02-24; tidy up for eslint
+	2021-02-24; disable cacheAsBitmap (for now)
+	2021-02-21; Remove cacheAsBitmap logic from playerglobal
+	2021-02-20; [WIP] Cache as bitmap
+	2021-02-11; remove _children from adaptee access
+	2021-02-11; removed use of _children property on DOC
+	2021-02-10; refine naming conventions for partition node variables
+	2021-02-09; partition properties refactor
+@awayfl/swf-loader (v0.4.91-v0.4.89):
+	2021-02-28; Fix load scale9Grid
+	2021-02-24; 0.4.90
+	2021-02-24; update version number in index.ts
+	2021-02-24; tidy up for eslint
+	2021-02-10; refine naming conventions for partition node variables
+	2021-02-09; partition properties refactor
+@awayjs/core (v0.9.22-v0.9.21):
+	2021-02-24; cleanup for eslint
+	2021-02-09; partition properties refactor
+@awayjs/graphics (v0.5.52-v0.5.49):
+	2021-03-23; Remove unused
+	2021-03-23; Fix ellipse draw command
+	2021-03-11; 0.5.51
+	2021-03-11; update version number in index.ts
+	2021-03-11; fix drawRectRound
+	2021-03-09; Fix location chek for small shapes
+	2021-03-09; Fix minor mistake
+	2021-03-09; [WIP] 9slices for strokes
+	2021-03-09; Docs
+	2021-03-09; [WIP] Worked slicer for TriangleElements
+	2021-03-09; Naive slice algoritm
+	2021-03-09; Fix shape scale 9 grid
+	2021-03-09; [WIP] Prepare shape for 9slice, generator utils
+	2021-03-09; [WIP] Slice builder
+	2021-03-01; Lint
+	2021-02-28; Fix invalidation. Try include pad support
+	2021-02-27; upps, i corrupted result from examples
+	2021-02-27; [WIP] Graphics api for 9slice
+	2021-02-24; 0.5.50
+	2021-02-24; update version number in index.ts
+	2021-02-24; tidy up for eslint
+	2021-02-10; refine naming conventions for partition node variables
+	2021-02-09; partition properties refactor
+@awayjs/materials (v0.6.6-v0.6.5):
+	2021-02-24; tidy up for eslint
+	2021-02-10; refine naming conventions for partition node variables
+	2021-02-09; partition properties refactor
+@awayjs/renderer (v0.11.13-v0.11.12):
+	2021-02-24; tidy for eslint
+	2021-02-19; Warn about mask overflow
+	2021-02-10; refine naming conventions for partition node variables
+	2021-02-09; partition properties refactor
+@awayjs/scene (v0.13.180-v0.13.163):
+	2021-03-23; Use blendings that not supported with standart render process for draw to Bitmap.
+	2021-03-22; v0.13.179
+	2021-03-22; update version number in index.ts
+	2021-03-22; Fix types collision
+	2021-03-22; [req: stage v0.11.81 ] Remove pool from SceneImage2D, use popTemp/pushTemp from filterManager.
+	2021-03-19; v0.13.178
+	2021-03-19; update version number in index.ts
+	2021-03-19; [req: stage v0.11.80] Disable filters API by default.
+	2021-03-19; Add button code support
+	2021-03-19; Merge remote-tracking branch 'origin/dev' into dev
+	2021-03-19; Rename AwayMouseEvent because it hide DOM MouseEvent Prevent right and middle buttons (scrollover + context menu)
+	2021-03-18; 0.13.177
+	2021-03-18; update version number in index.ts
+	2021-03-18; no forceReonstruct on currentFrameIndex (FPA3 fix)
+	2021-03-17; Validate that filter has name
+	2021-03-16; Remove trash
+	2021-03-16; Some refactorings to latest api
+	2021-03-13; v0.13.176
+	2021-03-13; update version number in index.ts
+	2021-03-13; [WIP] Implement ApplyFilter
+	2021-03-11; 0.13.175
+	2021-03-11; update version number in index.ts
+	2021-03-11; fix swapChildren (BT games GIRP)
+	2021-03-11; timeline - temp fix for FPA pirateking
+	2021-03-10; 0.13.174
+	2021-03-10; update version number in index.ts
+	2021-03-10; fix to text selection RTE
+	2021-03-09; 0.13.173
+	2021-03-09; update version number in index.ts
+	2021-03-09; revert textfield to old masking approach
+	2021-03-08; 0.13.172
+	2021-03-08; update version number in index.ts
+	2021-03-08; ensure any enabled mask has a partition assigned (prevents mask overflow loop)
+	2021-03-08; 0.13.171
+	2021-03-08; update version number in index.ts
+	2021-03-08; updates for scrollRect
+	2021-03-08; 0.13.170
+	2021-03-08; update version number in index.ts
+	2021-03-08; fixed by eslint
+	2021-03-08; fix to scrollRect
+	2021-03-08; fix for setChildIndex()
+	2021-03-08; stop textfield from erroring when being used as input
+	2021-03-03; 0.13.169
+	2021-03-03; update version number in index.ts
+	2021-03-03; fixed by eslint
+	2021-03-03; implement  draw() without resetting displayobject properties
+	2021-03-03; remove inheritTransform prop and other unused fields
+	2021-03-02; 0.13.168
+	2021-03-02; update version number in index.ts
+	2021-03-02; correction for swapChildrenAt() to be compatible with new node system
+	2021-02-28; v0.13.167
+	2021-02-28; update version number in index.ts
+	2021-02-28; Disable unsafe
+	2021-02-28; Pad fro scale grid
+	2021-02-28; Remove legacy, fix MSAA for small textures
+	2021-02-28; [WIP] use pad only for cacheAsBitmap withoun 9slice
+	2021-02-27; [WIP] Apply 9slice
+	2021-02-26; [WIP] Enable CacheAsBitmap under flags
+	2021-02-24; 0.13.166
+	2021-02-24; update version number in index.ts
+	2021-02-24; tidy unecessary commented code
+	2021-02-24; 0.13.165
+	2021-02-24; update version number in index.ts
+	2021-02-24; tidy up for eslint
+	2021-02-24; Revert back props
+	2021-02-24; Move cacheAsBitmap in AwayJs side directly
+	2021-02-24; [WIP] Cache as bitmap
+	2021-02-24; Fix crit mistakes
+	2021-02-24; updated _children to protected
+	2021-02-24; refine naming conventions for partition node variables
+	2021-02-24; partition properties refactor
+	2021-02-19; v0.13.164
+	2021-02-19; update version number in index.ts
+	2021-02-19; Fix scissor
+	2021-02-09; initial merge for partition update
+@awayjs/stage (v0.11.82-v0.11.74):
+	2021-03-22; Proxy blendMode to copyPixels. Required for `batch3/bomba`
+	2021-03-22; v0.11.81
+	2021-03-22; update version number in index.ts
+	2021-03-22; Fix MSAA mistakes for textures without MSAA
+	2021-03-22; Store temp enties by string-based keys Store MSAA temps isolated Use mergeAlpha on shader-based copyPixels (disable blending)
+	2021-03-22; WhyNotAssets
+	2021-03-19; v0.11.80
+	2021-03-19; update version number in index.ts
+	2021-03-17; Displacement map scale
+	2021-03-17; FIX Texture bounding order
+	2021-03-17; [WIP] Displacement filter
+	2021-03-17; Refact some filters, implement Blur filter (partially)
+	2021-03-17; Rename filters: Remove `FIlter3D` from classname and TaskName
+	2021-03-16; Disable belnd mode for some filters to reduce operation count. This will be prevent needings to clear TMP textures
+	2021-03-16; Support blend disabling
+	2021-03-16; Move blends from SceneInage2D to this
+	2021-03-16; Fix Bevel again
+	2021-03-16; Fix cache lookup
+	2021-03-16; Fix some problem in filter pipiline
+	2021-03-15; Remove VBlurTask because composed to BlurTask
+	2021-03-15; Migrate blur pass to GLSL
+	2021-03-15; Flip mult and add UV
+	2021-03-15; Fix compute offset
+	2021-03-15; Small chain refact
+	2021-03-15; CopyFilter fix
+	2021-03-15; Reafact filters
+	2021-03-15; [UNSAFE, NEED MORE TEST] Introduce destinationRect
+	2021-03-15; Refact bound logic for Filters
+	2021-03-13; v0.11.79
+	2021-03-13; update version number in index.ts
+	2021-03-13; some api changings
+	2021-03-13; Some fixes
+	2021-03-13; Bevel Task
+	2021-03-13; Fix filter task
+	2021-03-13; Strict
+	2021-03-13; Move out filter to clean stage
+	2021-03-12; v0.11.78
+	2021-03-12; update version number in index.ts
+	2021-03-12; Fence synce in present
+	2021-02-26; Use sync in end of render phase
+	2021-02-26; v0.11.77
+	2021-02-26; update version number in index.ts
+	2021-02-26; Supress crash when fence was deleted by GPU error. Fence Sync shouldn't removings automatically, look like that GPU delete fence by timeout.
+	2021-02-21; v0.11.76
+	2021-02-21; update version number in index.ts
+	2021-02-21; frame end requiest
+	2021-02-21; Limit MSAA  by max device accepted
+	2021-02-19; v0.11.75
+	2021-02-19; update version number in index.ts
+	2021-02-19; Fix scissor box for clear render texture
+@awayjs/view (v0.6.22-v0.6.14):
+	2021-03-08; update version number in index.ts
+	2021-03-08; tidy up scrollRect implementation
+	2021-03-08; 0.6.21
+	2021-03-08; update version number in index.ts
+	2021-03-08; updates for scrollRect
+	2021-03-08; 0.6.20
+	2021-03-08; update version number in index.ts
+	2021-03-08; fixed by eslint
+	2021-03-08; fix to scrollRect
+	2021-03-04; 0.6.19
+	2021-03-04; update version number in index.ts
+	2021-03-04; cleanup RaycastPicker - remove unecessary interface
+	2021-03-03; 0.6.18
+	2021-03-03; update version number in index.ts
+	2021-03-03; fixed by eslint
+	2021-03-03; less severe disposal for partition to improve memory use
+	2021-03-03; add transformDisabled property
+	2021-03-03; remove inheritColorTransform property from interface
+	2021-03-02; 0.6.17
+	2021-03-02; update version number in index.ts
+	2021-03-02; fixed by eslint
+	2021-03-02; small change to type for hitTestPointInternal
+	2021-03-02; improve partition disposal
+	2021-02-25; 0.6.16
+	2021-02-25; update version number in index.ts
+	2021-02-25; fixed by eslint
+	2021-02-25; improved clear handling on ContainerNode
+	2021-02-25; Force update entity when cacheASBitmap reached (required for cached  MC)
+	2021-02-24; cleanup imports for eslint
+	2021-02-24; 0.6.15
+	2021-02-24; update version number in index.ts
+	2021-02-24; fixed by eslint
+	2021-02-24; fix for FPA 1 hittest
+	2021-02-22; CACHE_AS_BITMAP as HierarchicalProperty
+	2021-02-19; Lint
+	2021-02-12; fix for localToGlobal
+	2021-02-10; refine naming conventions for partition node variables
+	2021-02-09; partition properties refactor
+Bundle version: 0.0.23
+Build at: Tue Mar 23 2021 16:23:11 GMT+0300 (GMT+03:00)
+---
+
 Bundle version: 0.0.22
 Build at: Fri Feb 12 2021 19:47:51 GMT+0300 (GMT+03:00)
 ---
