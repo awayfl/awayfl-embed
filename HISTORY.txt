@@ -1,3 +1,335 @@
+Bundle version: 0.0.25
+Build at: Fri May 07 2021 15:09:15 GMT+0300 (GMT+03:00)
+---
+@awayfl/avm1 (v0.2.108-v0.2.112):
+	2021-04-21; 0.2.112
+	2021-04-21; AVM1Handler.dispose stub
+	2021-04-20; v0.2.111
+	2021-04-20; fix(xml): Throw exception when XML Critically wrong
+	2021-04-20; fix(xml): Use `syntheticRoot` for avoid parser error
+	2021-04-20; feat(xml): Report error when passed XML is invalid
+	2021-04-10; feat(filters): Proxy filters to away side
+	2021-03-29; 0.2.110
+	2021-03-29; update for renderer cacheasbitmap
+	2021-03-27; v0.2.109
+	2021-03-27; Fix typo
+	2021-03-27; [NEED MORE TESTS] Remove ALL own properties from MC after removeMovieClip
+	2021-03-23; Change method material into Material fabric
+	2021-03-19; attachBitmap  - crash prevent error
+	2021-03-19; Unroll filters to filter models
+@awayfl/avm2 (v0.2.157-v0.2.165):
+	2021-04-27; fix: Fast check and stack alias collision
+	2021-04-27; feat: Enable experemental features by default
+	2021-04-27; fix: Fix `this` alias in catch block.
+	2021-04-27; fix: Add flag for disable THIS propogadition
+	2021-04-27; feat: Use WeakRef for Orphans
+	2021-04-24; fix: Missed `,` on merge
+	2021-04-23; 0.2.165
+	2021-04-23; minor correction to tslib devdependency version
+	2021-04-21; 0.2.164
+	2021-04-21; playerglobal.dispose
+	2021-04-19; 0.2.163
+	2021-04-19; jit HTTP_STRING
+	2021-04-19; 0.2.162
+	2021-04-19; another test for jit https issue
+	2021-04-17; fix: emit direct access
+	2021-04-17; feat: Try resolve `this` in stack
+	2021-04-17; feat: emit real this when this possible instead of alias
+	2021-04-17; feat: emit `this` for constructor
+	2021-04-17; feat: use default value as '{' in emitBeginMain and allow override it
+	2021-04-17; feat: Replace `js.push(...` onto `state.emitMain`
+	2021-04-17; feat: Rename `affiler` to `analyze`
+	2021-04-17; feat: Move emitStack/emitDomainMemOppcodes outside compiler
+	2021-04-17; feat: Staticaly resolve this
+	2021-04-16; feat: Move catch block emitters outside compiler function
+	2021-04-16; feat: external CompilerState class for passing to emitters
+	2021-04-16; fix: Fix string escaping inside a default arguments
+	2021-04-16; feat: Export function annotation emitters to externla function
+	2021-04-16; feat: minor optimise get/set
+	2021-04-16; fix: remove unused variable
+	2021-04-16; feat: Emit dot-property accessing when name is valid
+	2021-04-16; feat: Remove TweenCallSafer because unneeded.
+	2021-04-15; 0.2.161
+	2021-04-15; jit - Settings to switch to https
+	2021-04-13; 0.2.160
+	2021-04-13; GenericVector - workaround for _coerce crash
+	2021-04-13; jit - fix for getDefinitionByName
+	2021-03-26; 0.2.159
+	2021-03-26; axConstruct - fix orphan playback for Clicker-Hero
+	2021-03-24; v0.2.158
+	2021-03-24; [UNSAFE] Fix branch instructions
+@awayfl/awayfl-player (v0.2.23-v0.2.28):
+	2021-04-29; 0.2.28
+	2021-04-29; export PlayerGlobal
+	2021-04-26; v0.2.27
+	2021-04-26; feat: RAF play/stop/next
+	2021-04-25; fix: space -> tab
+	2021-04-15; 0.2.26
+	2021-04-15; export avm2 settings
+	2021-04-14; 0.2.25
+	2021-04-14; export core/EventBase
+	2021-04-12; 0.2.24
+	2021-04-12; export LoaderInfo and StageManager
+	2021-02-19; Fix minore bug
+@awayfl/playerglobal (v0.2.191-v0.2.203):
+	2021-04-30; v0.2.203
+	2021-04-30; feat(BitmapData): Implement hitTest
+	2021-04-27; v0.2.202
+	2021-04-27; feat: expose DropShadowFilter  as AwayFiltert Model
+	2021-04-25; 0.2.201
+	2021-04-25; addEventlistener on non constructed obj (fix BBR)
+	2021-04-24; v0.2.200
+	2021-04-24; feat: Implement `FileReference.save` by FileSystemAPI
+	2021-04-24; feat: Implement clipboard `setClipboard` API
+	2021-04-24; fix: property for `CompressionAlgorithm`
+	2021-04-24; v0.2.199
+	2021-04-24; fix: Use alpha blending when image is transparent
+	2021-04-21; 0.2.198
+	2021-04-21; playerglobal.dispose
+	2021-04-19; 0.2.197
+	2021-04-19; Sound - emit COMPLETE / ERROR events
+	2021-04-19; 0.2.196
+	2021-04-19; fixed by eslint
+	2021-04-19; implement Sound.load
+	2021-04-12; v0.2.195
+	2021-04-12; fix(filters): Fix ColorMatrix RTE on invalid implementation
+	2021-04-08; v0.2.194
+	2021-04-07; Improve `updateFilters`
+	2021-03-31; Proxy filters
+	2021-03-31; 0.2.193
+	2021-03-29; use Shape not Sprite (BBR timeline bug)
+	2021-03-29; 0.2.192
+	2021-03-29; update for renderer cacheasbitmap
+@awayfl/swf-loader (v0.4.91-v0.4.98):
+	2021-05-07; v0.4.98
+	2021-05-07; fix: parse MP3 header for using in gap-compensation
+	2021-04-26; 0.4.97
+	2021-04-26; remove setInterval abigulity to avoid typescript compile errors
+	2021-04-21; 0.4.96
+	2021-04-21; AVMStage.dispose
+	2021-04-21; 0.4.95
+	2021-04-21; remove error on multple AVMStage instances
+	2021-04-12; 0.4.94
+	2021-04-12; minor updates for MW AVMStage
+	2021-04-12; v0.4.93
+	2021-04-12; fix: never finish uncomplited streams
+	2021-03-29; 0.4.92
+	2021-03-29; update for renderer cacheasbitmap
+@awayjs/core (v0.9.22-v0.9.27):
+	2021-05-07; v0.9.27
+	2021-05-07; fix: Fix loop gap for MP3 files from SWF
+	2021-04-30; 0.9.26
+	2021-04-30; fix casting error in set pan
+	2021-04-28; 0.9.25
+	2021-04-28; fix for StereoPanner on safari
+	2021-04-23; 0.9.24
+	2021-04-23; catch eslint error to allow publish
+	2021-04-23; minor update to package dependencies
+	2021-04-12; v0.9.23
+	2021-04-12; fix: Lint in WebAudioChannel
+	2021-04-12; fix: Supress try decode sounds when buffer is 0
+	2021-04-12; feat: Extends errors from js Error for handle stack trace
+@awayjs/graphics (v0.5.52-v0.5.61):
+	2021-05-05; v0.5.61
+	2021-05-05; feat: add props for disabling deep colision check
+	2021-04-29; v0.5.60
+	2021-04-29; fix: TextureAtlass gradient allocation bechaviour
+	2021-04-23; v0.5.59
+	2021-04-23; fix: Morph shapes command filteration
+	2021-04-20; v0.5.58
+	2021-04-20; fix: Move bounds computation inside `updateScale9`
+	2021-04-20; fix: Remove redurant unused now class
+	2021-04-20; 0.5.57
+	2021-04-20; fixed by eslint
+	2021-04-20; update Scale9 to remove CacheRenderer dependency
+	2021-04-14; v0.5.56
+	2021-04-14; feat(scale9): Proxy UVMatrix for computing UV for BitmapFill
+	2021-04-14; fix: remove buffer from element constructor to allow us UV
+	2021-04-14; fix: Return valid matrix from getUVMatrix
+	2021-04-10; v0.5.55
+	2021-04-10; feat: rename `scale9` API calls following  by renderer
+	2021-03-29; 0.5.54
+	2021-03-29; v0.5.53
+	2021-03-29; Fix reverence to original element
+	2021-03-29; update for renderer cacheasbitmap
+@awayjs/materials (v0.6.6-v0.6.8):
+	2021-04-13; 0.6.8
+	2021-04-13; fix bad imports
+	2021-03-29; 0.6.7
+	2021-03-29; fixed by eslint
+	2021-03-29; update for renderer cacheasbitmap
+@awayjs/renderer (v0.11.13-v0.11.30):
+	2021-04-29; v0.11.30
+	2021-04-29; feat: Reduce buffer size for LineElements
+	2021-04-28; feat: proxy imageScale to filters
+	2021-04-28; v0.11.29
+	2021-04-28; feat: Proxy root view to compute scale
+	2021-04-27; v0.11.28
+	2021-04-27; fix: Throw error when bounds is null
+	2021-04-22; fix: Fix a expensive texture recreation
+	2021-04-22; feat: Introduce `boundsScale` for caches
+	2021-04-22; fix: Fix CachedRenderer elements usage.
+	2021-04-20; 0.11.27
+	2021-04-20; update Scale9 to remove CacheRenderer dependency
+	2021-04-14; v0.11.26
+	2021-04-14; feat(scale9): Emit UV for shapes that has BitmapFill
+	2021-04-14; fix(scale9): Include chunk left/topborder when determine chunk
+	2021-04-13; v0.11.25
+	2021-04-13; feat: Measure a pad and offsets for avoid crop filtered result by wrong dimensions
+	2021-04-13; 0.11.24
+	2021-04-13; export CacheRenderer
+	2021-04-11; 0.11.23
+	2021-04-11; matrix3D setter needed to trigger invalidation
+	2021-04-10; v0.11.22
+	2021-04-10; feat: Update cahceAsBitmap when a style of node changed
+	2021-04-10; v0.11.21
+	2021-04-10; fix: Fix `scale9` hack
+	2021-04-10; feat(Elements): Rename all scale9/slice9 etc props and methods
+	2021-04-06; 0.11.20
+	2021-04-06; fixed by eslint
+	2021-04-06; apply cacherenderer with absolute scaling to stage
+	2021-04-06; ensure invalid images are updated before updateRender is called
+	2021-04-01; v0.11.19
+	2021-04-01; CacheRenderer is valid when filters is used
+	2021-03-31; v0.11.18
+	2021-03-31; [unsafe] update 9 slices from CachedRenderer
+	2021-03-30; 0.11.17
+	2021-03-30; fixed by eslint
+	2021-03-30; fire invalidatePasses to make sure resized target is picked up by render material
+	2021-03-30; improved invalidation on Style when image is resized
+	2021-03-29; v0.11.16
+	2021-03-29; Revert back VAO
+	2021-03-29; Fix culling problems, minor changes for stage elements
+	2021-03-29; Remove unused
+	2021-03-29; Comments unsupported API //TODO tranform for apply filters
+	2021-03-29; Reuse props of collision for prevent allocations
+	2021-03-29; 0.11.15
+	2021-03-29; fix for incorrect vertical cache offset
+	2021-03-29; 0.11.14
+	2021-03-29; fixed by eslint
+	2021-03-29; update for renderer cacheasbitmap
+@awayjs/scene (v0.13.180-v0.13.191):
+	2021-05-05; v0.13.191
+	2021-05-05; fix: Fix potencial leak for editable TextField
+	2021-05-05; feat: disable deep check for text shapes
+	2021-05-04; v0.13.190
+	2021-05-04; fix: accelerate attribute filling for TextField.
+	2021-05-04; fix: Increase text filling performance
+	2021-05-03; v0.13.189
+	2021-05-03; feat: POOR implementation PASTE by Ctrl + V
+	2021-05-03; fix: Expensive text invalidation every key-event
+	2021-05-03; fix: Fix delta vertices calculation
+	2021-04-30; fix: suppress MSAA renderTarget for clear
+	2021-04-29; v0.13.188
+	2021-04-29; feat: deep equal of TextFormat
+	2021-04-29; fix: support resize bechaviour for TextShape verts
+	2021-04-29; fix: Improvment text shape building
+	2021-04-20; 0.13.187
+	2021-04-20; update Scale9 to remove CacheRenderer dependency
+	2021-04-13; 0.13.186
+	2021-04-13; no preventDefault on keyEvents (fix for MW UNSAFE)
+	2021-04-10; v0.13.185
+	2021-04-10; feat(filters): Call invalidate style when filers changed
+	2021-04-10; fix: Remove redurant call
+	2021-04-01; v0.13.184
+	2021-04-01; Remove unnecessary import
+	2021-04-01; Move filters under flag
+	2021-03-31; supres alert when cacheAsBitmap is false
+	2021-03-30; v0.13.183
+	2021-03-30; Cleanup unused
+	2021-03-30; Reduce bilboard element buffers size and fix vertices order to CCW
+	2021-03-30; Cache as bitmap under flag, becase it produce a lot of render glithes now.
+	2021-03-29; 0.13.182
+	2021-03-29; fixed by eslint
+	2021-03-29; update for renderer cacheasbitmap
+	2021-03-29; v0.13.181
+	2021-03-29; Reduce timeline allocation
+@awayjs/stage (v0.11.82-v0.11.96):
+	2021-04-30; v0.11.96
+	2021-04-30; feat(BitmapImage2D): Implement hitTest
+	2021-04-29; v0.11.95
+	2021-04-29; fixed by eslint
+	2021-04-29; Revert "feat: Try implement real gausian blur"
+	2021-04-28; fix: reset `imageScale` in `reset` to prevent bugs
+	2021-04-28; feat: proxy image scale for Blur Filter
+	2021-04-28; feat: Try implement real gausian blur
+	2021-04-27; v0.11.94
+	2021-04-27; fix: Invalid color transofrmation
+	2021-04-27; feat: implement `DropShadow`
+	2021-04-27; v0.11.93
+	2021-04-27; fix: RTE on empty `applyProps` for ColorMatrix
+	2021-04-23; v0.11.92
+	2021-04-23; feat: add PBO and total to statistic
+	2021-04-23; feat: collect statistic for used GL elements
+	2021-04-22; feat: Simplify stat object
+	2021-04-22; fix: remove redurant field (rebase problems)
+	2021-04-22; Remove redurant
+	2021-04-22; Type
+	2021-04-22; MSAA for everione
+	2021-04-22; Fix minor
+	2021-04-22; Refact present to new API
+	2021-04-22; Simplify texture class, extract RenderTarget, SampleState
+	2021-04-22; [WIP] Refact textrue/rendertarget bind API
+	2021-04-22; extract constant mapping
+	2021-04-22; Array instead of indices for Filters (consistence draw api)
+	2021-04-22; Clear stage constructor
+	2021-04-22; Kill OpenGL Proxy render
+	2021-04-22; Kill softrender
+	2021-04-21; v0.11.90
+	2021-04-21; feat: handle context lost after heavy state changed operations.
+	2021-04-13; v0.11.89
+	2021-04-13; fix: Optimise program upload
+	2021-04-13; feat: Filters padding
+	2021-04-13; fix: Fix ColorMatrix offsets and small mistakes
+	2021-04-12; feat: Implementa ColorMatrixFilter
+	2021-04-10; v0.11.88
+	2021-04-10; feat(Bevel): Use a human-readable names for atrributes and uniforms
+	2021-04-10; fix(shader): Fix legacy AGAL sampler/attribute index resolving
+	2021-04-09; v0.11.87
+	2021-04-09; feat(Bevel): procedural shader code generation
+	2021-04-09; v0.11.86
+	2021-04-09; fix: highlightColor value change check
+	2021-04-09; fix: missing alternative field name
+	2021-04-08; v0.11.84
+	2021-04-08; fixed by eslint
+	2021-04-08; Revert back filter clear implementation
+	2021-04-08; Resolve circular imports
+	2021-04-08; Gradient Atlass for filters
+	2021-04-07; Fix gradient bevel
+	2021-04-07; Hubrid mode (fallback to 2 colors when not gradient)
+	2021-04-07; fix texture bound miss
+	2021-04-06; Gradient Bevel Filter
+	2021-04-06; remove slow check
+	2021-04-06; Fix blur filter clip rect
+	2021-03-31; v0.11.83
+	2021-03-31; Store texture instead of sampler state
+	2021-03-31; Fix displacement `color` mode
+	2021-03-30; Implement filter stack
+	2021-03-26; Add metrics, try resolve Tako Mia problem without disable pool
+@awayjs/view (v0.6.22-v0.6.30):
+	2021-04-20; 0.6.30
+	2021-04-20; update Scale9 to remove CacheRenderer dependency
+	2021-04-14; v0.6.29
+	2021-04-14; feat(scale9): Call `update9slice` every traversing step
+	2021-04-10; v0.6.28
+	2021-04-10; feat: rename `scale9` API calls following  by renderer/graphics
+	2021-04-06; 0.6.27
+	2021-04-06; add the cached localnode to the partition's children for easy access
+	2021-04-06; add ContainerNodeEvent to index
+	2021-03-31; v0.6.26
+	2021-03-31; use singletone for local projection
+	2021-03-31; Proxy `update9Slice` and dirty implement resize
+	2021-03-30; 0.6.25
+	2021-03-30; fix for root container with entity node
+	2021-03-30; 0.6.24
+	2021-03-30; remove unnecessary inport
+	2021-03-30; better property invalidation for width and height on intialisation
+	2021-03-29; 0.6.23
+	2021-03-29; fixed by eslint
+	2021-03-29; update for renderer cacheasbitmap
+
+---
+
 Bundle version: 0.0.24
 Build at: Tue Mar 23 2021 16:45:31 GMT+0300 (GMT+03:00)
 ---
