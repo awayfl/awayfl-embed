@@ -1,3 +1,118 @@
+Bundle version: 0.0.26
+Build at: Sun May 23 2021 14:18:39 GMT+0300 (GMT+03:00)
+---
+@awayfl/avm1 (v0.2.112-v0.2.117):
+	2021-05-22; v0.2.117
+	2021-05-22; fix: fix missed prototype for bitmaps that was loaded by static call instead of conductor. All prototype methods/fields was unreachable.
+	2021-05-22; v0.2.116
+	2021-05-22; lint
+	2021-05-22; fix: get XML attribute value
+	2021-05-22; v0.2.115
+	2021-05-22; fixed by eslint
+	2021-05-22; fix: Ghost mode after `removeMovieClip`
+	2021-05-21; 0.2.114
+	2021-05-21; removeMovieClip should break masking
+	2021-05-21; allow BitmapData with width / height = 0
+	2021-05-18; 0.2.113
+	2021-05-18; fix removeMovieClip for Chickflick game
+@awayfl/avm2 (v0.2.165-v0.2.166):
+	2021-05-19; fix: Orphan manager
+	2021-05-19; manually-merge: OrphanManager -handle Sprites (fix for bucket)
+	2021-05-14; fix(lex, external): fix validation for Nape static imports
+	2021-05-12; 0.2.166
+	2021-05-12; fixed by eslint
+	2021-05-12; remove box2d classes and replace BOX2D_PREFERENCE with extClasses object
+	2021-04-27; fix: Fast check and stack alias collision
+	2021-04-27; feat: Enable experemental features by default
+	2021-04-27; fix: Fix `this` alias in catch block.
+	2021-04-27; fix: Add flag for disable THIS propogadition
+	2021-04-27; feat: Use WeakRef for Orphans
+	2021-04-24; fix: Missed `,` on merge
+	2021-04-17; fix: emit direct access
+	2021-04-17; feat: Try resolve `this` in stack
+	2021-04-17; feat: emit real this when this possible instead of alias
+	2021-04-17; feat: emit `this` for constructor
+	2021-04-17; feat: use default value as '{' in emitBeginMain and allow override it
+	2021-04-17; feat: Replace `js.push(...` onto `state.emitMain`
+	2021-04-17; feat: Rename `affiler` to `analyze`
+	2021-04-17; feat: Move emitStack/emitDomainMemOppcodes outside compiler
+	2021-04-17; feat: Staticaly resolve this
+	2021-04-16; feat: Move catch block emitters outside compiler function
+	2021-04-16; feat: external CompilerState class for passing to emitters
+	2021-04-16; fix: Fix string escaping inside a default arguments
+	2021-04-16; feat: Export function annotation emitters to externla function
+	2021-04-16; feat: minor optimise get/set
+	2021-04-16; fix: remove unused variable
+	2021-04-16; feat: Emit dot-property accessing when name is valid
+	2021-04-16; feat: Remove TweenCallSafer because unneeded.
+@awayfl/playerglobal (v0.2.203-v0.2.211):
+	2021-05-21; 0.2.211
+	2021-05-21; register timeline-childs in script-addChild
+	2021-05-20; 0.2.210
+	2021-05-20; Sprite: fix timeline child unregister
+	2021-05-20; v0.2.209
+	2021-05-20; feat: More robust implementation of separation of script mask and timeline mask. This (should) safe apply mask from script without corruption of timeline mask in any cases, include when same mask used as timeline and script mask.
+	2021-05-19; 0.2.208
+	2021-05-19; masks: distinglish timelien vs property masks
+	2021-05-18; Displayobject.srollRect can return null
+	2021-05-18; v0.2.207
+	2021-05-18; fix: Emit SOUND_COMPLETE event to SoundChannel
+	2021-05-17; v0.2.206
+	2021-05-17; feat: Implement perlinNoise
+	2021-05-16; v0.2.205
+	2021-05-16; feat: Implement cursor hide/show
+	2021-05-11; v0.2.204
+	2021-05-11; fix: Fix`mask` overriding by script
+@awayfl/swf-loader (v0.4.98-v0.4.99):
+	2021-05-12; v0.4.99
+	2021-05-12; feat: limit scale ratio for canvas
+@awayjs/graphics (v0.5.61-v0.5.61):
+	2021-05-10; feat: Try compute simple rect of shape
+@awayjs/renderer (v0.11.30-v0.11.32):
+	2021-05-20; 0.11.32
+	2021-05-20; fix for null bounds when cacherenderer is enabled (empty displayobject)
+	2021-05-16; v0.11.31
+	2021-05-16; feat: fix Multiple blendmode, add SCREEN blendmode
+@awayjs/scene (v0.13.191-v0.13.198):
+	2021-05-22; feat: use buffer copy instead of GPU copy for bitmap that has equal size and alpha merge not required.
+	2021-05-22; fix: alias for mask now is `scriptMask`
+	2021-05-21; 0.13.198
+	2021-05-21; Timeline - fix getCurrentFrameLabel
+	2021-05-20; v0.13.197
+	2021-05-20; feat: More robust implementation of separation of script mask and timeline mask. This (should) safe apply mask from script without corruption of timeline mask in any cases, include when same mask used as timeline and script mask.
+	2021-05-19; 0.13.196
+	2021-05-19; 0.13.194
+	2021-05-19; masks - distinglish timeline and property mask
+	2021-05-19; v0.13.195
+	2021-05-19; fix: Temporarily enable deepHitCheck for text shapes (super slow)
+	2021-05-17; v0.13.194
+	2021-05-17; fix: Right implementation of TextShape buffer resizing
+	2021-05-17; 0.13.193
+	2021-05-17; fix TextShapes for WInnerVSLooser
+	2021-05-17; fix: invalid cast to int for `fillRect`
+	2021-05-16; v0.13.192
+	2021-05-16; fix: Update cursor style in setters
+@awayjs/stage (v0.11.96-v0.11.102):
+	2021-05-22; v0.11.102
+	2021-05-22; fix: BitmapImage2D data is lazy, fix acessing to data in getPixel32
+	2021-05-18; v0.11.101
+	2021-05-18; fix: Fix Displacement filter implementation
+	2021-05-17; v0.11.100
+	2021-05-17; feat: Implement perlinNoise for ImageBitmap2D
+	2021-05-16; v0.11.99
+	2021-05-16; feat: Support for separated blend mode
+	2021-05-12; v0.11.98
+	2021-05-12; fix: who said that scissor on main framebuffer should be flipped?
+	2021-05-12; feat: proxying pixel ratio to allow external manipulation
+	2021-05-07; feat: Settings for disable context-lost profiling
+	2021-05-07; v0.11.97
+	2021-05-07; feat: Unimplement warn for BitmapImage2D hitTest
+	2021-05-07; feat: Move Context related flags to SETTINGS
+	2021-05-07; fix: MIP filter mode on non-mipped texture
+	2021-05-07; fix: supress mipmaps on nPOT and Webgl1
+
+---
+
 Bundle version: 0.0.25
 Build at: Fri May 07 2021 15:09:15 GMT+0300 (GMT+03:00)
 ---
