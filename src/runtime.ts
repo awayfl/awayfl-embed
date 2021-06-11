@@ -22,7 +22,7 @@ export const RUNTIME = JSON.parse(__LIBS__);
 export class Player extends AVMStage {
     constructor(public container: HTMLDivElement, conf: any) {
         super(Object.assign({
-            x:'0%', y: '0%', w: '100', h: '100%',
+            x:'0%', y: '0%', w: '100%', h: '100%',
             stageScaleMode: 'showAll',
         }, conf || {}));
         
