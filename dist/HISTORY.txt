@@ -1,3 +1,126 @@
+Bundle version: 0.0.27
+Build at: Fri Jun 11 2021 10:03:37 GMT+0300 (GMT+03:00)
+---
+@awayfl/avm1 (v0.2.117-v0.2.120):
+	2021-06-10; v0.2.120
+	2021-06-10; fix: Right sound playing and looping
+	2021-05-24; v0.2.119
+	2021-05-24; fix: return parsed attribute value from XMLAttributes
+	2021-05-24; v0.2.118
+	2021-05-24; fix: fix getter for attribute value from XMLNode
+@awayfl/avm2 (v0.2.166-v0.2.166):
+	2021-06-02; fix: Resolve binary symbols from class application domain
+	2021-05-30; fix: skip as type for `null` object.
+	2021-05-30; feat: Resolve super trait
+	2021-05-30; feat: compile time trait checking for safe determining a property type. Extremely increasing performance for big method, because JS compiler can optimise this methods.
+	2021-05-29; feat: NO_CHECK speculative optimisation
+	2021-05-29; feat: add NO_HOIST_MULTINAME
+	2021-05-29; fix: bug with runtime name, we must check that name is valid
+	2021-05-27; fix: alert external lib registration
+	2021-05-27; fix: no check external classes without lib
+	2021-05-27; fix: some optimisation for property resolving
+	2021-05-27; feat: fast path for runtime names
+	2021-05-27; fix: unroll numeric MultiName
+	2021-05-19; fix: Orphan manager
+	2021-05-19; manually-merge: OrphanManager -handle Sprites (fix for bucket)
+	2021-05-14; fix(lex, external): fix validation for Nape static imports
+	2021-04-27; fix: Fast check and stack alias collision
+	2021-04-27; feat: Enable experemental features by default
+	2021-04-27; fix: Fix `this` alias in catch block.
+	2021-04-27; fix: Add flag for disable THIS propogadition
+	2021-04-27; feat: Use WeakRef for Orphans
+	2021-04-24; fix: Missed `,` on merge
+	2021-04-17; fix: emit direct access
+	2021-04-17; feat: Try resolve `this` in stack
+	2021-04-17; feat: emit real this when this possible instead of alias
+	2021-04-17; feat: emit `this` for constructor
+	2021-04-17; feat: use default value as '{' in emitBeginMain and allow override it
+	2021-04-17; feat: Replace `js.push(...` onto `state.emitMain`
+	2021-04-17; feat: Rename `affiler` to `analyze`
+	2021-04-17; feat: Move emitStack/emitDomainMemOppcodes outside compiler
+	2021-04-17; feat: Staticaly resolve this
+	2021-04-16; feat: Move catch block emitters outside compiler function
+	2021-04-16; feat: external CompilerState class for passing to emitters
+	2021-04-16; fix: Fix string escaping inside a default arguments
+	2021-04-16; feat: Export function annotation emitters to externla function
+	2021-04-16; feat: minor optimise get/set
+	2021-04-16; fix: remove unused variable
+	2021-04-16; feat: Emit dot-property accessing when name is valid
+	2021-04-16; feat: Remove TweenCallSafer because unneeded.
+@awayfl/awayfl-player (v0.2.28-v0.2.29):
+	2021-06-07; v0.2.29
+	2021-06-07; feat: export global reference to console
+@awayfl/playerglobal (v0.2.211-v0.2.215):
+	2021-06-04; v0.2.215
+	2021-06-04; fix: Crash on undefined `traits` for URLVariables
+	2021-06-03; v0.2.214
+	2021-06-03; feat: GlowFilter implementation.
+	2021-06-02; v0.2.213
+	2021-06-02; fix: SoundMixer should stop all runned sounds include timeline sound.
+	2021-06-02; fix: Right implementation of SoundChannel
+	2021-06-01; 0.2.212
+	2021-06-01; DisplayObject x/y respect textfield.textOffsetX/Y
+@awayjs/core (v0.9.27-v0.9.29):
+	2021-06-07; v0.9.29
+	2021-06-07; feat: dirty flag for color tranform
+	2021-06-05; fix: valid libs for support Promise
+	2021-06-05; fix: Copy version after lint, support `'`
+	2021-06-05; feat: Async Libraries dictionary.
+	2021-06-02; v0.9.28
+	2021-06-02; fix: Right implementation of SoundChannel
+	2021-05-29; feat: Non alloc decomposition. Use temp static vectors for avoid allocation in decomposition phase. For some games this helps avoid GC calls.
+@awayjs/graphics (v0.5.61-v0.5.62):
+	2021-06-07; v0.5.62
+	2021-06-07; feat: Use wrapper for TESS to select wasm/js version
+	2021-05-10; feat: Try compute simple rect of shape
+@awayjs/renderer (v0.11.32-v0.11.35):
+	2021-06-07; v0.11.35
+	2021-06-04; feat: Add MSAA for CachedRenderer
+	2021-06-03; v0.11.34
+	2021-05-29; fix: supress crash for nodes witout parent
+	2021-05-20; 0.11.33
+	2021-05-20; fix renderGroup in applyTraverser
+@awayjs/scene (v0.13.198-v0.13.206):
+	2021-06-10; v0.13.206
+	2021-06-10; fix: Regression on new sound looping
+	2021-06-10; v0.13.205
+	2021-06-10; fix: Sound callback as optional
+	2021-06-10; fix: Right sound playing and looping
+	2021-06-10; 0.13.204
+	2021-06-10; ignore empty Billboard for travers
+	2021-06-08; v0.13.203
+	2021-06-08; fix: Cull state for Billboard
+	2021-06-08; v0.13.202
+	2021-06-08; feat: use projection matrix transform
+	2021-06-07; v0.13.201
+	2021-06-02; v0.12.202
+	2021-06-02; fix: SoundMixer should stop all runned sounds include timeline sound.
+	2021-05-29; v0.12.201
+	2021-05-29; fix: suppress crahs for invalid masks
+	2021-05-26; v0.13.200
+	2021-05-26; fix: sync PMA flag, because we should have same PMA settings
+	2021-05-26; v0.13.199
+	2021-05-26; fix: reset fillColor after CPU copy pass
+	2021-05-22; feat: use buffer copy instead of GPU copy for bitmap that has equal size and alpha merge not required.
+	2021-05-22; fix: alias for mask now is `scriptMask`
+@awayjs/stage (v0.11.102-v0.11.106):
+	2021-06-07; 0.11.106
+	2021-06-07; ColorMatrixFilter - alpha offset
+	2021-06-07; v0.11.105
+	2021-06-07; fix: Minor bugs
+	2021-06-03; v0.11.104
+	2021-06-03; feat: GlowFilter implementation.
+	2021-05-26; v0.11.103
+	2021-05-26; fix: GPU bassed copyPixels on invalid inputRect, pos
+	2021-05-25; fix: CopyPixels frambuffer loop on texture-to-texture implemenation
+@awayjs/view (v0.6.30-v0.6.32):
+	2021-06-07; v0.6.32
+	2021-06-07; fix: Reduce allocation count
+	2021-06-04; 0.6.31
+	2021-06-04; Boundspicker.traverse for scale=0
+
+---
+
 Bundle version: 0.0.26
 Build at: Sun May 23 2021 14:18:39 GMT+0300 (GMT+03:00)
 ---
