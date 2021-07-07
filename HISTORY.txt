@@ -1,3 +1,177 @@
+Bundle version: 0.0.28
+Build at: Wed Jul 07 2021 17:42:25 GMT+0300 (GMT+03:00)
+---
+@awayfl/avm1 (v0.2.120-v0.2.120):
+	2021-06-10; Bump glob-parent from 5.1.1 to 5.1.2
+@awayfl/avm2 (v0.2.166-v0.2.180):
+	2021-07-06; v0.2.180
+	2021-07-06; fix: Fix method annotation generator, byteArray
+	2021-07-06; v0.2.179
+	2021-07-06; fix: Revert array coerce implementation because `length` crashed when coerce called on TextField
+	2021-06-29; v0.2.178
+	2021-06-29; fix: Convert all input values toString
+	2021-06-29; v0.2.177
+	2021-06-29; v0.2.176
+	2021-06-29; fix: Lex import alias
+	2021-06-29; v0.2.175
+	2021-06-29; fix: Degradation. Invalid repalce/serach
+	2021-06-29; v0.2.174
+	2021-06-29; fix: box value before call axCallProperty
+	2021-06-26; v0.2.173
+	2021-06-26; fix: fix coerce regression
+	2021-06-25; fix: More obvious comments for optimised instruictions
+	2021-06-25; feat: Drop unused scope operation
+	2021-06-25; feat: Drop redundant cerce for booleans
+	2021-06-24; feat: Some optimisation
+	2021-06-16; v0.2.172
+	2021-06-16; fix: merge bugs
+	2021-06-16; fix: degradation, wrap accessor to coma for invalid JS names
+	2021-06-14; feat: optimise analyser phase
+	2021-06-12; feat: IR optimisation
+	2021-06-12; fix: drop constant aliases for stack in branch
+	2021-06-12; feat: Inline const variables
+	2021-06-02; fix: Resolve binary symbols from class application domain
+	2021-05-30; fix: skip as type for `null` object.
+	2021-05-30; feat: Resolve super trait
+	2021-05-30; feat: compile time trait checking for safe determining a property type. Extremely increasing performance for big method, because JS compiler can optimise this methods.
+	2021-05-29; feat: NO_CHECK speculative optimisation
+	2021-05-29; feat: add NO_HOIST_MULTINAME
+	2021-05-29; fix: bug with runtime name, we must check that name is valid
+	2021-05-27; fix: alert external lib registration
+	2021-05-27; fix: no check external classes without lib
+	2021-05-27; fix: some optimisation for property resolving
+	2021-05-27; feat: fast path for runtime names
+	2021-05-27; fix: unroll numeric MultiName
+	2021-05-20; 0.2.171
+	2021-05-20; more fixes for OrphanManager
+	2021-05-19; v0.2.170
+	2021-05-19; fix: Orphan manager
+	2021-05-19; manually-merge: OrphanManager -handle Sprites (fix for bucket)
+	2021-05-19; fix(lex, external): fix validation for Nape static imports
+	2021-05-18; 0.2.169
+	2021-05-18; 0.2.168
+	2021-05-18; remove test-code
+	2021-05-18; 0.2.167
+	2021-05-18; OrphanManager -handle Sprites (fix for bucket)
+	2021-05-14; fix(lex, external): fix validation for Nape static imports
+	2021-04-27; fix: Fast check and stack alias collision
+	2021-04-27; feat: Enable experemental features by default
+	2021-04-27; fix: Fix `this` alias in catch block.
+	2021-04-27; fix: Add flag for disable THIS propogadition
+	2021-04-27; feat: Use WeakRef for Orphans
+	2021-04-24; fix: Missed `,` on merge
+	2021-04-17; fix: emit direct access
+	2021-04-17; feat: Try resolve `this` in stack
+	2021-04-17; feat: emit real this when this possible instead of alias
+	2021-04-17; feat: emit `this` for constructor
+	2021-04-17; feat: use default value as '{' in emitBeginMain and allow override it
+	2021-04-17; feat: Replace `js.push(...` onto `state.emitMain`
+	2021-04-17; feat: Rename `affiler` to `analyze`
+	2021-04-17; feat: Move emitStack/emitDomainMemOppcodes outside compiler
+	2021-04-17; feat: Staticaly resolve this
+	2021-04-16; feat: Move catch block emitters outside compiler function
+	2021-04-16; feat: external CompilerState class for passing to emitters
+	2021-04-16; fix: Fix string escaping inside a default arguments
+	2021-04-16; feat: Export function annotation emitters to externla function
+	2021-04-16; feat: minor optimise get/set
+	2021-04-16; fix: remove unused variable
+	2021-04-16; feat: Emit dot-property accessing when name is valid
+	2021-04-16; feat: Remove TweenCallSafer because unneeded.
+@awayfl/playerglobal (v0.2.215-v0.2.223):
+	2021-07-06; v0.2.223
+	2021-07-06; fix: Bind ArrayBuffer from AVM2.
+	2021-07-05; v0.2.222
+	2021-07-05; fix: Scene navigation, we should navigate over scene indexes without moving cross scenes when loop.
+	2021-07-03; v0.2.221
+	2021-07-03; fix: DEGRADATION! Use offset as argument because frame can be a string.
+	2021-07-03; v0.2.220
+	2021-07-03; fix: Scene navigation
+	2021-06-25; v0.2.219
+	2021-06-25; fix: Round size to twips (1 / 20 )
+	2021-06-25; fix: Remove redundant allocation for point
+	2021-06-21; v0.2.218
+	2021-06-21; fix: Audio mixer global volume
+	2021-06-16; v0.2.217
+	2021-06-16; fix: Wrap filters constructor to sec, otherwise it wasn't have a traits.
+	2021-06-11; v0.2.216
+	2021-06-11; fix: Implement Sound for latest sound API. Remove manually restart for loop.
+@awayfl/swf-loader (v0.4.99-v0.4.100):
+	2021-06-21; v0.4.100
+	2021-06-21; fix: Audio mixer global volume
+@awayjs/core (v0.9.29-v0.9.30):
+	2021-06-11; Bump glob-parent from 5.1.1 to 5.1.2
+	2021-06-11; v0.9.30
+	2021-06-11; fix: Invalid counter for loops
+	2021-06-11; feat: numeric loop inside channel
+	2021-06-11; feat: introduce event-bassed api for channels
+@awayjs/graphics (v0.5.62-v0.5.67):
+	2021-06-23; v0.5.67
+	2021-06-23; fix: Fix imports and exports
+	2021-06-23; feat: Split GraphicsFillStyle and fill methods
+	2021-06-21; v0.5.66
+	2021-06-21; feat: Gradient for bitmap
+	2021-06-09; 0.5.65
+	2021-06-09; GraphicsPath.moveTo improve float issue fix
+	2021-06-09; 0.5.64
+	2021-06-09;  Graphicspath.moveTo: fix float-issue
+	2021-06-08; 0.5.63
+	2021-06-08; default values for lineStyle
+@awayjs/renderer (v0.11.35-v0.11.38):
+	2021-07-07; v0.11.38
+	2021-07-07; feat: support to disable blend overriding
+	2021-07-03; feat: enable image rendering phase when blend mode is used, apply regular blends modes without pre-composition pass
+	2021-07-02; v0.11.37
+	2021-07-02; fix: supress division on zero.
+	2021-06-16; v0.11.36
+	2021-06-15; feat:  vao for lines elements
+	2021-06-15; fix: Refact line shader - use array of string
+	2021-06-15; feat: use `native` instruction set
+	2021-06-15; feat: support procy metadata to shaders
+	2021-06-12; Bump glob-parent from 5.1.1 to 5.1.2
+@awayjs/scene (v0.13.206-v0.13.214):
+	2021-07-07; v0.13.214
+	2021-07-07; feat: remap blend mode
+	2021-07-06; v0.13.213
+	2021-07-06; fix: Run frame scrip without reconstruction
+	2021-07-06; v0.13.212
+	2021-07-06; fix: Valid scene index
+	2021-07-05; v0.13.211
+	2021-07-05; v0.13.210
+	2021-07-05; fix: Scene navigation, we should navigate over scene indexes without moving cross scenes when loop.
+	2021-07-03; feat: enable image rendering phase when blend mode is used, apply regular blends modes without pre-composition pass
+	2021-06-23; v0.13.209
+	2021-06-23; fix: Implement MorphShape for latest Graphics
+	2021-06-22; v0.13.208
+	2021-06-16; feat: disable MSAA for billboard that was used as source.
+	2021-06-16; fix: Remove debugger statement because it prevent normal debugging
+	2021-06-11; v0.13.207
+	2021-06-11; fix: WaveAudio not have loopsCount props now
+	2021-06-11; fix: Implement Sound for latest sound API. Remove manually restart for loop.
+@awayjs/stage (v0.11.106-v0.11.107):
+	2021-07-03; fix: use discard for uncomposed result
+	2021-07-03; [WIP] feat: Composition filter
+	2021-06-16; fix: Falling to standart CopyFilter instead of instanced.
+	2021-06-16; fix: disable instanced by default because is unstabe
+	2021-06-16; v0.11.107
+	2021-06-15; fix: some improvments in shader compiler
+	2021-06-15; fix: valid parser custom native register
+	2021-06-15; feat: Big Refact of AGAL parser
+	2021-06-12; build(deps): bump glob-parent from 5.1.1 to 5.1.2
+	2021-05-27; fix: instancing buffer reupload
+	2021-05-26; fix: proxy blend to instanced filter,
+	2021-05-26; feat: try use instancing copyPixel
+@awayjs/view (v0.6.32-v0.6.34):
+	2021-07-07; v0.6.34
+	2021-07-03; feat: enable image rendering phase when blend mode is used, apply regular blends modes without pre-composition pass
+	2021-06-28; fix: fast path for non-rotated nodes
+	2021-06-28; fix: not skip zero scaled nodes
+	2021-06-22; v0.6.33
+	2021-06-16; fix: non-alock transformation.
+	2021-06-16; fix: Non-allock method getViewCollision
+	2021-06-12; Bump glob-parent from 5.1.1 to 5.1.2
+
+---
+
 Bundle version: 0.0.27
 Build at: Fri Jun 11 2021 10:03:37 GMT+0300 (GMT+03:00)
 ---
