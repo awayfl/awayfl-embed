@@ -1,3 +1,38 @@
+Bundle version: 0.0.29
+Build at: Sat Jul 10 2021 17:50:03 GMT+0300 (Москва, стандартное время)
+---
+@awayfl/avm1 (v0.2.120-v0.2.120):
+	2021-06-10; Bump glob-parent from 5.1.1 to 5.1.2
+@awayfl/avm2 (v0.2.180-v0.2.181):
+	2021-07-09; v0.2.181
+	2021-07-09; feat: Callable closure
+@awayfl/playerglobal (v0.2.223-v0.2.224):
+	2021-07-07; v0.2.224
+	2021-07-07; fix: Re-register child when setChildIndex is called
+@awayjs/core (v0.9.30-v0.9.31):
+	2021-07-08; v0.9.31
+	2021-07-08; fix: Reset matrix dirty flag in matrix setter
+	2021-06-11; Bump glob-parent from 5.1.1 to 5.1.2
+@awayjs/scene (v0.13.214-v0.13.215):
+	2021-07-08; v0.13.215
+	2021-07-08; fix: Scene numFrames is -1 on latest scene
+	2021-07-08; fix: Move scene calculation onto  jumpToIndex
+	2021-07-08; fix: Simple mistake that has large sideeffect
+@awayjs/stage (v0.11.107-v0.11.107):
+	2021-07-03; fix: use discard for uncomposed result
+	2021-07-03; [WIP] feat: Composition filter
+	2021-06-16; fix: Falling to standart CopyFilter instead of instanced.
+	2021-06-16; fix: disable instanced by default because is unstabe
+	2021-05-27; fix: instancing buffer reupload
+	2021-05-26; fix: proxy blend to instanced filter,
+	2021-05-26; feat: try use instancing copyPixel
+@awayjs/view (v0.6.34-v0.6.35):
+	2021-07-09; v0.6.35
+	2021-07-09; fix: No composite overlay, it does result is darker
+	2021-07-09; fix: Apply color transform from real node
+
+---
+
 Bundle version: 0.0.28
 Build at: Wed Jul 07 2021 17:42:25 GMT+0300 (GMT+03:00)
 ---
