@@ -27,17 +27,17 @@ interface IBindingConfig {
     /**
      * @description Limit stage scale > 0 - force scale to this value, 0.5 - half resolution
      */
-    maxStageScale?: number;
+    maxstagescale?: number;
     /**
      * @description Hide player context before loading
      */
-    hideBeforeLoad?: boolean;
+    hidebeforeload?: boolean;
 
     /**
      * @kind Runtime
      * @description use smooth as default value for bitmap, by default Flash use is pixilate 
      */
-     smoothBitmapDefault?: boolean;
+     smoothbitmapdefault?: boolean;
 }
 
 type TBindingScheme = {[key in keyof IBindingConfig]: {required?: boolean, default?: any}};
@@ -64,11 +64,11 @@ export class AwayPlayerComponent extends HTMLElement {
         onerror: {required: false},
         scaleMode: {required: false, default: 'all'},
         autoplay: {required: false, default: true},
-        hideBeforeLoad: {required: false, default: true},
-        maxStageScale: {required: false, default: undefined},
+        hidebeforeload: {required: false, default: true},
+        maxstagescale: {required: false, default: undefined},
 
         // runtime
-        smoothBitmapDefault: {required: false, default: false},
+        smoothbitmapdefault: {required: false, default: false},
     };
 
     _loaderHolder: HTMLDivElement;
@@ -199,9 +199,9 @@ export class AwayPlayerComponent extends HTMLElement {
             }],
     //        debug: true,
             baseUrl: urls.baseUrl,
-            maxStageScale: this._runConfig.maxStageScale,
+            maxStageScale: +this._runConfig.maxstagescale,
             runtimeFlags: {
-                defaultSmoothBitmap: !!this._runConfig.smoothBitmapDefault
+                defaultSmoothBitmap: !!this._runConfig.smoothbitmapdefault
             }
         }
     
@@ -215,7 +215,7 @@ export class AwayPlayerComponent extends HTMLElement {
         const frame = document.createElement('iframe');
 
         frame.style.border = 'none';
-        frame.style.display = this._runConfig.hideBeforeLoad ? 'none' : ''
+        frame.style.display = this._runConfig.hidebeforeload ? 'none' : ''
 
         frame.width = '' + this._runConfig.width;
         frame.height = '' + this._runConfig.height;
