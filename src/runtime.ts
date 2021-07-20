@@ -30,7 +30,7 @@ export class Player extends AVMStage {
         
         const runtime = this._gameConfig.runtimeFlags;
 
-        GraphicsSettings.SMOOTH_BITMAP_FILL_DEFAULT = runtime.defaultSmoothBitmap
+        GraphicsSettings.SMOOTH_BITMAP_FILL_DEFAULT = runtime.defaultSmoothBitmap;
 
         if(!this._gameConfig.files) {
             this._gameConfig.files = [];
