@@ -1,3 +1,74 @@
+Bundle version: 0.0.30
+Build at: Tue Jul 20 2021 22:33:19 GMT+0300 (Москва, стандартное время)
+---
+
+---
+
+Bundle version: 0.0.29
+Build at: Tue Jul 20 2021 22:32:16 GMT+0300 (Москва, стандартное время)
+---
+@awayfl/avm1 (v0.2.120-v0.2.124):
+	2021-07-16; v0.2.124
+	2021-07-16; fix: More optimal check
+	2021-07-16; fix: string/number operations.
+	2021-07-15; v0.2.123
+	2021-07-15; fix: Result decoding of loaded vars
+	2021-07-15; fix: Fix invalid call of setInterval with arguments
+	2021-07-15; fix: Encode payload as URLVariables
+	2021-07-12; feat: Remap all filters name.
+	2021-07-12; v0.2.122
+	2021-07-12; fix: Never dispose symbol image
+	2021-07-11; v0.2.121
+	2021-07-11; fix: Restrict disposing ImageBitmap
+	2021-06-10; Bump glob-parent from 5.1.1 to 5.1.2
+@awayfl/playerglobal (v0.2.224-v0.2.227):
+	2021-07-20; v0.2.227
+	2021-07-20; fix: scene navigation
+	2021-07-15; v0.2.226
+	2021-07-15; fix: Remove log
+	2021-07-15; fix: Fix URLLoader and URLRequest
+	2021-07-13; v0.2.225
+	2021-07-13; fix: return root loaderInfo when not present
+@awayfl/swf-loader (v0.4.100-v0.4.102):
+	2021-07-20; v0.4.102
+	2021-07-20; fix: Valid frequency of parsed sound
+	2021-07-08; 0.4.101
+	2021-07-08; fixed by eslint
+	2021-07-08; add globalRedirectRules and showFPS updates to config
+@awayjs/renderer (v0.11.38-v0.11.40):
+	2021-07-20; v0.11.40
+	2021-07-20; fix: Fix a doubled apply color transform for cached nodes
+	2021-07-12; v0.11.39
+	2021-07-12; feat: Add flag disable/enable smooth image
+@awayjs/scene (v0.13.215-v0.13.218):
+	2021-07-20; v0.13.218
+	2021-07-20; fix: scene navigation
+	2021-07-20; fix: Process &amp;
+	2021-07-13; v0.13.217
+	2021-07-13; fix: Disable partial update, downgrade
+	2021-07-11; v0.13.216
+	2021-07-11; fix: Restrict disposing ImageBitmap
+@awayjs/stage (v0.11.107-v0.11.111):
+	2021-07-12; v0.11.111
+	2021-07-12; fix: overflow ammount size for BlurTask
+	2021-07-12; v0.11.110
+	2021-07-12; fix: Valid displacement map scale
+	2021-07-12; v0.11.109
+	2021-07-12; fix: Reset render target in copyPixels, isValid
+	2021-07-11; v0.11.108
+	2021-07-11; fix: emit clear after reseting props
+	2021-07-11; feat: Throw error when we try use disposed image
+	2021-06-16; fix: Falling to standart CopyFilter instead of instanced.
+	2021-06-16; fix: disable instanced by default because is unstabe
+	2021-05-27; fix: instancing buffer reupload
+	2021-05-26; fix: proxy blend to instanced filter,
+	2021-05-26; feat: try use instancing copyPixel
+@awayjs/view (v0.6.35-v0.6.36):
+	2021-07-20; v0.6.36
+	2021-07-20; fix: Fix a doubled apply color transform for cached nodes
+
+---
+
 Bundle version: 0.0.29
 Build at: Sat Jul 10 2021 17:50:03 GMT+0300 (Москва, стандартное время)
 ---

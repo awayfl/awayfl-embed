@@ -1,16 +1,16 @@
-Bundle version: 0.0.29
-Build at: Sat Jul 10 2021 17:50:03 GMT+0300 (Москва, стандартное время)
+Bundle version: 0.0.30
+Build at: Tue Jul 20 2021 22:33:18 GMT+0300 (Москва, стандартное время)
 ==========
 Modules:
-@awayfl/avm1:0.2.120
+@awayfl/avm1:0.2.124
 @awayfl/avm2:0.2.181
 @awayfl/awayfl-player:0.2.29
-@awayfl/playerglobal:0.2.224
-@awayfl/swf-loader:0.4.100
+@awayfl/playerglobal:0.2.227
+@awayfl/swf-loader:0.4.102
 @awayjs/core:0.9.31
 @awayjs/graphics:0.5.67
 @awayjs/materials:0.6.8
-@awayjs/renderer:0.11.38
-@awayjs/scene:0.13.215
-@awayjs/stage:0.11.107
-@awayjs/view:0.6.35
+@awayjs/renderer:0.11.40
+@awayjs/scene:0.13.218
+@awayjs/stage:0.11.111
+@awayjs/view:0.6.36
