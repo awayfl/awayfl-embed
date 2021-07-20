@@ -1,3 +1,11 @@
+Bundle version: 0.0.32
+Build at: Wed Jul 21 2021 01:45:51 GMT+0300 (Москва, стандартное время)
+---
+@awayjs/graphics (v0.5.67-v0.5.67):
+	2021-07-21; feat: Add flag to graphics to allow smooth bitmap fill by default
+
+---
+
 Bundle version: 0.0.31
 Build at: Wed Jul 21 2021 01:35:38 GMT+0300 (Москва, стандартное время)
 ---
