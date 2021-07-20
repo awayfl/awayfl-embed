@@ -14,6 +14,8 @@ import { AVM1Handler } from "@awayfl/avm1";
 import { AVM2Handler } from "@awayfl/avm2";
 import { LoaderInfo, PlayerGlobal } from "@awayfl/playerglobal";
 import { AVMStage } from "@awayfl/swf-loader";
+import { Settings as GraphicsSettings } from '@awayjs/graphics';
+
 
 //@ts-ignore;
 export const VERSION = "__VERSION__";
@@ -23,9 +25,13 @@ export class Player extends AVMStage {
     constructor(public container: HTMLDivElement, conf: any) {
         super(Object.assign({
             x:'0%', y: '0%', w: '100%', h: '100%',
-            stageScaleMode: 'showAll',
+            stageScaleMode: 'showAll', runtimeFlags : {}
         }, conf || {}));
         
+        const runtime = this._gameConfig.runtimeFlags;
+
+        GraphicsSettings.SMOOTH_BITMAP_FILL_DEFAULT = runtime.defaultSmoothBitmap
+
         if(!this._gameConfig.files) {
             this._gameConfig.files = [];
         }
