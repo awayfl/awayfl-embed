@@ -1,3 +1,221 @@
+Bundle version: 0.0.33
+Build at: Mon Oct 11 2021 18:30:53 GMT+0300 (Москва, стандартное время)
+---
+@awayfl/avm1 (v0.2.124-v0.2.136):
+	2021-10-11; v0.2.136
+	2021-10-11; fix: remove Key listeners when it removed from stage
+	2021-10-11; v0.2.135
+	2021-10-11; fix: Remove console.log
+	2021-09-29; v0.2.134
+	2021-09-29; fix: Partial fix getAscii
+	2021-09-26; v0.2.133
+	2021-09-26; fix: Disable events for Bitmap
+	2021-09-21; v0.2.132
+	2021-09-21; fix: Enable lazy events by default
+	2021-09-21; fix: Crash on calling a protitype methods
+	2021-09-08; fix: copyversion for allow ' in versions
+	2021-09-08; v0.2.131
+	2021-09-08; feat (FrameScript): Use lazy event registering for onClipEvents.
+	2021-09-02; v0.2.130
+	2021-09-02; feat (AVM1Filters): Implement timeline filters
+	2021-08-26; fix (sound): No spam getPan
+	2021-08-26; v0.2.129
+	2021-08-26; fix (AVM1MovieClip): Fix resolving a getInstanceAtDepth
+	2021-08-20; v0.2.128
+	2021-08-20; fix (AVM1): Fix drag-and-drop
+	2021-08-19; v0.2.127
+	2021-08-19; fix(avm1): Remove console.log
+	2021-08-19; v0.2.126
+	2021-08-19; fix (avm1): Mouse dragging missposition
+	2021-08-12; Bump path-parse from 1.0.6 to 1.0.7
+	2021-08-04; v0.2.125
+	2021-08-04; fix: Return undef when away bounds is null
+@awayfl/avm2 (v0.2.181-v0.2.191):
+	2021-10-09; v0.2.191
+	2021-10-09; fix: ASArray.sort must save valid context
+	2021-10-09; v0.2.190
+	2021-10-09; fix: strict resolve _children XML
+	2021-09-26; fix: Compile regression for RTM
+	2021-08-25; fix (AVM2): Simplify createError
+	2021-08-16; v0.2.189
+	2021-08-16; fix (JIT): alias from lexer not has types
+	2021-08-13; v0.2.188
+	2021-08-13; feat: Minor priority changing
+	2021-08-13; fix (JIT, coerce): Fix static coerse resolver bug
+	2021-08-13; fix (JIT): Fix crash on runtimename for object without sec
+	2021-08-13; fix (JIT): Fix valueOf type checking for boxed ASUint
+	2021-08-13; fix (axConstruct): fix resolfing timeline bug
+	2021-08-13; feat (JIT): WIP, Resolve type
+	2021-08-13; feat (JIT): Prepare for type propogadition
+	2021-08-13; feat (Multiname): Use weak ref to prevent lock object for GC
+	2021-08-13; feat (JIT): Inline return void when this possible
+	2021-08-13; feat (JIT): Primitive coercion as emmiter
+	2021-08-12; build(deps): bump path-parse from 1.0.6 to 1.0.7
+	2021-08-06; v0.2.187
+	2021-08-06; fix(JIT): Generate value coersion for returned value.
+	2021-08-06; v0.2.186
+	2021-08-06; fix: fix string constructor, can be called with value, we should apply it.
+	2021-08-05; v0.2.185
+	2021-08-05; feat: Wrap ASArray to proxy for using a [] notation
+	2021-07-29; v0.2.184
+	2021-07-29; fix: Ignore a BitmapData from fast construct
+	2021-07-28; v0.2.183
+	2021-07-28; lint: Some typos
+	2021-07-27; fix: wrong byte buffer write size
+	2021-07-27; fix: write buffer fast to AMF
+	2021-07-27; fix: Multiname from simple name with space
+	2021-07-24; v0.2.182
+	2021-07-24; fix: Add support externals for constructFast
+	2021-07-24; fix: Disable fastCall checker
+	2021-07-24; fix: valueOf of ASInt and ASUint
+	2021-07-24; feat: Compile time check of type for fast constructor
+	2021-07-23; feat: Resolve GETLEX or getPropStrict to fast mode
+	2021-07-23; fix: Typos
+	2021-07-23; feat: introduce fast AVM constructors
+	2021-07-23; feat: drop redundat coerce
+@awayfl/playerglobal (v0.2.227-v0.2.346):
+	2021-09-26; v0.2.346
+	2021-09-26; fix: ApplicationDomain must be constructed from SEC
+	2021-09-26; v0.2.345
+	2021-09-26; fix: Handle channel overflow for RoubleTrouble.
+	2021-09-26; Bump ansi-regex from 5.0.0 to 5.0.1
+	2021-09-26; v0.2.344
+	2021-09-26; fix: Only interactiveObject can handle any events
+	2021-09-21; v0.2.343
+	2021-09-21; fix: AVM2 allow get x/y befor constructor call
+	2021-09-21; fix: Valid clone for filters
+	2021-09-11; v0.2.342
+	2021-09-11; fix (BitmapData): valid getVector implementation
+	2021-09-09; 0.2.341
+	2021-09-09; fixed by eslint
+	2021-09-09; fix dragging for mouse release outside of play area
+	2021-08-26; v0.2.340
+	2021-08-26; fix (Matrix): Typo in matrix element order
+	2021-08-24; v0.2.239
+	2021-08-24; fix (Sprite): Convert a MovieClip as sprite for pure AMV Sprite.
+	2021-08-17; v0.2.238
+	2021-08-17; Revert "fix (SimpleButton) Use valid class for SimpleButton"
+	2021-08-16; v0.2.237
+	2021-08-16; fix: Some fixes
+	2021-08-16; fix (SimpleButton) Use valid class for SimpleButton
+	2021-08-13; v0.2.236
+	2021-08-13; feat (MovieClip): Move Sprite transforming onto MovieClip.ts from AVM2
+	2021-08-11; v0.2.235
+	2021-08-11; fix (BitmapData): Restore back clear abstraction when there are not owners.
+	2021-08-10; Bump path-parse from 1.0.6 to 1.0.7
+	2021-08-10; v0.2.234
+	2021-08-10; fix (Timeline) [UNSAFE] Fix Script execution order after navigation.
+	2021-08-10; v0.2.233
+	2021-08-10; fix (BitmapData): Never clear BitmapData without owners, because it can be pooled.
+	2021-08-07; v0.2.232
+	2021-08-07; fix (Text): Fix forcing mouseEnabled for TextField
+	2021-08-06; v0.2.231
+	2021-08-06; fix (net): Allow reset data to null in URLLoader without real resetting.
+	2021-07-29; v0.2.230
+	2021-07-29; fix: invalid offset of code version
+	2021-07-28; v0.2.229
+	2021-07-28; fix: Reorder timeline execution order
+	2021-07-28; v0.2.228
+	2021-07-27; feat:  Use right serialisation
+@awayfl/swf-loader (v0.4.102-v0.4.105):
+	2021-09-06; v0.4.105
+	2021-09-06; fix (Buttons): Convert button character blend/filters onto timeline
+	2021-08-16; Bump acorn from 5.7.3 to 5.7.4
+	2021-08-16; v0.4.104
+	2021-08-16; fix (Resize) emit resize delayed
+	2021-08-11; Bump path-parse from 1.0.6 to 1.0.7
+	2021-07-28; v0.4.103
+	2021-07-27; feat: Modern host-based implementation
+@awayjs/graphics (v0.5.67-v0.5.68):
+	2021-09-18; v0.5.68
+	2021-09-18; feat: Pre-tesselation scale quality
+	2021-09-18; feat: use native string utf8 encode/ decoder
+	2021-09-18; feat: Add flag to graphics to allow smooth bitmap fill by default
+	2021-08-11; Bump path-parse from 1.0.5 to 1.0.7
+@awayjs/renderer (v0.11.40-v0.11.44):
+	2021-10-08; fix: Rename GradientAtlass.ts to GradientAtlas.ts and fix asset name
+	2021-09-07; v0.11.44
+	2021-09-07; feat (CachedRenderer): Invalidate CacheRenderer when ColorTransform changed
+	2021-09-07; v0.11.43
+	2021-09-07; feat: [req: stage 0.11.116 ] Support SUBTRACT blending on A = 1
+	2021-08-12; v0.11.42
+	2021-08-12; fix (CachedRenderer): Fix missed image
+	2021-07-26; v0.11.41
+	2021-07-26; feat: Remove Legacy renderer
+	2021-07-26; feat: Support deep bitmap caching.
+@awayjs/scene (v0.13.218-v0.13.230):
+	2021-10-11; v0.13.230
+	2021-10-10; feat: implement alphaSource for  bitmapData.copyPixels
+	2021-10-10; fix: round pixel for text filling to avoid bluring in some games
+	2021-10-10; fix: word placement regression
+	2021-10-08; v0.13.229
+	2021-10-08; fix: Scroll overflowing when value is negative
+	2021-10-08; v0.13.228
+	2021-10-08; fix: Invalid getChart output
+	2021-10-08; feat: Add settings field for FNT
+	2021-10-08; fix: null char checking
+	2021-10-02; feat: Minore code improvments
+	2021-09-30; feat: Optimise char requies path
+	2021-09-30; feat: Refact text diff checking
+	2021-09-30; feat: Refact, universy API
+	2021-09-29; fix: Crash on chars when it not have rect.
+	2021-09-29; feat: FNT Test (enabled by default)
+	2021-09-29; feat: Restore FNT filling
+	2021-09-29; fix: Fix bugs in Canvas Implementation
+	2021-09-29; feat: Canvas bassed FNT table
+	2021-09-18; v0.13.227
+	2021-09-18; feat: Reduce font tesselation quality
+	2021-09-18; feat: Refact textrun entry for readability
+	2021-09-14; fix: Word offset
+	2021-09-14; feat: WordStore as data structure
+	2021-08-25; v0.13.226
+	2021-08-25; fix (SceneImage2D): Fix draw in SceneImage2D with colorTransform
+	2021-08-25; v0.13.225
+	2021-08-25; fix (DisplayObjectContainer): Optimise errors
+	2021-08-25; fix (Wheel): Fix wheel event direction and ammout
+	2021-08-20; v0.13.224
+	2021-08-20; fix (AVM1): Fix drag-and-drop
+	2021-08-16; v0.13.223
+	2021-08-16; fix: Regression, invalid missed skipAdvance
+	2021-08-16; v0.13.222
+	2021-08-16; fix (MovieClip) Script can't unlink reference onto child in any removeChild operation. This allowed only for Timeline
+	2021-08-13; v0.13.221
+	2021-08-13; feat (MovieClip): Move Sprite transforming onto MovieClip.ts from AVM2
+	2021-08-11; v0.13.220
+	2021-08-11; fix (BitmapData): Restore back clear abstraction when there are not owners.
+	2021-08-11; v0.13.219
+	2021-08-11; fix (MovieClip): Copy button mode.
+@awayjs/stage (v0.11.111-v0.11.118):
+	2021-10-11; v0.11.118
+	2021-10-10; feat: implement alphaSource for  bitmapData.copyPixels
+	2021-10-10; fix: Threshold for specific case
+	2021-10-08; fix: Rename GradientAtlass.ts to GradientAtlas.ts and fix asset name
+	2021-09-21; v0.11.117
+	2021-09-21; fix: Default opcode for ThresholdTask
+	2021-09-07; v0.11.116
+	2021-09-07; feat: Support SUBTRACT blending on A = 1
+	2021-08-12; v0.11.115
+	2021-08-12; fix (Filters): Flush end task output image
+	2021-08-06; v0.11.114
+	2021-08-06; feat (Filters): Use maximal available texture size for temporary texture.
+	2021-07-26; v0.11.113
+	2021-07-26; feat: Support deep bitmap caching.
+	2021-07-22; feat: Introduce support for multipassed filters
+	2021-07-21; v0.11.112
+	2021-07-21; feat: Support `inner` mode for Glow and DropShadow filters
+@awayjs/view (v0.6.36-v0.6.40):
+	2021-10-08; v0.6.40
+	2021-10-08; feat: Visible state
+	2021-09-07; v0.6.39
+	2021-09-07; feat (CachedRenderer): Invalidate CacheRenderer when ColorTransform changed
+	2021-08-06; v0.6.38
+	2021-08-06; fix (Bounds): Compute valid width/height
+	2021-07-21; v0.6.37
+	2021-07-21; fix: Force entity invalidation in parttition request phase
+	2021-07-21; clean: Cleanup ContainerNode class
+
+---
+
 Bundle version: 0.0.32
 Build at: Wed Jul 21 2021 01:45:51 GMT+0300 (Москва, стандартное время)
 ---
