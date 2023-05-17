@@ -1,4 +1,538 @@
 Bundle version: 0.0.33
+Build at: Fri Apr 28 2023 01:59:05 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Fri Apr 28 2023 01:56:17 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 23:34:06 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 22:42:05 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.158-v0.2.159):
+	2023-04-27; 0.2.159
+	2023-04-26; Use document.baseURI instead of window.location.href
+@awayfl/avm2 (v0.2.196-v0.2.197):
+	2023-04-27; 0.2.197
+	2023-04-27; Implement SORT.RETURNINDEXEDARRAY for Array.sortOn
+@awayfl/playerglobal (v0.2.368-v0.2.369):
+	2023-04-27; 0.2.369
+	2023-04-27; Use document.baseURI instead of window.location.href in one more place
+	2023-04-26; Use document.baseURI instead of window.location.href
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 05:40:09 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.158-v0.2.158):
+	2023-04-26; Use document.baseURI instead of window.location.href
+@awayfl/playerglobal (v0.2.368-v0.2.368):
+	2023-04-26; Use document.baseURI instead of window.location.href
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 05:34:41 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.158-v0.2.158):
+	2023-04-26; Use document.baseURI instead of window.location.href
+@awayfl/playerglobal (v0.2.368-v0.2.368):
+	2023-04-26; Use document.baseURI instead of window.location.href
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 05:26:10 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.158-v0.2.158):
+	2023-04-26; Use document.baseURI instead of window.location.href
+@awayfl/playerglobal (v0.2.368-v0.2.368):
+	2023-04-26; Use document.baseURI instead of window.location.href
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 05:01:10 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.158-v0.2.158):
+	2023-04-26; Use document.baseURI instead of window.location.href
+@awayfl/playerglobal (v0.2.368-v0.2.368):
+	2023-04-26; Use document.baseURI instead of window.location.href
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 04:22:57 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.158-v0.2.158):
+	2023-04-26; Use document.baseURI instead of window.location.href
+@awayfl/playerglobal (v0.2.368-v0.2.368):
+	2023-04-26; Use document.baseURI instead of window.location.href
+
+---
+
+Bundle version: 0.0.33
+Build at: Thu Apr 27 2023 03:59:27 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.158-v0.2.158):
+	2023-04-26; Use document.baseURI instead of window.location.href
+@awayfl/playerglobal (v0.2.368-v0.2.368):
+	2023-04-26; Use document.baseURI instead of window.location.href
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Apr 26 2023 21:14:26 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Apr 26 2023 20:13:30 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Apr 26 2023 16:44:22 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Apr 26 2023 16:41:55 GMT-0500 (Central Daylight Time)
+---
+@awayjs/scene (v0.13.251-v0.13.252):
+	2023-04-11; 0.13.252
+	2023-04-11; cleanup import statements
+
+---
+
+Bundle version: 0.0.33
+Build at: Fri Apr 07 2023 17:30:46 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Fri Apr 07 2023 17:25:23 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Fri Apr 07 2023 17:24:40 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Fri Apr 07 2023 16:03:25 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.136-v0.2.158):
+	2023-03-31; 0.2.158
+	2023-03-31; update to correctly handle maskMode setting and sciptMask setting
+	2023-03-15; 0.2.157
+	2023-03-15; fixed by eslint
+	2023-03-15; update API for tracking mouse buttons status
+	2023-03-14; 0.2.156
+	2023-03-14; clone Graphics and MorphSprites in createChildInstanceForTimeline() to avoid mem leaks (TODO fix)
+	2023-03-01; 0.2.155
+	2023-03-01; 0.2.154
+	2023-03-01; fixed by eslint
+	2023-03-01; remove annoying try... catch statements that do nothing to help with debugging
+	2023-02-28; Update issue templates
+	2023-02-25; 0.2.153
+	2023-02-25; use factory property injection on timeline and move awaySymbols to factory to remove SymbolDecoder dependency and allow parser disposal
+	2023-02-23; 0.2.152
+	2023-02-23; update TextTormat to use font_name setter for setting font name
+	2023-02-07; 0.2.151
+	2023-02-07; fix AVM1Selection for when getFocus() is null
+	2023-01-21; 0.2.150
+	2023-01-21; fix _url property on MovieClip to be absolute url string
+	2023-01-11; 0.2.149
+	2023-01-10; use numFrames for framesLoaded
+	2022-05-27; 0.2.148
+	2022-05-27; fix for focus selection (whoops)
+	2022-05-24; 0.2.147
+	2022-05-24; clean up enterFrame / exitFrame events execution
+	2022-05-06; 0.2.146
+	2022-05-06; add check for 'undefined'  on _gotoFrame()
+	2022-02-16; 0.2.145
+	2022-02-16; fix for drag in avm1
+	2022-01-26; 0.2.144
+	2022-01-26; cleanup of NodeContainer refactor
+	2021-11-17; v0.2.143
+	2021-11-17; fix: Supress crash on NaN width/height
+	2021-11-17; fix: not all symbols has adaptee
+	2021-11-17; fix: Implement `getConcatenatedMatrix`
+	2021-11-13; v0.2.142
+	2021-11-13; fix: Valid resolving a child names
+	2021-11-08; v0.2.141
+	2021-11-08; fix: symbol should be cloned onto SceneImage2D
+	2021-11-07; v0.2.140
+	2021-11-07; feat: Migrating modules config into centralised store
+	2021-10-29; v0.2.139
+	2021-10-29; fix: implement as2 ColorMatrix filter converter
+	2021-10-29; fix: doublicateMovieClip
+	2021-10-23; v0.2.138
+	2021-10-23; fix: findColor by default is true
+	2021-10-21; v0.2.137
+	2021-10-21; fix: implment blur timeline filter
+@awayfl/avm2 (v0.2.191-v0.2.196):
+	2023-03-31; 0.2.196
+	2023-03-31; fix to readU29() in amf (accounting for int8 values rather than uint8)
+	2023-02-28; Update issue templates
+	2023-02-25; 0.2.195
+	2023-02-25; use factory property injection on timeline and move awaySymbols to factory to remove SymbolDecoder dependency and allow parser disposal
+	2021-11-07; v0.2.194
+	2021-11-07; feat: Migrating modules config into centralised store
+	2021-10-29; v0.2.193
+	2021-10-29; fix: valid number coercion
+	2021-10-28; v0.2.192
+@awayfl/awayfl-player (v0.2.29-v0.2.32):
+	2023-03-17; 0.2.32
+	2023-03-17; upgrade to webpack 5 typescript 4.9
+	2022-01-26; 0.2.31
+	2022-01-26; update yarn.lock file
+	2022-01-26; cleanup of NodeContainer refactor
+	2022-01-17; add assembly modules to scripts
+	2021-07-08; 0.2.30
+	2021-07-08; update yarn.lock file
+	2021-07-08; add Main entry point for boilerplate player
+	2021-06-18; add unlink bat file for debugging installation
+@awayfl/playerglobal (v0.2.346-v0.2.368):
+	2023-03-31; 0.2.368
+	2023-03-31; update to correctly handle maskMode setting and sciptMask setting
+	2023-03-21; 0.2.367
+	2023-03-21; fixed by eslint
+	2023-03-21; fix bytearray check for rollup
+	2023-03-20; Implement FileReference.browse
+	2023-03-17; 0.2.366
+	2023-03-17; fixed by eslint
+	2023-03-17; use esnext.asynciterable interfaces in implementation of showSaveFilePicker()
+	2023-03-17; add esnext.asynciterable in tsc compile options to expose showSaveFilePicker() on window
+	2023-03-17; add Settings file to allow enable / disable of experimental showSaveFilePicker() API
+	2023-03-16; Implement FileReference.save for ByteArray
+	2023-03-15; 0.2.365
+	2023-03-15; implement RELEASE_OUTSIDE on MouseEvent
+	2023-03-14; 0.2.364
+	2023-03-14; fixed by eslint
+	2023-03-14; lazy creation of node property to avoid mem overhead and listen for clear event
+	2023-03-14; clone Graphics and MorphSprites in createChildInstanceForTimeline() to avoid mem leaks (TODO fix)
+	2023-03-14; remove unecessary commented code
+	2023-03-06; 0.2.363
+	2023-03-06; update getObjectUnderPoint to use IPartitionContainer
+	2023-02-28; Update issue templates
+	2023-02-25; 0.2.362
+	2023-02-25; use factory property injection on timeline and move awaySymbols to factory to remove SymbolDecoder dependency and allow parser disposal
+	2023-02-23; 0.2.361
+	2023-02-23; update TextTormat to use font_name setter for setting font name
+	2023-02-10; 0.2.360
+	2023-02-09; correct LocalConnection.domain
+	2023-02-02; 0.2.359
+	2023-02-02; fix for BitmapData RTE when calling dispose() and then setting Bitmap property to null
+	2023-02-02; 0.2.358
+	2023-02-02; fix crash for subclass symbols when calling constructClassFromSymbol()
+	2023-02-02; 0.2.357
+	2023-02-02; fixed by eslint
+	2023-02-02; use the SimpleButton class instead of MC to create an instance of SimpleButton
+	2023-01-20; 0.2.356
+	2023-01-20; fix to LoaderInfo url property on root assets
+	2022-12-19; 0.2.355
+	2022-12-19; removed reliance on DefaultLocation spoof and fixed LoaderInfo url property to return absolute urls
+	2022-11-02; 0.2.354
+	2022-11-02; revert fix for partitionClass
+	2022-11-02; 0.2.353
+	2022-11-02; fix for partitionClass creating duplicate root partition
+	2022-09-08; 0.2.352
+	2022-09-08; use target and currentTarget from awayjs mouse events
+	2022-05-27; 0.2.351
+	2022-05-27; allow for Stage.focus = null
+	2022-05-27; return .stage = null when DisplayObject hasn't been added to Stage
+	2022-05-24; 0.2.350
+	2022-05-24; fixed by eslint
+	2022-05-24; add FocusEvent and Stage.focus functionality
+	2022-02-14; fix for dragging
+	2022-01-26; 0.2.349
+	2022-01-26; cleanup of NodeContainer refactor
+	2021-12-07; v0.2.348
+	2021-12-07; fix:valid get/set for frameRate
+	2021-11-20; v0.2.347
+	2021-11-20; fix: clamp values that setted onto movie clip property
+@awayfl/swf-loader (v0.4.105-v0.4.114):
+	2023-03-18; 0.4.114
+	2023-03-18; update for MouseManager changes
+	2023-02-28; Update issue templates
+	2023-02-25; 0.4.113
+	2023-02-25; fixed by eslint
+	2023-02-25; replace parser property with factory in ShapeTag and move awaySymbols to factory to allow mem disposal of parser
+	2023-02-25; delete unused SWFABCExtractor
+	2023-02-04; 0.4.112
+	2023-02-04; stop Billboard assets in timeline picking up mouse events
+	2022-11-02; 0.4.111
+	2022-11-02; fix for partitionClass creating duplicate root partition
+	2022-04-22; 0.4.110
+	2022-04-22; fix for showFrameRate (div ordering bug)
+	2022-03-11; 0.4.109
+	2022-03-11; change default tag names to 'instance_' from 'AwayJS_'
+	2022-01-26; 0.4.108
+	2022-01-26; cleanup of NodeContainer refactor
+	2022-01-25; 0.4.107
+	2022-01-25; fixed by eslint
+	2022-01-25; refactor to move view into nodecontainer
+	2021-11-07; v0.4.106
+	2021-11-07; fix: const enums exports
+	2021-11-07; feat: md5 128. Fallback to md5
+	2021-11-07; feat: compute file hash for unique cache.
+@awayjs/core (v0.9.31-v0.9.36):
+	2023-03-17; 0.9.36
+	2023-03-17; fix typescript errors in v5
+	2023-03-01; 0.9.35
+	2023-03-01; remove guard rails on abstractionbase disposal - if you're accidentally double-disposing assets you probably want to know about it
+	2022-09-08; 0.9.34
+	2022-09-08; add target option to dispatchEvent()
+	2022-03-25; 0.9.33
+	2022-03-25; fixed by eslint
+	2022-03-25; safeguard against divide by zero for decompose()
+	2021-11-07; v0.9.32
+	2021-11-07; fix: Allow use raw json-string instead object
+	2021-11-07; fix: Hint for direct assigment
+	2021-11-07; fix: Introduce centralised store for game configs
+@awayjs/graphics (v0.5.68-v0.5.77):
+	2023-03-14; 0.5.77
+	2023-03-14; register Graphics as an EntityNode
+	2023-03-06; 0.5.76
+	2023-03-06; add clone() method to Graphics
+	2023-03-06; corrrect interface for test collision
+	2023-03-01; 0.5.75
+	2023-03-01; fixed by eslint
+	2023-03-01; remove unused listeners on shapes causing memory leaks - this logic was long ago replaced by _Pick_Shape and the BoundsPicker
+	2023-02-25; 0.5.74
+	2023-02-25; fixed by eslint
+	2023-02-25; replace parser with factory in ShapeTag to allow parser disposal
+	2023-01-18; 0.5.73
+	2023-01-18; remove unecessary invalidate calls in TextureAtlas
+	2022-09-07; 0.5.72
+	2022-09-07; update traverser ordering (bottom to top)
+	2022-01-26; 0.5.71
+	2022-01-26; cleanup of NodeContainer refactor
+	2022-01-25; 0.5.70
+	2022-01-25; refactor to move view into nodecontainer
+	2021-11-07; v0.5.69
+	2021-11-07; feat: Migrating modules config into centralised store
+@awayjs/materials (v0.6.8-v0.6.11):
+	2023-01-18; 0.6.11
+	2023-01-18; INVALIDATE_IMAGES event listener added for Style object
+	2022-01-26; 0.6.10
+	2022-01-26; cleanup of NodeContainer refactor
+	2022-01-25; 0.6.9
+	2022-01-25; refactor to move view into nodecontainer
+@awayjs/renderer (v0.11.44-v0.11.58):
+	2023-03-14; 0.11.58
+	2023-03-14; cleanup imports
+	2023-03-14; fix listener for rendable events on IPartitionContainer
+	2023-03-06; 0.11.57
+	2023-03-06; Separate IPartitonContainer and IPartitionEntity interfaces, ready for mem optimisation
+	2023-03-01; 0.11.56
+	2023-03-01; fixed by eslint
+	2023-03-01; add addRenderable / removeRenderable to RenderEntity to allow clearing of renderables
+	2023-02-25; 0.11.55
+	2023-02-25; create IMaterialFactory
+	2023-02-25; add AlphaBlending to IMaterial
+	2023-01-18; 0.11.54
+	2023-01-18; renderer invalidated on material invalidation
+	2023-01-18; INVALIDATE_IMAGES event added to Style object
+	2022-11-02; 0.11.53
+	2022-11-02; temp disable invalidation on defaultrenderer while we fix things
+	2022-11-01; 0.11.52
+	2022-11-01; fixed by eslint
+	2022-11-01; add non-native blend option to cacherenderer (default disabled)
+	2022-09-28; 0.11.51
+	2022-09-28; fix for filters when masking
+	2022-09-07; 0.11.50
+	2022-09-07; fixed by eslint
+	2022-09-07; convert links lists to arrays
+	2022-03-25; 0.11.49
+	2022-03-25; fixed by eslint
+	2022-03-25; safeguard agaionst divide by zero for getThicknessScale()
+	2022-02-10; 0.11.48
+	2022-02-10; fixed by eslint
+	2022-02-10; code tidy
+	2022-01-26; 0.11.47
+	2022-01-26; fixed by eslint
+	2022-01-26; cleanup of NodeContainer refactor
+	2022-01-25; 0.11.46
+	2022-01-25; fixed by eslint
+	2022-01-25; refactor to move view into nodecontainer
+	2021-10-31; v0.11.45
+	2021-10-31; fix: depth test for CachedRenderer
+	2021-10-08; fix: Rename GradientAtlass.ts to GradientAtlas.ts and fix asset name
+@awayjs/scene (v0.13.230-v0.13.251):
+	2023-03-31; 0.13.251
+	2023-03-31; fixed by eslint
+	2023-03-31; update to correctly handle maskMode setting and sciptMask setting
+	2023-03-29; 0.13.250
+	2023-03-29; fix fill issue when SceneImage2D is non-transparent
+	2023-03-29; fix maskMode issue when mask is removed from a DisplayObject via script
+	2023-03-15; 0.13.249
+	2023-03-15; fixes to Button behaviour and MouseManager
+	2023-03-15; added MouesButtons enum for logging button status on MouseEvent
+	2023-03-14; 0.13.248
+	2023-03-14; fixed by eslint
+	2023-03-14; allow graphics property to be null, remove EntityNode registrations for Sprite, TextField and MorphSprite and cleanup
+	2023-03-14; remove _updateEntity() and _acceptTraverser() from DisplayObject
+	2023-03-06; 0.13.247
+	2023-03-06; fixed by eslint
+	2023-03-06; Separate IPartitonContainer and IPartitionEntity interfaces, ready for mem optimisation
+	2023-02-25; 0.13.246
+	2023-02-25; fixed by eslint
+	2023-02-25; use factory property injection on timeline to remove SymbolDecoder Dependency and allow parser disposal
+	2023-02-23; 0.13.245
+	2023-02-23; fixed by eslint
+	2023-02-23; update TextTormat to use font_name setter for setting font name
+	2023-02-23; getFont() returns null if fontName is null
+	2023-01-18; 0.13.244
+	2023-01-18; INVALIDATE_IMAGES event listener added for Style object
+	2023-01-18; invalidate added to SceneImage2D.draw()
+	2022-11-02; 0.13.243
+	2022-11-02; fix for swapChildren in movieclips
+	2022-09-08; 0.13.242
+	2022-09-08; add target option to dispatchEvent()
+	2022-09-07; 0.13.241
+	2022-09-07; fix for setChildIndex() behaviour
+	2022-05-24; 0.13.240
+	2022-05-24; fixed by eslint
+	2022-05-24; Fixing setFocus and FocusEvent for MouseManager
+	2022-04-27; 0.13.239
+	2022-04-27; revert deepHitCheck to true for  bugfix on raycastpicker (issue with clicker heroes perf
+	2022-04-20; 0.13.238
+	2022-04-20; add preventdefault for cursor keys to stop page movement when game has focus
+	2022-03-18; v0.13.237
+	2022-03-18; fix (SceneImage2D): We should fill target texture when draw with blend
+	2022-01-26; 0.13.236
+	2022-01-26; cleanup of NodeContainer refactor
+	2022-01-25; 0.13.235
+	2022-01-25; refactor to move view into nodecontainer
+	2021-11-23; feat: minor optimisation
+	2021-11-08; v0.13.234
+	2021-11-08; fix: clone of SceneImage2D should return valid class
+	2021-11-07; v0.13.233
+	2021-11-07; feat: Migrating modules config into centralised store
+	2021-10-26; v0.13.232
+	2021-10-26; fix: point instead of rect
+	2021-10-26; fix: clear color MUST be a 0
+	2021-10-26; feat: Allow blending for ImageBitmap.draw variation
+	2021-10-19; v0.13.231
+	2021-10-19; fix: increase precission size for text.
+@awayjs/stage (v0.11.118-v0.11.133):
+	2023-02-25; 0.11.133
+	2023-02-25; Rename DefaultGraphicsFactory to DefaultStageFactory, IGraphicsFactory to IImageFactory
+	2023-01-18; 0.11.132
+	2023-01-18; needUpload used for invalidating GPU
+	2023-01-10; 0.11.131
+	2023-01-10; fix FinalizationRegistry for Illegal upload of disposed BitmapImage2D
+	2022-09-28; 0.11.130
+	2022-09-28; fixed by eslint
+	2022-09-28; fix for filters (disable depthtest)
+	2022-06-29; 0.11.129
+	2022-06-29; correction to overlay for transparent src values
+	2022-03-25; 0.11.128
+	2022-03-25; correction to overlay filter
+	2022-03-24; 0.11.127
+	2022-03-24; temporary fix for composite filter re. Icycle
+	2022-03-18; v0.11.126
+	2022-03-18; fix: Revert back fix for GetInTop, because it corrupt other
+	2021-11-22; v0.11.125
+	2021-11-22; regression: Disable buffer poolling
+	2021-11-11; fix: Threshold decoding bug
+	2021-11-08; v0.11.124
+	2021-11-08; v0.11.123
+	2021-11-07; fix: Clear output when source === target for avoid artefacts
+	2021-11-07; fix: ColorMatrix filter in matrix mode not require blending
+	2021-11-07; v0.11.122
+	2021-11-07; feat: Migrating modules config into centralised store
+	2021-10-31; v0.11.121
+	2021-10-31; fix: Restrict zero frames for filters
+	2021-10-26; feat: flags for Composition
+	2021-10-26; fix: Overlay and Hardlight implementation.
+	2021-10-26; drop: Drop support CompositeFilter by AGAL
+	2021-10-26; feat: implement a lot of composition operations
+	2021-10-26; fix: Composite shader invalidation
+	2021-10-26; feat: Debug methods for BitmapImage2D
+	2021-10-26; feat: try composite over shader
+	2021-10-26; fix: Remove unstable feature: instanced copy
+	2021-10-26; feat: support composite operation over filter
+	2021-10-21; v0.11.120
+	2021-10-21; fix: we should take acount that angle can flip sign.
+	2021-10-21; v0.11.119
+	2021-10-21; fix: Typo
+	2021-10-20; fix: GradientBevel implementation
+	2021-10-20; fix: close range for degradated gradients
+	2021-10-20; Fix: GradientAtlas.ts implementation
+	2021-10-20; fix: degradation for bitmap filters
+	2021-10-19; fix: push back a used temporary textures from filters
+	2021-10-19; feat: New Blur, new filters structures.
+	2021-10-19; feat: move filter apply inside filterBase
+	2021-10-19; feat: valid gaussian blur
+	2021-10-11; build(deps): bump ansi-regex from 5.0.0 to 5.0.1
+@awayjs/view (v0.6.40-v0.6.54):
+	2023-03-24; 0.6.54
+	2023-03-24; fixed by eslint
+	2023-03-24; mem leak improvements: dispose of EntityNodes / clear BoundingVolumes
+	2023-03-14; 0.6.53
+	2023-03-14; cleanup imports
+	2023-03-14; reduce listeners by using standard invalidate event for update_entity
+	2023-03-14; remove _acceptTraverser() from IPartitionContainer
+	2023-03-06; 0.6.52
+	2023-03-06; fixed by eslint
+	2023-03-06; Separate IPartitonContainer and IPartitionEntity interfaces, ready for mem optimisation
+	2023-03-01; 0.6.51
+	2023-03-01; ensure partitions of cleared nodes have been invalidated
+	2023-03-01; update partition invalidate method to only trigger once per traversal
+	2023-03-01; 0.6.50
+	2023-03-01; fixed by eslint
+	2023-03-01; fire clear on all nodes in ContainerNode to recursively clear all RenderEntities / PickEntities when a child is removed
+	2023-03-01; add addPickable / removePickable to PIckEntity to allow clearing of pickables
+	2022-09-28; 0.6.49
+	2022-09-28; fixed by eslint
+	2022-09-28; fix for filters when masking
+	2022-09-07; 0.6.48
+	2022-09-07; fix mixed spaces and tabs
+	2022-09-07; swap order of traverser (bottom to top)
+	2022-03-24; 0.6.47
+	2022-03-24; isRenderable take into account whether renderable is mask
+	2022-03-11; 0.6.46
+	2022-03-11; RaycastPicker enterNode allows invisible mask elements to be traversed
+	2022-03-11; isMouseDisabled takes into account isInvisible result on ContainerNode
+	2022-02-16; 0.6.45
+	2022-02-16; temp fix,  issues on sunflower code
+	2022-02-10; 0.6.44
+	2022-02-10; code tidy on get partition
+	2022-02-10; removed unused IContainerNode
+	2022-01-26; 0.6.43
+	2022-01-26; remove unused imports
+	2022-01-26; 0.6.42
+	2022-01-26; fixed by eslint
+	2022-01-26; cleanup of NodeContainer refactor
+	2022-01-25; 0.6.41
+	2022-01-25; fixed by eslint
+	2022-01-25; refactor to move view into nodecontainer
+
+---
+
+Bundle version: 0.0.33
 Build at: Mon Oct 11 2021 18:30:53 GMT+0300 (Москва, стандартное время)
 ---
 @awayfl/avm1 (v0.2.124-v0.2.136):

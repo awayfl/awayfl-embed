@@ -189,7 +189,18 @@ export class AwayPlayerComponent extends HTMLElement {
             width: frame.clientWidth,
             height: frame.clientHeight,
             //splash: AWAY_EMBED_CFG.splash,
-            progress: {},
+            splash: 'splash.jpg',
+		    "progress": {
+		        "direction": "lr",
+		        "back": "#130d02",
+		        "line": "#f29f01",
+		        "rect": [
+		            0.25,
+		            0.77,
+		            0.5,
+		            0.01
+		        ]
+		    },
             runtime: [urls.runtime],
             binary: [{
                 path: this._runConfig.src,
@@ -233,7 +244,7 @@ export class AwayPlayerComponent extends HTMLElement {
     }
 
     _mapAttrs() {
-        const params = this.querySelectorAll('param');
+        const params: NodeListOf<HTMLParamElement> = this.querySelectorAll('param');
         const attrs = this.getAttributeNames();
 
         const scheme = AwayPlayerComponent.BINDING_CONFIG;

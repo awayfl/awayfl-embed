@@ -3,57 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eample</title>
+    <title>AwayFL Embed Example</title>
     <script src="../dist/embed.js"></script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        #root {
-            position: relative;
-            width: 100%;
-            height: 600px;
-            background: no-repeat center/cover url('./todo.jpg');
-        }
-
-        #flashBlock {
-            display: none;
-        }
-
-        #progress {
-            font-size: 36px;
-            width: 100%;
-            height: 1em;
-            position: absolute;
-            bottom: 1em;
-            color: black;
-            line-height: 1em;
-            padding: 0 1em;
-            text-align: center;
-
-            transition: opacity 1s;
-        }
-
-        #text {
-            width: 100%;
-            color: #857c7c;
-            mix-blend-mode: difference;
-        }
-
-        #line {
-            width: 0px;
-            transition: width 1s;
-            height: 100%;
-            background-color: #9182ff;
-            margin-top: -1em;
-        }
-
-    </style>
 </head>
 <body>
-    
+    <div id = 'root'>
+        <!-- <awayfl-player id = 'flashBlock'
+            runtimebaseurl = '../dist/'
+            src = './Embedded.swf'
+
+            width = '100%'
+            height = '100%'
+        >
+        </awayfl-player> -->
+        <div id = 'container'>
+
+        </div>
+    </div>
+
     <script>
         function onProgress (e) {
             document.querySelector('#line').style.width = e * 100 + '%';
@@ -68,24 +35,24 @@
                 document.querySelector('#progress').remove();
             }, 1000);
         }
-
+        window.AWAY_EMBED_CFG = {
+            splash: 'example/splash.jpg',
+		    "progress": {
+		        "direction": "lr",
+		        "back": "#130d02",
+		        "line": "#f29f01",
+		        "rect": [
+		            0.25,
+		            0.77,
+		            0.5,
+		            0.01
+		        ]
+		    },
+			baseUrl: '../dist',
+            loaderUrl: 'loader.js',
+			runtimeUrl: 'runtime.js',
+        }
+        swfObject.embedSWF('papaspancakeria.swf', 'container', '550', '400');
     </script>
-
-    <div id = 'root'>
-        <awayfl-player id = 'flashBlock'
-            runtimebaseurl = '../dist/'
-            src = './Embeded.swf'
-            onprogress = 'onProgress'
-            onload = 'onLoad'
-
-            width = '100%'
-            height = '100%'
-        >
-        </awayfl-player>
-        <div id = 'progress'>
-            <div id = 'text'></div>
-            <div id = 'line'></div>
-        </div>
-    </div>
 </body>
 </html>
