@@ -70,7 +70,7 @@ export const LegacyLoader = {
 
 		// make functions avilailable on window, so the loaded js-code can access and execute them
 		Object.assign(window, {
-			pokiGameParseComplete: complete,
+			swfParseComplete: complete,
 		});
 		
 		return runner

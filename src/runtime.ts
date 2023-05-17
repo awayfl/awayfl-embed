@@ -51,8 +51,6 @@ export class Player extends AVMStage {
         this.registerAVMStageHandler( new AVM1Handler());
         this.registerAVMStageHandler( new AVM2Handler(new PlayerGlobal()));
 
-        LoaderInfo.DefaultLocation = conf?.location || "http://localhost";
-
     }
 
     loadAndPlay(): Promise<void> {

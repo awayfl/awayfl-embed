@@ -1,21 +1,26 @@
-AWAYFL Embed Player
+AwayFL Embedded Player
 ==================
-AwayFL will help to save your Flash games workable after 2020!
+AwayFL will help you save your Flash games and keep them running after 2020!
 
 Check your game on:
 https://exponenta.games/games/AFL/
 
-__How to use:__
+__How to use__
 
-1. [By override a `swfObject` api](./example/index.html)
+There are 3 main ways to use AwayFL on your site:
 
-2. Direct with loader (or direct, with config):
-    * Grab template from [/src/embed/embed.html](./src/embed/embed.html)
-    * Replace `__LOADER_URL__` to loader url
-    * Replace `__GAME_CONFIG__` to game configuration JSON (or object) with interface of [CONFIG](./src/loader/iConfigBase.ts)
-    * NOTE! If game use a external fonts, add records as `{path: path/to/font.swf, resourceType:'FONTS'}` to binary array, for `GAME` you should use a record: `{path: path/to/gaem.swf, resourceType:'GAME'}`.
+1. [Overriding the `swfObject` API](./example/index.html)
+
+2. Using the AwayFL loader and a custom config:
+    * Grab the template from [/src/embed/embed.html](./src/embed/embed.html)
+    * Replace `__LOADER_URL__` with the URL of the AwayFL loader script (`loader.js`)
+    * Replace `__GAME_CONFIG__` with a game configuration JSON (or object) conforming to the [AwayFL config interface](./src/loader/iConfigBase.ts).
+    * To run your game, add a `GAME` resource record to the `binary` array of the game configuration.
+      * Example: `{path: path/to/game.swf, resourceType:'GAME'}`
+    * If your game uses external fonts, you will need to create separate SWF file(s) containing these fonts, then add font resource records to the `binary` array. 
+      * Example: `{path: path/to/font.swf, resourceType:'FONTS'}`
     
-    Example:
+    Full Example:
     ```
     const gameConfig = {
         width: 550,
@@ -24,12 +29,12 @@ __How to use:__
         progress: { // optional
             back: 'cover url(./progressBack.png)',
             line: #cc0022, // or image, it will passed to progressLine background,
-            rect: [0, 0.9, 1, 0.1] // x, y, width, height of preogress line relative contianer 
+            rect: [0, 0.9, 1, 0.1] // x, y, width, height of preogress line relative container 
         },
         baseUrl: '../dist',
         runtime: ['../dist/runtime.js'],
         binary: [{
-            path: 'Embeded.swf',
+            path: 'Embedded.swf',
             resourceType: 'GAME',
             name: 'Game', // not used atm
             meta: {} // not used atm
@@ -37,8 +42,8 @@ __How to use:__
     }
     ```
 
-3. From ArrayBuffer of SWF (custom loader):
-    * Load runtime: `..dist/runtime.js`
-    * Construct player: `const player = new AWAYFL.Player()`.
+3. Creating a custom loader that loads SWF data from an ArrayBuffer:
+    * Load the AwayFL runtime from `dist/runtime.js`
+    * Construct the player: `const player = new AWAYFL.Player();`
     * Call `player.loadBuffer(arrayBuffer);`
 
