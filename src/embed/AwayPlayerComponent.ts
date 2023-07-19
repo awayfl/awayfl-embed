@@ -14,6 +14,8 @@ interface IAwayPlayer {
 interface IBindingConfig {
     version?: string;
     runtimebaseurl: string;
+    loaderurl?: string;
+    runtimeurl?: string;
     src: string;
     avm1?: boolean;
     width: string | number;
@@ -29,7 +31,7 @@ interface IBindingConfig {
      */
     maxstagescale?: number;
     /**
-     * @description Hide player context before loading
+     * @description Hide player content before loading
      */
     hidebeforeload?: boolean;
 
@@ -53,18 +55,20 @@ export class AwayPlayerComponent extends HTMLElement {
     }
 
     private static BINDING_CONFIG: TBindingScheme  = {
-        version: {required: false, default:'latest'},
+        version: {required: false, default: 'latest'},
         runtimebaseurl: {required: true},
+        loaderurl: {required: false, default: 'loader.js'},
+        runtimeurl: {required: false, default: 'runtime.js'},
         src: {required: true},
-        avm1: {required: false, default:false},
-        width: {required: false, default:550},
-        height: {required: false, default:400},
+        avm1: {required: false, default: false},
+        width: {required: false, default: 550},
+        height: {required: false, default: 400},
         onload: {required: false},
         onprogress: {required: false},
         onerror: {required: false},
         scaleMode: {required: false, default: 'all'},
         autoplay: {required: false, default: true},
-        hidebeforeload: {required: false, default: true},
+        hidebeforeload: {required: false, default: false},
         maxstagescale: {required: false, default: undefined},
 
         // runtime
@@ -117,14 +121,16 @@ export class AwayPlayerComponent extends HTMLElement {
     }
 
     _getRuntimeUrl() {
-        const baseUrl = this._runConfig.runtimebaseurl 
+        const baseUrl = this._runConfig.runtimebaseurl;
+        const loader  = new URL(this._runConfig.loaderurl, baseUrl).href;
+        const runtime = new URL(this._runConfig.runtimeurl, baseUrl).href;
         /**
          * @todo support runtime version
          **/
         return {
-            loader: baseUrl  + '/loader.js',
-            runtime: baseUrl + '/runtime.js',
-            baseUrl
+            loader,
+            runtime,
+            baseUrl,
         }
     }
 
@@ -184,23 +190,26 @@ export class AwayPlayerComponent extends HTMLElement {
     _buildTemplate(frame: HTMLIFrameElement): string {
         const t: string = template;
         const urls = this._getRuntimeUrl();
+        const global = <any>window;
+        const globalCfg = global.AWAY_EMBED_CFG;
+        const defaultSplash = 'splash.jpg';
+        const defaultProgress = {
+            "direction": "lr",
+            "back": "#130d02",
+            "line": "#f29f01",
+            "rect": [
+                0.25,
+                0.77,
+                0.5,
+                0.01
+            ]
+        };
      
         const gameConfig = {
             width: frame.clientWidth,
             height: frame.clientHeight,
-            //splash: AWAY_EMBED_CFG.splash,
-            splash: 'splash.jpg',
-		    "progress": {
-		        "direction": "lr",
-		        "back": "#130d02",
-		        "line": "#f29f01",
-		        "rect": [
-		            0.25,
-		            0.77,
-		            0.5,
-		            0.01
-		        ]
-		    },
+            splash: (typeof globalCfg.splash == 'string' && globalCfg.splash) || defaultSplash,
+            progress: globalCfg.progress || defaultProgress,
             runtime: [urls.runtime],
             binary: [{
                 path: this._runConfig.src,
@@ -208,7 +217,7 @@ export class AwayPlayerComponent extends HTMLElement {
                 name: 'Game',
                 meta: {}
             }],
-    //        debug: true,
+            //debug: true,
             baseUrl: urls.baseUrl,
             maxStageScale: +this._runConfig.maxstagescale,
             runtimeFlags: {
@@ -248,37 +257,47 @@ export class AwayPlayerComponent extends HTMLElement {
         const attrs = this.getAttributeNames();
 
         const scheme = AwayPlayerComponent.BINDING_CONFIG;
-        const config: IBindingConfig = <any>{};
 
         params.forEach(node => {
             if (node.name in scheme) {
-                config[node.name] = node.value;
+                this._runConfig[node.name] = node.value;
             }
         });
 
         attrs.forEach(name => {
             if (name in scheme) {
-                config[name] = this.getAttribute(name);
+                this._runConfig[name] = this.getAttribute(name);
             }
         });
 
         for(const key in scheme) {
-            if (scheme[key].required && typeof config[key] === 'undefined') {
+            if (scheme[key].required && typeof this._runConfig[key] === 'undefined') {
                 throw `Parameter ${key} is required!`;
             }
 
-            if (typeof config[key] === 'undefined') {
-                config[key] = scheme[key].default;
+            if (typeof this._runConfig[key] === 'undefined') {
+                this._runConfig[key] = scheme[key].default;
             }
         }
+    }
 
-        this._runConfig = config;
+    _loadGlobalConfig() {
+        const global = <any>window;
+        const globalCfg = global.AWAY_EMBED_CFG;
+        const scheme = AwayPlayerComponent.BINDING_CONFIG;
+        
+        for(const [key, value] of Object.entries(globalCfg)) {
+            if (key in scheme) {
+                this._runConfig[key] = value;
+            }
+        }
     }
 
     connectedCallback() 
     {
         setTimeout(() => {
             this._loaderHolder = this.querySelector('div.awayfl__loader');
+            this._loadGlobalConfig();
             this._mapAttrs();
             this._constructPlayer();
 

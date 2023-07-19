@@ -8,51 +8,13 @@
 </head>
 <body>
     <div id = 'root'>
-        <!-- <awayfl-player id = 'flashBlock'
-            runtimebaseurl = '../dist/'
-            src = './Embedded.swf'
-
-            width = '100%'
-            height = '100%'
-        >
-        </awayfl-player> -->
         <div id = 'container'>
 
         </div>
     </div>
 
     <script>
-        function onProgress (e) {
-            document.querySelector('#line').style.width = e * 100 + '%';
-            document.querySelector('#text').textContent = ((e * 100) | 0) + '%';
-        }
-
-        function onLoad () {
-            
-            document.querySelector('#progress').style.opacity = 0;
-            setTimeout(() => {
-                document.querySelector('#flashBlock').style.display = 'block';
-                document.querySelector('#progress').remove();
-            }, 1000);
-        }
-        window.AWAY_EMBED_CFG = {
-            splash: 'example/splash.jpg',
-		    "progress": {
-		        "direction": "lr",
-		        "back": "#130d02",
-		        "line": "#f29f01",
-		        "rect": [
-		            0.25,
-		            0.77,
-		            0.5,
-		            0.01
-		        ]
-		    },
-			baseUrl: '../dist',
-            loaderUrl: 'loader.js',
-			runtimeUrl: 'runtime.js',
-        }
-        swfObject.embedSWF('papaspancakeria.swf', 'container', '550', '400');
+        swfObject.embedSWF('Embedded.swf', 'container', '550', '400');
     </script>
 </body>
 </html>
