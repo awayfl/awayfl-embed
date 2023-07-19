@@ -1,4 +1,134 @@
 Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 13:44:18 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 13:14:53 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 13:05:52 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 13:01:26 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 12:56:34 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 12:44:33 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 12:38:37 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 12:34:10 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 12:31:56 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 12:17:53 GMT-0500 (Central Daylight Time)
+---
+
+---
+
+Bundle version: 0.0.33
+Build at: Wed Jul 19 2023 12:05:08 GMT-0500 (Central Daylight Time)
+---
+@awayfl/avm1 (v0.2.159-v0.2.162):
+	2023-05-11; 0.2.162
+	2023-05-11; fixed by eslint
+	2023-05-11; fix ExternalInterface for multiple arguments and return value
+	2023-05-11; 0.2.161
+	2023-05-11; fix to setVolume to alllow global sound control
+	2023-05-10; 0.2.160
+	2023-05-10; use sound object rather than id for startSound & stopSound
+@awayfl/avm2 (v0.2.197-v0.2.200):
+	2023-05-19; 0.2.200
+	2023-05-19; fixed by eslint
+	2023-05-19; returns object keys when weakKeys is true
+	2023-05-18; 0.2.199
+	2023-05-18; fix name clash with matching classnames that have different namespaces
+	2023-05-10; 0.2.198
+	2023-05-10; cleanup updateOrphans() types
+@awayfl/awayfl-player (v0.2.32-v0.2.33):
+	2023-05-25; 0.2.33
+	2023-05-25; update yarn.lock file
+@awayfl/playerglobal (v0.2.369-v0.2.375):
+	2023-06-07; 0.2.375
+	2023-06-07; Clamp DisplayObject rotation values to [-180, 180]
+	2023-05-25; 0.2.374
+	2023-05-25; fixed by eslint
+	2023-05-25; startTime for Sound.play() should be in milliseconds, not seconds
+	2023-05-19; fix typescript version to 3.8.3 to avoid enumerable: false errors
+	2023-05-19; 0.2.373
+	2023-05-19; replace console.log() with notImplemented() for missing System functions
+	2023-05-18; 0.2.372
+	2023-05-18; fix missing applicationDomain on top level LoaderInfo
+	2023-05-18; 0.2.371
+	2023-05-18; fix error when filters property set to null
+	2023-05-10; 0.2.370
+	2023-05-10; fixed by eslint
+	2023-05-10; temp remove id getter for GameInputDevice
+	2023-05-10; tidy up stopAll()
+	2023-05-10; use addEventListener intead of onSoundComplete setter for audio channel
+	2023-05-10; add WeakRef to BroadcastEventDispatchQueue
+@awayjs/core (v0.9.36-v0.9.38):
+	2023-06-23; 0.9.38
+	2023-06-23; fixed by eslint
+	2023-06-23; create IAbstraction Interface
+	2023-05-10; 0.9.37
+	2023-05-10; clean up audiochannel classes
+	2023-05-10; remove deprecated onSoundComplete setter
+@awayjs/materials (v0.6.11-v0.6.12):
+	2023-06-23; 0.6.12
+	2023-06-23; fix RTE when clearing texture
+	2023-06-23; fix for diffuse & specular methods
+	2023-06-23; fix mem leak with shader methods
+	2023-06-23; use IAbstraction for _IShader_Method
+@awayjs/scene (v0.13.252-v0.13.256):
+	2023-05-18; 0.13.256
+	2023-05-18; re-register Sprite with EntityNode
+	2023-05-15; 0.13.255
+	2023-05-15; fix for using static texfields as masks
+	2023-05-11; 0.13.254
+	2023-05-11; fix to soundVolume that keeps it persistent with new sounds
+	2023-05-10; 0.13.253
+	2023-05-10; fixed by eslint
+	2023-05-10; use sound object rather than id for startSound & stopSound, add onSoundCompleteInternal listener to deactivate sound owners whose sounds have stopped
+@awayjs/view (v0.6.54-v0.6.55):
+	2023-04-29; 0.6.55
+	2023-04-29; temp fix for getBounds invalidation when being performed on an updating mc that isn't being rendered
+
+---
+
+Bundle version: 0.0.33
 Build at: Fri Apr 28 2023 01:59:05 GMT-0500 (Central Daylight Time)
 ---
 

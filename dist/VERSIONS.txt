@@ -1,16 +1,16 @@
 Bundle version: 0.0.33
-Build at: Fri Apr 28 2023 01:59:04 GMT-0500 (Central Daylight Time)
+Build at: Wed Jul 19 2023 13:44:17 GMT-0500 (Central Daylight Time)
 ==========
 Modules:
-@awayfl/avm1:0.2.159
-@awayfl/avm2:0.2.197
-@awayfl/awayfl-player:0.2.32
-@awayfl/playerglobal:0.2.369
+@awayfl/avm1:0.2.162
+@awayfl/avm2:0.2.200
+@awayfl/awayfl-player:0.2.33
+@awayfl/playerglobal:0.2.375
 @awayfl/swf-loader:0.4.114
-@awayjs/core:0.9.36
+@awayjs/core:0.9.38
 @awayjs/graphics:0.5.77
-@awayjs/materials:0.6.11
+@awayjs/materials:0.6.12
 @awayjs/renderer:0.11.58
-@awayjs/scene:0.13.252
+@awayjs/scene:0.13.256
 @awayjs/stage:0.11.133
-@awayjs/view:0.6.54
+@awayjs/view:0.6.55
