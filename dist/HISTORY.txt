@@ -1,13 +1,6 @@
-@awayfl/avm1 (v0.2.167-v0.2.167):
-	2023-11-14; Stop execution of actions if clip is removed
-
----
-
 Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 14:57:17 GMT-0600 (Central Standard Time)
+Build at: Fri Nov 17 2023 21:44:15 GMT-0100 (Hora padrão dos Açores)
 ---
-@awayfl/avm1 (v0.2.167-v0.2.167):
-	2023-11-14; Stop execution of actions if clip is removed
 
 ---
 
