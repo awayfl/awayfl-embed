@@ -1,4 +1,232 @@
 Bundle version: 0.0.33
+Build at: Fri Nov 17 2023 15:21:04 GMT-0600 (Central Standard Time)
+---
+@awayfl/avm1 (v0.2.167-v0.2.167):
+	2023-11-14; Stop execution of actions if clip is removed
+
+---
+
+Bundle version: 0.0.33
+Build at: Fri Nov 17 2023 14:57:17 GMT-0600 (Central Standard Time)
+---
+@awayfl/avm1 (v0.2.167-v0.2.167):
+	2023-11-14; Stop execution of actions if clip is removed
+
+---
+
+Bundle version: 0.0.33
+Build at: Fri Nov 17 2023 11:31:39 GMT-0600 (Central Standard Time)
+---
+@awayfl/avm1 (v0.2.162-v0.2.167):
+	2023-11-14; Stop execution of actions if clip is removed
+	2023-11-02; 0.2.167
+	2023-11-02; fix issue with text variables not being updated due to missing enterframe/exitframe events on Textfield
+	2023-10-19; 0.2.166
+	2023-10-19; fix setVolume to allow global volume control for a target_mc that is also the _root
+	2023-10-11; 0.2.165
+	2023-10-11; Coerce NaN to 0 in Sound.setVolume
+	2023-08-03; 0.2.164
+	2023-08-03; fixed by eslint
+	2023-08-03; update rollup to latest, switch to terser from uglifyjs
+	2023-07-20; 0.2.163
+	2023-07-20; upgrade tslib to 2.3
+@awayfl/avm2 (v0.2.200-v0.2.209):
+	2023-11-14; 0.2.209
+	2023-11-14; Fix calling anonymous function stored in object
+	2023-11-08; 0.2.208
+	2023-11-08; fixed by eslint
+	2023-11-08; add fast static getTrait for findProperty in applicationdomain
+	2023-10-03; 0.2.207
+	2023-10-03; complete applying eslint recommendations
+	2023-10-03; 0.2.206
+	2023-10-03; apply eslint recommendations
+	2023-10-03; 0.2.205
+	2023-10-03; fixed by eslint
+	2023-10-03; tidy up Traits parsing and multiname caching
+	2023-09-29; 0.2.204
+	2023-09-29; fixed by eslint
+	2023-09-29; streamline abc file parsing
+	2023-09-29; small code cleanup
+	2023-09-29; modify lookup on Traits to save mem usage
+	2023-08-03; 0.2.203
+	2023-08-03; remove uncessary global declarations
+	2023-08-03; remove ObjectUtilities object and use exported functions directly
+	2023-08-03; 0.2.202
+	2023-08-03; update rollup to latest, switch to terser from uglifyjs
+	2023-07-20; 0.2.201
+	2023-07-20; upgrade tslib to 2.3
+@awayfl/awayfl-player (v0.2.33-v0.2.39):
+	2023-11-14; 0.2.39
+	2023-11-14; update yarn.lock file
+	2023-11-14; add template folder to npm release
+	2023-11-13; fix weakref compile error
+	2023-11-13; 0.2.38
+	2023-11-13; update yarn.lock file
+	2023-11-13; some tweaks for updateAwayDev batch for mac
+	2023-11-13; fix loading screen scaling for noBorder
+	2023-11-13; 0.2.37
+	2023-11-13; update webpack config to take advantage of WP5
+	2023-11-13; update yarn.lock file
+	2023-11-13; 0.2.36
+	2023-11-13; update readme
+	2023-11-13; tidy up package.json
+	2023-11-13; move copyVersionIndex.js to /scripts
+	2023-11-13; update awayfl config to default split to true
+	2023-11-13; 0.2.35
+	2023-11-13; update yarn.lock file
+	2023-11-13; add batch files for macos in script/
+	2023-07-20; 0.2.34
+	2023-07-20; upgrade tslib to 2.3
+@awayfl/playerglobal (v0.2.375-v0.2.384):
+	2023-11-09; 0.2.384
+	2023-11-09; enable drawWithQuality() function in BitmapData
+	2023-10-22; 0.2.383
+	2023-10-22; correct blendMode getter to correctly return adaptee blendMode
+	2023-10-09; 0.2.382
+	2023-10-09; fix RTE for when bitmapData is already null and being set to null
+	2023-09-19; 0.2.381
+	2023-09-19; Don't dispose BitmapData SceneImage2D with symbol source
+	2023-09-12; 0.2.380
+	2023-09-12; Don't use constructor.name for filter name
+	2023-08-29; 0.2.379
+	2023-08-29; fixed by eslint
+	2023-08-29; ensure removed children are re-added to orphan list for updated frame events
+	2023-08-03; 0.2.378
+	2023-08-03; remove uncessary global declarations
+	2023-08-03; remove NumberUtilities object and use exported functions directly
+	2023-08-03; remove ObjectUtilities object and use exported functions directly
+	2023-08-03; 0.2.377
+	2023-08-03; update rollup to latest, switch to terser from uglifyjs
+	2023-07-20; 0.2.376
+	2023-07-20; upgrade tslib to 2.3
+@awayfl/swf-loader (v0.4.114-v0.4.121):
+	2023-11-13; 0.4.121
+	2023-11-13; fix stageScaleMode for EXACT_FIT
+	2023-11-13; correct EXACT_FIT string to 'exactFit'
+	2023-09-22; 0.4.120
+	2023-09-22; fix to stop MovieClipSoundStream audio from pausing the timeline
+	2023-09-19; 0.4.119
+	2023-09-19; 0.4.118
+	2023-09-19; fixed by eslint
+	2023-09-19; remove toLowerCase() on asset.name setting
+	2023-08-03; 0.4.117
+	2023-08-03; fixed by eslint
+	2023-08-03; remove uncessary global declarations
+	2023-08-03; remove ArrayUtilities object and use exported functions directly
+	2023-08-03; remove NumberUtilities object and use exported functions directly
+	2023-08-03; remove ObjectUtilities object and use exported functions directly
+	2023-08-03; use getOwnPropertyNames to fix enumerable bug
+	2023-08-03; 0.4.116
+	2023-08-03; update rollup to latest, switch to terser from uglifyjs
+	2023-07-20; 0.4.115
+	2023-07-20; upgrade tslib to 2.3
+@awayjs/core (v0.9.38-v0.9.44):
+	2023-10-12; 0.9.44
+	2023-10-12; fix autoplay for iOS
+	2023-10-04; 0.9.43
+	2023-10-04; fixed by eslint
+	2023-10-04; reduce object properties for AssetBase to improve memory footprint
+	2023-10-04; remove deprecated ID_COUNT - use UUID.Nest() instead
+	2023-08-03; 0.9.42
+	2023-08-03; update rollup and use terser in place of uglifyjs
+	2023-08-02; 0.9.41
+	2023-08-02; update yarn.lock to latest
+	2023-08-02; add BaseAudioChannel to index.ts
+	2023-08-01; 0.9.40
+	2023-08-01; update devDependencies tslib
+	2023-07-20; 0.9.39
+	2023-07-20; upgrade tslib to 2.3
+@awayjs/graphics (v0.5.77-v0.5.82):
+	2023-11-03; 0.5.82
+	2023-11-03; fix for morphsprite regression
+	2023-11-03; 0.5.81
+	2023-11-03; stop morphtween from craching in certain situations
+	2023-08-03; 0.5.80
+	2023-08-03; update rollup and use terser in place of uglifyjs
+	2023-08-02; 0.5.79
+	2023-08-02; correct rollup for sourcemaps
+	2023-08-02; update devDependencies tslib
+	2023-07-20; 0.5.78
+	2023-07-20; upgrade tslib to 2.3
+@awayjs/materials (v0.6.12-v0.6.16):
+	2023-09-03; 0.6.16
+	2023-09-03; fixed by eslint
+	2023-09-03; fix for methods with invalidated textures
+	2023-08-03; 0.6.15
+	2023-08-03; update rollup and use terser in place of uglifyjs
+	2023-08-02; 0.6.14
+	2023-08-02; update devDependencies tslib
+	2023-07-20; 0.6.13
+	2023-07-20; upgrade tslib to 2.3
+@awayjs/renderer (v0.11.58-v0.11.63):
+	2023-10-22; 0.11.63
+	2023-10-22; move USE_NON_NATIVE_BLEND flag to Stage Settings and use isNativeBlend in RendererBase
+	2023-10-04; 0.11.62
+	2023-10-04; fixed by eslint
+	2023-10-04; no need to clear texture on renderer material as cache renderer has already cleared
+	2023-10-04; remove cache renderer listeners when cleared
+	2023-10-04; stop onClear error
+	2023-10-04; ensure render elements and render materials are cleared when renderer is cleared
+	2023-10-04; replace deprecated AbstractionBase.ID_COUNT with UUID.Next()
+	2023-08-03; 0.11.61
+	2023-08-03; update rollup and use terser in place of uglifyjs
+	2023-08-01; 0.11.60
+	2023-08-01; update devDependencies tslib
+	2023-07-20; 0.11.59
+	2023-07-20; upgrade tslib to 2.3
+@awayjs/scene (v0.13.256-v0.13.264):
+	2023-10-24; 0.13.264
+	2023-10-24; fix for draw() method when drawing nested display objects by making sure to reset transformDisabled on the sourceNode
+	2023-10-22; 0.13.263
+	2023-10-22; correct default blendmode to layer
+	2023-10-22; 0.13.262
+	2023-10-22; make sure blendMode property defaults to NORMAL
+	2023-10-19; 0.13.261
+	2023-10-19; update to soundVolume behaviour
+	2023-10-19; supress context menu only on scene container
+	2023-08-03; 0.13.260
+	2023-08-03; update typescript to 4.9.5
+	2023-08-02; 0.13.259
+	2023-08-02; update rollup to latest, switch to terser from uglifyjs
+	2023-08-02; fix BaseAudioChannel import
+	2023-08-02; 0.13.258
+	2023-08-02; update devDependencies tslib
+	2023-07-20; 0.13.257
+	2023-07-20; upgrade tslib to 2.3
+@awayjs/stage (v0.11.133-v0.11.138):
+	2023-10-22; 0.11.138
+	2023-10-22; fixed by eslint
+	2023-10-22; add isNativeBlend() check to BlendMode
+	2023-10-22; move USE_NON_NATIVE_BLEND check to Stage Settings
+	2023-10-04; 0.11.137
+	2023-10-04; replace deprecated AbstractionBase.ID_COUNT with UUID.Next()
+	2023-08-03; 0.11.136
+	2023-08-03; update rollup
+	2023-08-03; upgrade typescript to remove custom WeakRef declarations
+	2023-08-01; 0.11.135
+	2023-08-01; update devDependencies tslib
+	2023-07-20; 0.11.134
+	2023-07-20; upgrade tslib to 2.3
+@awayjs/view (v0.6.55-v0.6.61):
+	2023-11-10; 0.6.61
+	2023-11-10; Return false by default in hitTestPoint
+	2023-10-22; 0.6.60
+	2023-10-22; stop renderToImage from returning true if non-native blend is detected when flag is false
+	2023-10-04; 0.6.59
+	2023-10-04; fixed by eslint
+	2023-10-04; limit creation of EntityNode to fix some memory leaks
+	2023-10-04; no need to perform deep clear() in PartitionBase as this is handled by ContainerNode
+	2023-10-04; correct typo in BoundingVolumePool
+	2023-08-03; 0.6.58
+	2023-08-03; update rollup and use terser in place of uglifyjs
+	2023-08-01; 0.6.57
+	2023-08-01; update devDependencies tslib
+	2023-07-20; 0.6.56
+	2023-07-20; upgrade tslib to 2.3
+
+---
+
+Bundle version: 0.0.33
 Build at: Wed Jul 19 2023 13:44:18 GMT-0500 (Central Daylight Time)
 ---
 

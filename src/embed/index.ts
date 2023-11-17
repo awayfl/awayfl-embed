@@ -1,20 +1,6 @@
 //@ts-ignore
 import template from "./embed.html";
-import {AwayPlayerComponent} from './AwayPlayerComponent';
-
-interface IAWAY_EMBED_CFG {
-    loaderUrl?: string,
-    baseUrl?: string,
-    runtimeUrl?: string,
-    trackEmbedObjectTags?: boolean,
-    splash?: string | boolean,
-    progress?: {
-		back: string;
-		rect: [number, number, number, number],
-		line: string;
-		direction?: 'lr' | 'tb'
-	},
-}
+import {AwayPlayerComponent, IBindingConfig} from './AwayPlayerComponent';
 
 const NOT_IMPLEMENTED = (name) =>
     console.warn("AwayFL loader does not support " + name);
@@ -23,7 +9,7 @@ const scriptSrc = (<HTMLScriptElement>document.currentScript).src;
 
 const global = <any>window;
 
-let AWAY_EMBED_CFG: IAWAY_EMBED_CFG;
+let AWAY_EMBED_CFG: IBindingConfig;
 
 if (global.swfObject) {
     console.warn("Replace `swfObject` with AwayFl loader!");
@@ -41,30 +27,17 @@ function createRuntimeFrame(
     }
     AWAY_EMBED_CFG = global.AWAY_EMBED_CFG;
 
-    let baseUrl = AWAY_EMBED_CFG.baseUrl;
-    let loaderUrl = AWAY_EMBED_CFG.loaderUrl;
-    let runtimeUrl = AWAY_EMBED_CFG.runtimeUrl;
     const splash = AWAY_EMBED_CFG.splash;
     const progress = AWAY_EMBED_CFG.progress;
 
-    if (!baseUrl) {
-        baseUrl = new URL('.', scriptSrc).href;
-    }
-
     const player = new AwayPlayerComponent();
-    player.setAttribute('src', swfUrl);
-    player.setAttribute('width', width);
-    player.setAttribute('height', height);
-    player.setAttribute('runtimebaseurl', baseUrl);
+    player.src = swfUrl;
+    player.width = width;
+    player.height = height;
 
-    if (loaderUrl) {
-        player.setAttribute('loaderurl', loaderUrl);
-    }
-    if (runtimeUrl) {
-        player.setAttribute('runtimeurl', runtimeUrl);
-    }
-    if (splash === false) {
-        player.setAttribute('hidebeforeload', 'true');
+    let baseUrl = AWAY_EMBED_CFG.runtimeBaseUrl;
+    if (baseUrl) {
+        player.runtimeBaseUrl = baseUrl;
     }
 
     const id = target.id;
