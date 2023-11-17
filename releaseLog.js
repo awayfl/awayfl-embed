@@ -47,7 +47,7 @@ function collectCommits (repoUrls = [], endTags = []) {
     const req = repoUrls.map(({url}, i) => {
         return invoke(
             'git', 
-            ['log', '--pretty=format:"%cd; %s"','--date=short', `HEAD...${endTags[i].trim()}`],
+            ['log', '--pretty=format:"%cd; %s"','--date=short', '--' ,`HEAD...${endTags[i].trim()}`],
             { cwd: url, windowsHide: true }
         ).then(h => h.split('\n').filter(Boolean).map((l) => l.substring(1, l.length - 1)));
     });
