@@ -156,11 +156,6 @@ export default async (args) => {
 			}),
 			commonjs({
 				include: /node_modules/,
-				namedExports: {
-					'random-seed': [ 'create' ],
-					'../@awayjs/scene/node_modules/he/he.js': ['decode'],
-					'../@awayfl/avm1/node_modules/random-seed/index.js':['create']
-				},
 			}),
 			terser({})
 		]
