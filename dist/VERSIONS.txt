@@ -1,10 +1,10 @@
 Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 15:21:04 GMT-0600 (Central Standard Time)
+Build at: Fri Nov 17 2023 21:33:35 GMT-0100 (Hora padrão dos Açores)
 ==========
 Modules:
 @awayfl/avm1:0.2.167
 @awayfl/avm2:0.2.209
-@awayfl/awayfl-player:0.2.39
+@awayfl/awayfl-player:0.2.40
 @awayfl/playerglobal:0.2.384
 @awayfl/swf-loader:0.4.121
 @awayjs/core:0.9.44

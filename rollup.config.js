@@ -1,7 +1,7 @@
-import typescript from 'rollup-plugin-typescript2'
-import nodeResolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import { terser } from 'rollup-plugin-terser';
+import typescript from '@rollup/plugin-typescript'
+import nodeResolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import terser from '@rollup/plugin-terser';
 import replace  from '@rollup/plugin-replace';
 import { string } from 'rollup-plugin-string';
 import { releaseLog } from './releaseLog';
@@ -96,15 +96,9 @@ export default async (args) => {
 			replace({
 				__VERSION__: VERSION,
 				__DATE__: new Date().toDateString(),
+				preventAssignment: true
 			}), 
-			typescript({
-				rollupCommonJSResolveHack:true,
-				tsconfigOverride: {
-					compilerOptions: {
-						target: 'es2017'
-					}
-				}
-			}),
+			typescript({}),
 			nodeResolve({
 				mainFields: ['jsnext', 'module']
 			}),
@@ -127,15 +121,9 @@ export default async (args) => {
 			replace({
 				__VERSION__: VERSION,
 				__DATE__: new Date().toDateString(),
+				preventAssignment: true
 			}), 
-			typescript({
-				rollupCommonJSResolveHack:true,
-				tsconfigOverride: {
-					compilerOptions: {
-						target: 'es2017'
-					}
-				}
-			}),
+			typescript({}),
 			nodeResolve({
 				mainFields: ['jsnext', 'module']
 			}),
@@ -159,11 +147,10 @@ export default async (args) => {
 			replace({
 				__VERSION__: VERSION,
 				__LIBS__: JSON.stringify(JSON.stringify(REAL_VERS)),
-				__DATE__: new Date().toDateString()
+				__DATE__: new Date().toDateString(),
+				preventAssignment: true
 			}),
-			typescript({
-				rollupCommonJSResolveHack:true,
-			}),
+			typescript({}),
 			nodeResolve({
 				mainFields: ['jsnext', 'module']
 			}),
