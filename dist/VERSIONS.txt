@@ -1,5 +1,5 @@
 Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 21:41:43 GMT-0100 (Hora padrão dos Açores)
+Build at: Fri Nov 17 2023 21:44:15 GMT-0100 (Hora padrão dos Açores)
 ==========
 Modules:
 @awayfl/avm1:0.2.167
