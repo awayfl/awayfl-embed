@@ -11,35 +11,55 @@ interface IAwayPlayer {
     stop(): void;
 }
 
-interface IBindingConfig {
+const scriptSrc = (<HTMLScriptElement>document.currentScript).src;
+const scriptBaseUrl = new URL('.', scriptSrc).href;
+const defaultProgress = {
+    "direction": "lr",
+    "back": "#130d02",
+    "line": "#f29f01",
+    "rect": [
+        0.25,
+        0.77,
+        0.5,
+        0.01
+    ]
+};
+
+export interface IBindingConfig {
     version?: string;
-    runtimebaseurl: string;
-    loaderurl?: string;
-    runtimeurl?: string;
+    runtimeBaseUrl: string;
     src: string;
     avm1?: boolean;
     width: string | number;
     height: string | number;
-    onload?: string;
-    onprogress?: string;
-    onerror?: string;
+    onLoad?: string;
+    onProgress?: string;
+    onError?: string;
     scaleMode?: string;
     autoplay?: boolean;
+    splash?: string | boolean,
+    progress?: {
+		back: string;
+		rect: [number, number, number, number],
+		line: string;
+		direction?: 'lr' | 'tb'
+	},
     
     /**
-     * @description Limit stage scale > 0 - force scale to this value, 0.5 - half resolution
+     * @description A decimal value between 0 and 1. Limits stage scale to improve performance.
+     * For example, 0.5 limits the player to half resolution.
      */
-    maxstagescale?: number;
+    maxStageScale?: number;
     /**
      * @description Hide player content before loading
      */
-    hidebeforeload?: boolean;
+    hideBeforeLoad?: boolean;
 
     /**
      * @kind Runtime
-     * @description use smooth as default value for bitmap, by default Flash use is pixilate 
+     * @description Smooth bitmaps by default, by default Flash use is pixilate 
      */
-     smoothbitmapdefault?: boolean;
+     smoothBitmaps?: boolean;
 }
 
 type TBindingScheme = {[key in keyof IBindingConfig]: {required?: boolean, default?: any}};
@@ -54,25 +74,24 @@ export class AwayPlayerComponent extends HTMLElement {
         ];
     }
 
-    private static BINDING_CONFIG: TBindingScheme  = {
+    private static BINDING_CONFIG: TBindingScheme = {
         version: {required: false, default: 'latest'},
-        runtimebaseurl: {required: true},
-        loaderurl: {required: false, default: 'loader.js'},
-        runtimeurl: {required: false, default: 'runtime.js'},
+        runtimeBaseUrl: {required: false, default: scriptBaseUrl},
         src: {required: true},
         avm1: {required: false, default: false},
         width: {required: false, default: 550},
         height: {required: false, default: 400},
-        onload: {required: false},
-        onprogress: {required: false},
-        onerror: {required: false},
+        onLoad: {required: false},
+        onProgress: {required: false},
+        onError: {required: false},
         scaleMode: {required: false, default: 'all'},
         autoplay: {required: false, default: true},
-        hidebeforeload: {required: false, default: false},
-        maxstagescale: {required: false, default: undefined},
+        maxStageScale: {required: false, default: undefined},
+        splash: {required: false, default: 'splash.jpg'},
+        progress: {required: false, default: defaultProgress},
 
         // runtime
-        smoothbitmapdefault: {required: false, default: false},
+        smoothBitmaps: {required: false, default: false},
     };
 
     _loaderHolder: HTMLDivElement;
@@ -85,32 +104,39 @@ export class AwayPlayerComponent extends HTMLElement {
         return this._player;
     }
 
-    get runConfig() {
+    get config() {
         return this._runConfig;
     }
+    set config(cfg) {
+        this._runConfig = cfg;
+    } 
 
     get src() {
-        return this.getAttribute('src');
+        return this._runConfig.src || this.getAttribute('src');
+    }
+    set src(v) {
+        this._runConfig.src = v;
     }
 
-    set src (v) {
-        this.setAttribute('src', v);
+    set width(v: number | string) {
+        this._runConfig.width = v;
+    }
+    get width() {
+        return this._runConfig.width || this.getAttribute('width');
     }
 
-    set width (v: string) {
-        this.setAttribute('width', v);
+    set height(v: number | string) {
+        this._runConfig.height = v;
+    }
+    get height() {
+        return this._runConfig.height || this.getAttribute('height');
     }
 
-    get width () {
-        return this.getAttribute('width');
+    set runtimeBaseUrl(v: string) {
+        this._runConfig.runtimeBaseUrl = v;
     }
-
-    set height (v: string) {
-        this.setAttribute('height', v);
-    }
-
-    get height () {
-        return this.getAttribute('height');
+    get runtimeBaseUrl() {
+        return this._runConfig.runtimeBaseUrl;
     }
 
     constructor(){
@@ -121,9 +147,9 @@ export class AwayPlayerComponent extends HTMLElement {
     }
 
     _getRuntimeUrl() {
-        const baseUrl = this._runConfig.runtimebaseurl;
-        const loader  = new URL(this._runConfig.loaderurl, baseUrl).href;
-        const runtime = new URL(this._runConfig.runtimeurl, baseUrl).href;
+        const baseUrl = this._runConfig.runtimeBaseUrl;
+        const loader  = new URL('loader.js', baseUrl).href;
+        const runtime = new URL('runtime.js', baseUrl).href;
         /**
          * @todo support runtime version
          **/
@@ -142,7 +168,7 @@ export class AwayPlayerComponent extends HTMLElement {
     }
 
     onError(_arg: any) {
-        const f = this._runConfig.onerror && self[this._runConfig.onerror];
+        const f = this._runConfig.onError && self[this._runConfig.onError];
 
         if (typeof f === 'function') {
             f(_arg);
@@ -162,7 +188,7 @@ export class AwayPlayerComponent extends HTMLElement {
         }, {once: true});
 
         fd.addEventListener('awayfl-player-load', () => {
-            const f = this._runConfig.onload && self[this._runConfig.onload];
+            const f = this._runConfig.onLoad && self[this._runConfig.onLoad];
 
             if (typeof f === 'function') {
                 f();
@@ -175,7 +201,7 @@ export class AwayPlayerComponent extends HTMLElement {
 
         //@ts-ignore
         fd.addEventListener('awayfl-player-progress', ({detail}) => {
-            const f = this._runConfig.onprogress && self[this._runConfig.onprogress];
+            const f = this._runConfig.onProgress && self[this._runConfig.onProgress];
 
             if (typeof f === 'function') {
                 f(detail);
@@ -192,24 +218,12 @@ export class AwayPlayerComponent extends HTMLElement {
         const urls = this._getRuntimeUrl();
         const global = <any>window;
         const globalCfg = global.AWAY_EMBED_CFG;
-        const defaultSplash = 'splash.jpg';
-        const defaultProgress = {
-            "direction": "lr",
-            "back": "#130d02",
-            "line": "#f29f01",
-            "rect": [
-                0.25,
-                0.77,
-                0.5,
-                0.01
-            ]
-        };
      
         const gameConfig = {
             width: frame.clientWidth,
             height: frame.clientHeight,
-            splash: (typeof globalCfg.splash == 'string' && globalCfg.splash) || defaultSplash,
-            progress: globalCfg.progress || defaultProgress,
+            splash: this._runConfig.splash,
+            progress: this._runConfig.progress,
             runtime: [urls.runtime],
             binary: [{
                 path: this._runConfig.src,
@@ -219,9 +233,9 @@ export class AwayPlayerComponent extends HTMLElement {
             }],
             //debug: true,
             baseUrl: urls.baseUrl,
-            maxStageScale: +this._runConfig.maxstagescale,
+            maxStageScale: +this._runConfig.maxStageScale,
             runtimeFlags: {
-                defaultSmoothBitmap: !!this._runConfig.smoothbitmapdefault
+                defaultSmoothBitmap: !!this._runConfig.smoothBitmaps
             }
         }
     
@@ -235,7 +249,7 @@ export class AwayPlayerComponent extends HTMLElement {
         const frame = document.createElement('iframe');
 
         frame.style.border = 'none';
-        frame.style.display = this._runConfig.hidebeforeload ? 'none' : ''
+        frame.style.display = this._runConfig.splash === false ? 'none' : ''
 
         frame.width = '' + this._runConfig.width;
         frame.height = '' + this._runConfig.height;
@@ -269,16 +283,6 @@ export class AwayPlayerComponent extends HTMLElement {
                 this._runConfig[name] = this.getAttribute(name);
             }
         });
-
-        for(const key in scheme) {
-            if (scheme[key].required && typeof this._runConfig[key] === 'undefined') {
-                throw `Parameter ${key} is required!`;
-            }
-
-            if (typeof this._runConfig[key] === 'undefined') {
-                this._runConfig[key] = scheme[key].default;
-            }
-        }
     }
 
     _loadGlobalConfig() {
@@ -293,12 +297,25 @@ export class AwayPlayerComponent extends HTMLElement {
         }
     }
 
-    connectedCallback() 
-    {
+    _setDefaults() {
+        const scheme = AwayPlayerComponent.BINDING_CONFIG;
+        for(const key in scheme) {
+            if (scheme[key].required && typeof this._runConfig[key] === 'undefined') {
+                throw `Parameter ${key} is required!`;
+            }
+
+            if (typeof this._runConfig[key] === 'undefined') {
+                this._runConfig[key] = scheme[key].default;
+            }
+        }
+    }
+
+    connectedCallback() {
         setTimeout(() => {
             this._loaderHolder = this.querySelector('div.awayfl__loader');
             this._loadGlobalConfig();
             this._mapAttrs();
+            this._setDefaults();
             this._constructPlayer();
 
             const style = document.createElement('style');

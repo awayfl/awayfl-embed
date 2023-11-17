@@ -1,6 +1,6 @@
 AwayFL Embedded Player
 ==================
-AwayFL will help you save your Flash games and keep them running after 2020!
+AwayFL helps you save your Flash games and keep them running after 2020!
 
 Check your game on:
 https://exponenta.games/games/AFL/
@@ -10,6 +10,12 @@ __How to use__
 There are 3 main ways to use AwayFL on your site:
 
 1. [Overriding the `swfObject` API](./example/index.html)
+    * Load the AwayFL player by adding a script tag to your HTML file. For example:
+        `<script src="../dist/embed.js"></script>`
+    * Load your SWF file using the [swfObject API](https://web.archive.org/web/20140704095451if_/http://code.google.com/p/swfobject/wiki/documentation#STEP_3:_Embed_your_SWF_with). For example:
+        `swfObject.embedSWF('Embedded.swf', 'container', '550', '400');`
+    * Optional: Configure AwayFL using the `AWAY_EMBED_CFG` variable.
+        This allows you to customize AwayFL's behavior. For a list of available options, see the [IBindingConfig interface](./src/embed/AwayPlayerComponent.ts).
 
 2. Using the AwayFL loader and a custom config:
     * Grab the template from [/src/embed/embed.html](./src/embed/embed.html)
