@@ -1,4 +1,4 @@
-import typescript from '@rollup/plugin-typescript'
+import typescript from 'rollup-plugin-typescript2'
 import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import terser from '@rollup/plugin-terser';
@@ -98,7 +98,13 @@ export default async (args) => {
 				__DATE__: new Date().toDateString(),
 				preventAssignment: true
 			}), 
-			typescript({}),
+			typescript({
+				tsconfigOverride: {
+					compilerOptions: {
+						target: 'es2017'
+					}
+				}
+			}),
 			nodeResolve({
 				mainFields: ['jsnext', 'module']
 			}),
@@ -123,7 +129,13 @@ export default async (args) => {
 				__DATE__: new Date().toDateString(),
 				preventAssignment: true
 			}), 
-			typescript({}),
+			typescript({
+				tsconfigOverride: {
+					compilerOptions: {
+						target: 'es2017'
+					}
+				}
+			}),
 			nodeResolve({
 				mainFields: ['jsnext', 'module']
 			}),
@@ -150,12 +162,13 @@ export default async (args) => {
 				__DATE__: new Date().toDateString(),
 				preventAssignment: true
 			}),
-			typescript({}),
+			typescript({
+			}),
 			nodeResolve({
 				mainFields: ['jsnext', 'module']
 			}),
 			commonjs({
-				include: /node_modules/,
+				include: /node_modules/
 			}),
 			terser({})
 		]
