@@ -13,6 +13,7 @@ interface IAwayPlayer {
 
 const scriptSrc = (<HTMLScriptElement>document.currentScript).src;
 const scriptBaseUrl = new URL('.', scriptSrc).href;
+const defaultSplashUrl = new URL('./assets/splash.jpg', scriptBaseUrl).href;
 const defaultProgress = {
     "direction": "lr",
     "back": "#130d02",
@@ -87,7 +88,7 @@ export class AwayPlayerComponent extends HTMLElement {
         scaleMode: {required: false, default: 'all'},
         autoplay: {required: false, default: true},
         maxStageScale: {required: false, default: undefined},
-        splash: {required: false, default: 'splash.jpg'},
+        splash: {required: false, default: defaultSplashUrl},
         progress: {required: false, default: defaultProgress},
 
         // runtime
@@ -216,8 +217,6 @@ export class AwayPlayerComponent extends HTMLElement {
     _buildTemplate(frame: HTMLIFrameElement): string {
         const t: string = template;
         const urls = this._getRuntimeUrl();
-        const global = <any>window;
-        const globalCfg = global.AWAY_EMBED_CFG;
      
         const gameConfig = {
             width: frame.clientWidth,
