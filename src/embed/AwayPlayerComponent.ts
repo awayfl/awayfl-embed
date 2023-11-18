@@ -38,8 +38,9 @@ export interface IBindingConfig {
     onError?: string;
     scaleMode?: string;
     autoplay?: boolean;
+    backgroundColor?: string;
     splash?: string | boolean,
-    progress?: {
+    progress?: boolean | {
 		back: string;
 		rect: [number, number, number, number],
 		line: string;
@@ -87,7 +88,9 @@ export class AwayPlayerComponent extends HTMLElement {
         onError: {required: false},
         scaleMode: {required: false, default: 'all'},
         autoplay: {required: false, default: true},
+        hideBeforeLoad: {required: false, default: false},
         maxStageScale: {required: false, default: undefined},
+        backgroundColor: {required: false, default: 'black'},
         splash: {required: false, default: defaultSplashUrl},
         progress: {required: false, default: defaultProgress},
 
@@ -221,6 +224,7 @@ export class AwayPlayerComponent extends HTMLElement {
         const gameConfig = {
             width: frame.clientWidth,
             height: frame.clientHeight,
+            backgroundColor: this._runConfig.backgroundColor,
             splash: this._runConfig.splash,
             progress: this._runConfig.progress,
             runtime: [urls.runtime],
@@ -248,7 +252,7 @@ export class AwayPlayerComponent extends HTMLElement {
         const frame = document.createElement('iframe');
 
         frame.style.border = 'none';
-        frame.style.display = this._runConfig.splash === false ? 'none' : ''
+        frame.style.display = this._runConfig.hideBeforeLoad ? 'none' : ''
 
         frame.width = '' + this._runConfig.width;
         frame.height = '' + this._runConfig.height;

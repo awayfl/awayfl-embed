@@ -1,23 +1,5 @@
-Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 18:50:41 GMT-0600 (Central Standard Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 18:46:47 GMT-0600 (Central Standard Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 18:26:38 GMT-0600 (Central Standard Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 11:31:39 GMT-0600 (Central Standard Time)
+Bundle version: 0.1.0
+Build at: Sat Nov 18 2023 16:15:52 GMT-0600 (Central Standard Time)
 ---
 @awayfl/avm1 (v0.2.162-v0.2.167):
 	2023-11-14; Stop execution of actions if clip is removed
@@ -228,67 +210,7 @@ Build at: Fri Nov 17 2023 11:31:39 GMT-0600 (Central Standard Time)
 
 ---
 
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 13:44:18 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 13:14:53 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 13:05:52 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 13:01:26 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 12:56:34 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 12:44:33 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 12:38:37 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 12:34:10 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 12:31:56 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Jul 19 2023 12:17:53 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
+Bundle version: 0.0.38
 Build at: Wed Jul 19 2023 12:05:08 GMT-0500 (Central Daylight Time)
 ---
 @awayfl/avm1 (v0.2.159-v0.2.162):
@@ -358,25 +280,7 @@ Build at: Wed Jul 19 2023 12:05:08 GMT-0500 (Central Daylight Time)
 
 ---
 
-Bundle version: 0.0.33
-Build at: Fri Apr 28 2023 01:59:05 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Fri Apr 28 2023 01:56:17 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Thu Apr 27 2023 23:34:06 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
+Bundle version: 0.0.37
 Build at: Thu Apr 27 2023 22:42:05 GMT-0500 (Central Daylight Time)
 ---
 @awayfl/avm1 (v0.2.158-v0.2.159):
@@ -392,57 +296,7 @@ Build at: Thu Apr 27 2023 22:42:05 GMT-0500 (Central Daylight Time)
 
 ---
 
-Bundle version: 0.0.33
-Build at: Thu Apr 27 2023 05:40:09 GMT-0500 (Central Daylight Time)
----
-@awayfl/avm1 (v0.2.158-v0.2.158):
-	2023-04-26; Use document.baseURI instead of window.location.href
-@awayfl/playerglobal (v0.2.368-v0.2.368):
-	2023-04-26; Use document.baseURI instead of window.location.href
-
----
-
-Bundle version: 0.0.33
-Build at: Thu Apr 27 2023 05:34:41 GMT-0500 (Central Daylight Time)
----
-@awayfl/avm1 (v0.2.158-v0.2.158):
-	2023-04-26; Use document.baseURI instead of window.location.href
-@awayfl/playerglobal (v0.2.368-v0.2.368):
-	2023-04-26; Use document.baseURI instead of window.location.href
-
----
-
-Bundle version: 0.0.33
-Build at: Thu Apr 27 2023 05:26:10 GMT-0500 (Central Daylight Time)
----
-@awayfl/avm1 (v0.2.158-v0.2.158):
-	2023-04-26; Use document.baseURI instead of window.location.href
-@awayfl/playerglobal (v0.2.368-v0.2.368):
-	2023-04-26; Use document.baseURI instead of window.location.href
-
----
-
-Bundle version: 0.0.33
-Build at: Thu Apr 27 2023 05:01:10 GMT-0500 (Central Daylight Time)
----
-@awayfl/avm1 (v0.2.158-v0.2.158):
-	2023-04-26; Use document.baseURI instead of window.location.href
-@awayfl/playerglobal (v0.2.368-v0.2.368):
-	2023-04-26; Use document.baseURI instead of window.location.href
-
----
-
-Bundle version: 0.0.33
-Build at: Thu Apr 27 2023 04:22:57 GMT-0500 (Central Daylight Time)
----
-@awayfl/avm1 (v0.2.158-v0.2.158):
-	2023-04-26; Use document.baseURI instead of window.location.href
-@awayfl/playerglobal (v0.2.368-v0.2.368):
-	2023-04-26; Use document.baseURI instead of window.location.href
-
----
-
-Bundle version: 0.0.33
+Bundle version: 0.0.36
 Build at: Thu Apr 27 2023 03:59:27 GMT-0500 (Central Daylight Time)
 ---
 @awayfl/avm1 (v0.2.158-v0.2.158):
@@ -452,25 +306,7 @@ Build at: Thu Apr 27 2023 03:59:27 GMT-0500 (Central Daylight Time)
 
 ---
 
-Bundle version: 0.0.33
-Build at: Wed Apr 26 2023 21:14:26 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Apr 26 2023 20:13:30 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Wed Apr 26 2023 16:44:22 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
+Bundle version: 0.0.35
 Build at: Wed Apr 26 2023 16:41:55 GMT-0500 (Central Daylight Time)
 ---
 @awayjs/scene (v0.13.251-v0.13.252):
@@ -479,25 +315,7 @@ Build at: Wed Apr 26 2023 16:41:55 GMT-0500 (Central Daylight Time)
 
 ---
 
-Bundle version: 0.0.33
-Build at: Fri Apr 07 2023 17:30:46 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Fri Apr 07 2023 17:25:23 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
-Build at: Fri Apr 07 2023 17:24:40 GMT-0500 (Central Daylight Time)
----
-
----
-
-Bundle version: 0.0.33
+Bundle version: 0.0.34
 Build at: Fri Apr 07 2023 16:03:25 GMT-0500 (Central Daylight Time)
 ---
 @awayfl/avm1 (v0.2.136-v0.2.158):

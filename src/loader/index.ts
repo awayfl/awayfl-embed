@@ -53,7 +53,7 @@ export const LegacyLoader = {
 
 				ui.ready();
 
-				const onCLick = (_e: MouseEvent) => {					
+				const onClick = (_e: MouseEvent) => {					
 					ui.hide(true);
 					if (!func) 
 						throw "PokiPlayer did not send a callback for starting game";
@@ -61,7 +61,7 @@ export const LegacyLoader = {
 					func();
 				};
 
-				window.addEventListener("click", onCLick, {once: true});
+				window.addEventListener("click", onClick, {once: true});
 
 			} else {
 				ui.hide(true);

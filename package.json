@@ -1,6 +1,6 @@
 {
   "name": "@awayfl/away-player-embed",
-  "version": "0.0.33",
+  "version": "0.1.0",
   "description": "AwayFL Runtime provider for replacing a flash player",
   "main": "index.js",
   "scripts": {

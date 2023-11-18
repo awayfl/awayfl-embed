@@ -32,7 +32,7 @@ export class Runner {
 				console.log("AVM Load", f);
 			},
 			null,
-			config.progressParserWeigth ? config.progressParserWeigth : 0.001
+			config.progressParserWeight ? config.progressParserWeight : 0.001
 		);
 
 		this.progress = new Reporter(

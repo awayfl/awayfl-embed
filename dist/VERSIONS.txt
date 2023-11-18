@@ -1,5 +1,5 @@
-Bundle version: 0.0.33
-Build at: Fri Nov 17 2023 18:50:40 GMT-0600 (Central Standard Time)
+Bundle version: 0.1.0
+Build at: Sat Nov 18 2023 16:34:17 GMT-0600 (Central Standard Time)
 ==========
 Modules:
 @awayfl/avm1:0.2.167
