@@ -7,14 +7,13 @@
     <script src="../dist/embed.js"></script>
 </head>
 <body>
-    <div id = 'root'>
-        <div id = 'container'>
+    <div id = 'container'>
 
-        </div>
     </div>
 
     <script>
-        swfObject.embedSWF('Embedded.swf', 'container', '550', '400');
+        window.AWAY_EMBED_CFG = {}
+        swfObject.embedSWF('Embedded.swf', 'container', 550, 400);
     </script>
 </body>
 </html>

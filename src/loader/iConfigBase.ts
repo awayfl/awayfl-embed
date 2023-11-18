@@ -17,6 +17,7 @@ export interface IGameConfigBase {
 
 	width: number;
 	height: number;
+	backgroundColor: string,
 	splash: string;
 	start?: string;
 	progress?: {
@@ -27,7 +28,7 @@ export interface IGameConfigBase {
 	},
 	runtime?: Array<IFile | string> | string;
 	binary?: Array<IFile | string> | string;
-	progressParserWeigth?: number;
+	progressParserWeight?: number;
 	files?: IFile[];
 	debug?: boolean;
 }

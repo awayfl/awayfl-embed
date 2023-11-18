@@ -27,9 +27,6 @@ function createRuntimeFrame(
     }
     AWAY_EMBED_CFG = global.AWAY_EMBED_CFG;
 
-    const splash = AWAY_EMBED_CFG.splash;
-    const progress = AWAY_EMBED_CFG.progress;
-
     const player = new AwayPlayerComponent();
     player.src = swfUrl;
     player.width = width;
