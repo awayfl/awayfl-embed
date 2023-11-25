@@ -11,7 +11,7 @@ const global = <any>window;
 
 let AWAY_EMBED_CFG: IBindingConfig;
 
-if (global.swfObject) {
+if ((global.swfObject) || (global.swfobject))  {
     console.warn("Replace `swfObject` with AwayFl loader!");
 }
 
@@ -98,5 +98,6 @@ const swfObject = {
     embedSWF    
 };
 
-global.swfObject = swfObject;
+global.swfObject = swfObject; global.swfobject = swfObject;
+
 
