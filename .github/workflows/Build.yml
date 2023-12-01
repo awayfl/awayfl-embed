@@ -1,0 +1,35 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+
+    - name: Install Dependencies
+      run: |
+        npm i
+
+    - name: Build Library
+      run: |
+        npm run build
+
+    - name: Package Library for npm
+      run: |
+        npm pack
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Embed-NPM
+        path: awayfl-away-player-embed-*.tgz
+        if-no-files-found: error
