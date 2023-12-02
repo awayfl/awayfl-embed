@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "@awayfl/avm1": "^0.2.167",
-    "@awayfl/avm2": "^0.2.209",
+    "@awayfl/avm2": "^0.2.210",
     "@awayfl/awayfl-player": "^0.2.40",
-    "@awayfl/playerglobal": "^0.2.384",
+    "@awayfl/playerglobal": "^0.2.386",
     "@awayfl/swf-loader": "^0.4.121",
     "@awayjs/core": "^0.9.44",
     "@awayjs/graphics": "^0.5.82",
@@ -47,21 +47,21 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "copyfiles": "^2.4.1",
     "rimraf": "^5.0.5",
-    "rollup": "^4.4.1",
-    "typescript": "^5.2.2"
+    "rollup": "^4.6.1",
+    "typescript": "^5.3.2"
   },
   "lastUsedTags": {
-    "@awayfl/avm1": "v0.1.0",
-    "@awayfl/avm2": "v0.1.0",
-    "@awayfl/awayfl-player": "v0.1.0",
-    "@awayfl/playerglobal": "v0.1.0",
-    "@awayfl/swf-loader": "v0.1.0",
-    "@awayjs/core": "v0.1.0",
-    "@awayjs/graphics": "v0.1.0",
-    "@awayjs/materials": "v0.1.0",
-    "@awayjs/renderer": "v0.1.0",
-    "@awayjs/scene": "v0.1.0",
-    "@awayjs/stage": "v0.1.0",
-    "@awayjs/view": "v0.1.0"
+    "@awayfl/avm1": "v0.2.167",
+    "@awayfl/avm2": "v0.2.210",
+    "@awayfl/awayfl-player": "v0.2.40",
+    "@awayfl/playerglobal": "v0.2.386",
+    "@awayfl/swf-loader": "v0.4.121",
+    "@awayjs/core": "v0.9.44",
+    "@awayjs/graphics": "v0.5.82",
+    "@awayjs/materials": "v0.6.16",
+    "@awayjs/renderer": "v0.11.63",
+    "@awayjs/scene": "v0.13.264",
+    "@awayjs/stage": "v0.11.138",
+    "@awayjs/view": "v0.6.61"
   }
 }
