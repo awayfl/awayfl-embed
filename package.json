@@ -1,6 +1,6 @@
 {
   "name": "@awayfl/away-player-embed",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AwayFL Runtime provider for replacing a flash player",
   "main": "index.js",
   "scripts": {
@@ -51,17 +51,17 @@
     "typescript": "^5.2.2"
   },
   "lastUsedTags": {
-    "@awayfl/avm1": "v0.0.33",
-    "@awayfl/avm2": "v0.0.33",
-    "@awayfl/awayfl-player": "v0.0.33",
-    "@awayfl/playerglobal": "v0.0.33",
-    "@awayfl/swf-loader": "v0.0.33",
-    "@awayjs/core": "v0.0.33",
-    "@awayjs/graphics": "v0.0.33",
-    "@awayjs/materials": "v0.0.33",
-    "@awayjs/renderer": "v0.0.33",
-    "@awayjs/scene": "v0.0.33",
-    "@awayjs/stage": "v0.0.33",
-    "@awayjs/view": "v0.0.33"
+    "@awayfl/avm1": "v0.1.0",
+    "@awayfl/avm2": "v0.1.0",
+    "@awayfl/awayfl-player": "v0.1.0",
+    "@awayfl/playerglobal": "v0.1.0",
+    "@awayfl/swf-loader": "v0.1.0",
+    "@awayjs/core": "v0.1.0",
+    "@awayjs/graphics": "v0.1.0",
+    "@awayjs/materials": "v0.1.0",
+    "@awayjs/renderer": "v0.1.0",
+    "@awayjs/scene": "v0.1.0",
+    "@awayjs/stage": "v0.1.0",
+    "@awayjs/view": "v0.1.0"
   }
 }
