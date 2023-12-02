@@ -59,9 +59,21 @@ export interface IBindingConfig {
 
     /**
      * @kind Runtime
-     * @description Smooth bitmaps by default, by default Flash use is pixilate 
+     * @description Smooth bitmaps by default. Flash Player defaults to pixelated scaling.
      */
-     smoothBitmaps?: boolean;
+    smoothBitmaps?: boolean;
+
+    /**
+     * @kind Runtime
+     * @description Enable blend modes (experimental)
+     */
+    enableBlends?: boolean;
+
+    /**
+     * @kind Runtime
+     * @description Enable filters such as blur and glow (experimental)
+     */
+    enableFilters?: boolean;
 }
 
 type TBindingScheme = {[key in keyof IBindingConfig]: {required?: boolean, default?: any}};
@@ -96,6 +108,8 @@ export class AwayPlayerComponent extends HTMLElement {
 
         // runtime
         smoothBitmaps: {required: false, default: false},
+        enableBlends: {required: false, default: false},
+        enableFilters: {required: false, default: false},
     };
 
     _loaderHolder: HTMLDivElement;
@@ -238,7 +252,9 @@ export class AwayPlayerComponent extends HTMLElement {
             baseUrl: urls.baseUrl,
             maxStageScale: +this._runConfig.maxStageScale,
             runtimeFlags: {
-                defaultSmoothBitmap: !!this._runConfig.smoothBitmaps
+                defaultSmoothBitmap: !!this._runConfig.smoothBitmaps,
+                enableBlends: !!this._runConfig.enableBlends,
+                enableFilters: !!this._runConfig.enableFilters,
             }
         }
     

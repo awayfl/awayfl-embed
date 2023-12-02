@@ -15,7 +15,7 @@ import { AVM2Handler } from "@awayfl/avm2";
 import { LoaderInfo, PlayerGlobal } from "@awayfl/playerglobal";
 import { AVMStage } from "@awayfl/swf-loader";
 import { Settings as GraphicsSettings } from '@awayjs/graphics';
-
+import { Settings as SceneSettings } from "@awayjs/scene";
 
 //@ts-ignore;
 export const VERSION = "__VERSION__";
@@ -31,6 +31,8 @@ export class Player extends AVMStage {
         const runtime = this._gameConfig.runtimeFlags;
 
         GraphicsSettings.SMOOTH_BITMAP_FILL_DEFAULT = runtime.defaultSmoothBitmap;
+        SceneSettings.USE_UNSAFE_BLENDS = runtime.enableBlends;
+        SceneSettings.USE_UNSAFE_FILTERS = runtime.enableFilters;
 
         if(!this._gameConfig.files) {
             this._gameConfig.files = [];
