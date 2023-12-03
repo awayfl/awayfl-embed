@@ -20,10 +20,12 @@ jobs:
     - name: Install Dependencies
       run: |
         npm i
-    - name: Force Unshallow Repo
+    - 
+      name: Force Unshallow Repo
       run: |
         git fetch --depth=500 
-    - name: Build Library
+    - 
+      name: Build Library
       run: |
         npm run build
 
@@ -36,5 +38,5 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
         git add dist
-        git commit -m "Update files from dist"
+        git commit -m "Update Dist"
         git push
