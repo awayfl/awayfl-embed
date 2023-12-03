@@ -20,7 +20,9 @@ jobs:
     - name: Install Dependencies
       run: |
         npm i
-
+    - name: Force Unshallow Repo
+      run: |
+        git fetch --depth=500 
     - name: Build Library
       run: |
         npm run build
