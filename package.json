@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf --glob ./dist/*",
-    "static": "copyfiles -u 1 ./static/**/* ./dist/assets/",
+    "static": "copyfiles -u 1 ./static/* ./dist/assets/",
     "prebuild": "npm run clean && npm run static",
     "build": "rollup -c --bundleConfigAsCjs",
     "version": " npm run build",
