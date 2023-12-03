@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 Bundle version: 0.1.1
 Build at: Fri Dec 01 2023 19:42:54 GMT-0600 (Central Standard Time)
+=======
+Bundle version: 0.1.0
+Build at: Fri Dec 01 2023 22:33:33 GMT-0100 (Hora padrão dos Açores)
+>>>>>>> 4cabf8088f4fab379b89b489655a39f82adc07ee
 ==========
 Modules:
 @awayfl/avm1:0.2.167
