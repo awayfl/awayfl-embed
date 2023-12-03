@@ -35,7 +35,7 @@ function collectLastTags (repoUrls = []) {
     const req = repoUrls.map(({url}) => {
         return invoke(
             'git', 
-            ['describe', '--abbrev=0', '--tags'],
+            ['describe', '--abbrev=0', '--tags', '--always'],
             { cwd: url, windowsHide: true }
         ).then((e) => e.trim());
     });
