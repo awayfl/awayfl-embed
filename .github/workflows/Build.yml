@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master  # default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+        fetch-tags: true
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 20.x
+
+    - name: Install Dependencies
+      run: |
+        npm i
+    - 
+      name: Force Unshallow Repo
+      run: |
+        git fetch --depth=500 
+    - 
+      name: Build Library
+      run: |
+        npm run build
+
+    - name: Package Library for npm
+      run: |
+        npm pack
+
+    - name: Update dist
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add dist
+        git commit -m "Update Dist"
+        git push
