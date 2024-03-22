@@ -1,7 +1,7 @@
 {
-  "name": "@awayfl/away-player-embed",
+  "name": "@awayfl/awayfl-embed",
   "version": "0.1.1",
-  "description": "AwayFL Runtime provider for replacing a flash player",
+  "description": "Embedded AwayFL Player for static publishing",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf --glob ./dist/*",
@@ -18,7 +18,7 @@
   ],
   "author": "eXponenta",
   "license": "MIT",
-  "repository": "https://github.com/awayfl/away-player-embed",
+  "repository": "https://github.com/awayfl/awayfl-embed",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
