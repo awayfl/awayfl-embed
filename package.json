@@ -9,7 +9,7 @@
     "prebuild": "npm run clean && npm run static",
     "build": "rollup -c --bundleConfigAsCjs",
     "version": " npm run build",
-    "postversion": "git commit -a -m Build && git push origin --all && git push origin --tags && npm publish"
+    "postversion": "git commit -a -m Build && git push origin --all && git push origin --tags"
   },
   "keywords": [
     "Flash",
