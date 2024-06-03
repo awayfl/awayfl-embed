@@ -1,6 +1,6 @@
 {
   "name": "@awayfl/awayfl-embed",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Embedded AwayFL Player for static publishing",
   "main": "index.js",
   "scripts": {
@@ -52,16 +52,16 @@
   },
   "lastUsedTags": {
     "@awayfl/avm1": "v0.2.175",
-    "@awayfl/avm2": "v0.2.219",
+    "@awayfl/avm2": "v0.2.220",
     "@awayfl/awayfl-player": "v0.2.43",
-    "@awayfl/playerglobal": "v0.2.397",
-    "@awayfl/swf-loader": "v0.4.127",
+    "@awayfl/playerglobal": "v0.2.403",
+    "@awayfl/swf-loader": "v0.4.128",
     "@awayjs/core": "v0.9.47",
-    "@awayjs/graphics": "v0.5.87",
+    "@awayjs/graphics": "v0.5.90",
     "@awayjs/materials": "v0.6.16",
     "@awayjs/renderer": "v0.11.65",
-    "@awayjs/scene": "v0.13.276",
-    "@awayjs/stage": "v0.11.143",
+    "@awayjs/scene": "v0.13.279",
+    "@awayjs/stage": "v0.11.145",
     "@awayjs/view": "v0.6.64"
   }
 }
