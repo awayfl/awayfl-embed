@@ -3,7 +3,7 @@ AwayFL Embedded Player
 AwayFL helps you save your Flash games and keep them running after 2020!
 
 Check your game on:
-https://exponenta.games/games/AFL/
+https://awayfl.org/swf-tester/
 
 __How to use__
 
